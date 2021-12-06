@@ -20,7 +20,6 @@
 		F3CE653226D2BC8F009ED66B /* WaitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE653126D2BC8F009ED66B /* WaitVC.swift */; };
 		F3CE653526D2BE92009ED66B /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE653426D2BE92009ED66B /* NetworkHandler.swift */; };
 		F3CE653726D2BEA6009ED66B /* G.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE653626D2BEA6009ED66B /* G.swift */; };
-		F3CE654526D5F590009ED66B /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3CE654426D5F590009ED66B /* Inter.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		F3CE653126D2BC8F009ED66B /* WaitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitVC.swift; sourceTree = "<group>"; };
 		F3CE653426D2BE92009ED66B /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 		F3CE653626D2BEA6009ED66B /* G.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = G.swift; sourceTree = "<group>"; };
-		F3CE654426D5F590009ED66B /* Inter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Inter.ttf; path = ../PhylloConnect/Classes/fonts/Inter.ttf; sourceTree = "<group>"; };
 		F3F5D7B17233B2C57CD48328 /* Pods_PhylloConnect_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhylloConnect_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,7 +75,6 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				F3CE654426D5F590009ED66B /* Inter.ttf */,
 				607FACD21AFB9204008FA782 /* Example for PhylloConnect */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -242,7 +239,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3CE654526D5F590009ED66B /* Inter.ttf in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				F3CE653026D2B7C2009ED66B /* loading.gif in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,

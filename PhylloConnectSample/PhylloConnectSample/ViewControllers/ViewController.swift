@@ -68,10 +68,10 @@ class ViewController: UIViewController {
     
     
     @IBAction func instagramBtnClicked(_ sender: Any) {
-        initLaunch(workPlatformId: "9bb8913b-ddd9-430b-a66a-d74d846e6c66")
+        initLaunch(workPlatformId: "")
     }
     @IBAction func youtubeBtnClicked(_ sender: Any) {
-        initLaunch(workPlatformId: "14d9ddf5-51c6-415e-bde6-f8ed36ad7054")
+        initLaunch(workPlatformId: "")
     }
     
     @IBAction func existingUserClicked(_ sender: UIButton) {

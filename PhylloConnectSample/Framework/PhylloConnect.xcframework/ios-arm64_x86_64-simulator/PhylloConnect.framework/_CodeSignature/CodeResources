@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		grtNFxhgAXhuUVq2cADUORYYWIk=
+		AoVblvOphNXAUIvwXSWGC6dJf9E=
 		</data>
 		<key>Headers/PhylloConnect-Swift.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OE66ds/4ed8a8ck++Ifai9uLvOQ=
+		yUed6W+cJZ/MSsJ76fomtIVTY3k=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		OE66ds/4ed8a8ck++Ifai9uLvOQ=
+		yUed6W+cJZ/MSsJ76fomtIVTY3k=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WcrTBeTsD14jWqNmIR5Dz/lLDqs=
+		ulz5pLWOmIgbDzX95rmvV18rUq0=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		WcrTBeTsD14jWqNmIR5Dz/lLDqs=
+		ulz5pLWOmIgbDzX95rmvV18rUq0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -271,7 +271,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5lrbX9inNiP04ulbb+Kq36WOdjywds8Zk6iR2Jqf6PQ=
+			zjWcSMr7IsiOi9DPoqXx6vC8o2U4L21CgzR1USwjx8Y=
 			</data>
 		</dict>
 		<key>Headers/PhylloConnect-Swift.h</key>
@@ -313,7 +313,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A1GdNPRmzLTe9WG2u1SfsS/49gc0XdAJJwkFZXqC6HE=
+			o4N84rHPptVt1QYpcqjFloIDsuz6tsiaQGrwFD+7iJU=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/arm64.swiftdoc</key>
@@ -334,7 +334,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A1GdNPRmzLTe9WG2u1SfsS/49gc0XdAJJwkFZXqC6HE=
+			o4N84rHPptVt1QYpcqjFloIDsuz6tsiaQGrwFD+7iJU=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -355,7 +355,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JkomUqlS+9U4SGJiqILxICsVg6rDJrVu28uMV2pY5a4=
+			UIMbzTn3qe0CJGSMK0XvuU4tRjVwptlN20IIVZqhFOw=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64.swiftdoc</key>
@@ -376,7 +376,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JkomUqlS+9U4SGJiqILxICsVg6rDJrVu28uMV2pY5a4=
+			UIMbzTn3qe0CJGSMK0XvuU4tRjVwptlN20IIVZqhFOw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

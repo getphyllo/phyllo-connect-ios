@@ -10,7 +10,7 @@ struct G {
 
     
     //URLs for Network Requests
-    static let privacyUrl = "https://argyle.com/security-and-compliance"
+    static let privacyUrl = ""
     
     //vew controller of developer app
     static var developerVC = UIViewController()
@@ -21,8 +21,8 @@ struct G {
     static let clientHeaderKey = "client_id"
     static let clientSecretHeaderKey = "client_secret"
     static let sdkType = "IOS"
-    static let client_id = "04eeded4-12c6-4f9c-80e3-8c53eb0973a1"
-    static let client_secret =  "6fc7726c-702d-4fc3-87dd-5f2d6c3d7640"
+    static let client_id = ""
+    static let client_secret =  ""
     static let sdkVersion = "1.0"
     
     //these parameters will be set from developer-app

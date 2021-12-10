@@ -5,6 +5,7 @@ import Foundation
 @_exported import PhylloConnect
 import Swift
 import UIKit
+import WebKit
 import _Concurrency
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class LoginViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
@@ -12,8 +13,31 @@ import _Concurrency
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-public class PhylloConnectManager {
-  public init(key: Swift.String)
-  public func readSecret() -> Swift.String?
+public struct PhylloConfig {
+  public static var shared: PhylloConnect.PhylloConfig
+  public init()
+  public var env: PhylloConnect.PhylloEnvironment
+  public var phylloVC: UIKit.UIViewController
+  public var developerName: Swift.String
+  public var deepLinkURL: Swift.String
+  public var sdkToken: Swift.String
+  public var userId: Swift.String
+}
+public class PhylloConnectSDK {
+  required public init(configuration: PhylloConnect.PhylloConfig)
+  public func launchSDK(workPlatformId: Swift.String)
   @objc deinit
 }
+public enum PhylloEnvironment : Swift.String {
+  case dev
+  case sandbox
+  case prod
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension PhylloConnect.PhylloEnvironment : Swift.Equatable {}
+extension PhylloConnect.PhylloEnvironment : Swift.Hashable {}
+extension PhylloConnect.PhylloEnvironment : Swift.RawRepresentable {}

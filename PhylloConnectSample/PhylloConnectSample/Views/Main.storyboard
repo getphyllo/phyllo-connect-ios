@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iFu-s8-0Km">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter.ttf">
+            <string>Inter-Regular_SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Sy6-I0-OOj">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="iFu-s8-0Km" customClass="ViewController" customModule="PhylloConnectSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Amf-tI-a7g"/>
+                        <viewControllerLayoutGuide type="bottom" id="aSO-UB-Nbe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9qh-tM-9BI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7MR-aB-lQD">
+                                <rect key="frame" x="48" y="44" width="318" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHk-0N-9kQ">
+                                        <rect key="frame" x="0.0" y="200" width="318" height="48"/>
+                                        <color key="backgroundColor" name="dark-purple"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="S0s-0U-3nb"/>
+                                            <constraint firstAttribute="height" constant="48" id="ZGQ-jY-0SZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Inter-Regular_SemiBold" family="Inter" pointSize="14"/>
+                                        <state key="normal" title="Connect Platform Account(s)">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="continueBtnClicked:" destination="iFu-s8-0Km" eventType="touchUpInside" id="EXa-5n-vJc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbP-5p-Es8">
+                                        <rect key="frame" x="0.0" y="272" width="318" height="48"/>
+                                        <color key="backgroundColor" name="dark-purple"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="dO4-XQ-bn6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Inter-Regular_SemiBold" family="Inter" pointSize="14"/>
+                                        <state key="normal" title="Connect Instagram using Phyllo">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="instagramBtnClicked:" destination="iFu-s8-0Km" eventType="touchUpInside" id="9vM-go-FFl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mH2-Mm-Q4M">
+                                        <rect key="frame" x="0.0" y="344" width="318" height="48"/>
+                                        <color key="backgroundColor" name="dark-purple"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="8oD-bm-ZZv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Inter-Regular_SemiBold" family="Inter" pointSize="14"/>
+                                        <state key="normal" title="Connect YouTube using Phyllo">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="youtubeBtnClicked:" destination="iFu-s8-0Km" eventType="touchUpInside" id="wms-aA-OMM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xq4-Ta-dyG">
+                                        <rect key="frame" x="0.0" y="416" width="105" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="VW9-Uh-o5v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                        <state key="normal" title="Existing User">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="existingUserClicked:" destination="iFu-s8-0Km" eventType="touchUpInside" id="nTo-o2-ZOx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="mH2-Mm-Q4M" firstAttribute="top" secondItem="FbP-5p-Es8" secondAttribute="bottom" constant="24" id="06f-r9-hJG"/>
+                                    <constraint firstItem="xq4-Ta-dyG" firstAttribute="leading" secondItem="7MR-aB-lQD" secondAttribute="leading" id="16C-4w-a0Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="mH2-Mm-Q4M" secondAttribute="trailing" id="8xO-Ut-cfQ"/>
+                                    <constraint firstItem="dHk-0N-9kQ" firstAttribute="top" secondItem="7MR-aB-lQD" secondAttribute="top" constant="200" id="9ma-XS-TzS"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xq4-Ta-dyG" secondAttribute="trailing" constant="20" symbolic="YES" id="9pk-sp-xIG"/>
+                                    <constraint firstItem="mH2-Mm-Q4M" firstAttribute="leading" secondItem="7MR-aB-lQD" secondAttribute="leading" id="H0j-gG-YnL"/>
+                                    <constraint firstItem="FbP-5p-Es8" firstAttribute="top" secondItem="dHk-0N-9kQ" secondAttribute="bottom" constant="24" id="LmQ-nW-26I"/>
+                                    <constraint firstAttribute="trailing" secondItem="dHk-0N-9kQ" secondAttribute="trailing" id="Upa-WA-hRF"/>
+                                    <constraint firstItem="FbP-5p-Es8" firstAttribute="leading" secondItem="7MR-aB-lQD" secondAttribute="leading" id="WGq-h6-ZT0"/>
+                                    <constraint firstAttribute="trailing" secondItem="FbP-5p-Es8" secondAttribute="trailing" id="Wyn-Xx-zOU"/>
+                                    <constraint firstItem="xq4-Ta-dyG" firstAttribute="top" secondItem="mH2-Mm-Q4M" secondAttribute="bottom" constant="24" id="jIJ-qZ-NtS"/>
+                                    <constraint firstItem="dHk-0N-9kQ" firstAttribute="leading" secondItem="7MR-aB-lQD" secondAttribute="leading" id="mYb-JF-6kR"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TsF-Sw-HJ7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDz-2C-QGs">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dsQ-fs-n26">
+                                        <rect key="frame" x="149.5" y="390.5" width="115" height="115"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="115" id="22V-4o-s6x"/>
+                                            <constraint firstAttribute="height" constant="115" id="7cm-6j-FWT"/>
+                                            <constraint firstAttribute="width" secondItem="dsQ-fs-n26" secondAttribute="height" multiplier="15:8" id="gWF-n5-6LF"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="gWF-n5-6LF"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dsQ-fs-n26" firstAttribute="centerX" secondItem="TsF-Sw-HJ7" secondAttribute="centerX" id="3ho-tz-LfC"/>
+                                    <constraint firstItem="cDz-2C-QGs" firstAttribute="leading" secondItem="TsF-Sw-HJ7" secondAttribute="leading" id="3q8-18-cfZ"/>
+                                    <constraint firstItem="cDz-2C-QGs" firstAttribute="top" secondItem="TsF-Sw-HJ7" secondAttribute="top" id="CpF-MR-SYU"/>
+                                    <constraint firstAttribute="trailing" secondItem="cDz-2C-QGs" secondAttribute="trailing" id="FYj-ai-Nef"/>
+                                    <constraint firstItem="dsQ-fs-n26" firstAttribute="centerY" secondItem="TsF-Sw-HJ7" secondAttribute="centerY" id="oej-c6-EOd"/>
+                                    <constraint firstAttribute="bottom" secondItem="cDz-2C-QGs" secondAttribute="bottom" id="sBc-lL-DEJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HgL-RE-R9I"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="TsF-Sw-HJ7" secondAttribute="bottom" id="IBe-vg-30g"/>
+                            <constraint firstItem="TsF-Sw-HJ7" firstAttribute="trailing" secondItem="HgL-RE-R9I" secondAttribute="trailing" id="J6P-bA-Fgb"/>
+                            <constraint firstItem="TsF-Sw-HJ7" firstAttribute="leading" secondItem="HgL-RE-R9I" secondAttribute="leading" id="Qe9-o8-Jfi"/>
+                            <constraint firstItem="7MR-aB-lQD" firstAttribute="leading" secondItem="9qh-tM-9BI" secondAttribute="leading" constant="48" id="RvM-qe-Hf7"/>
+                            <constraint firstItem="7MR-aB-lQD" firstAttribute="top" secondItem="Amf-tI-a7g" secondAttribute="bottom" id="T6h-1d-s5i"/>
+                            <constraint firstItem="TsF-Sw-HJ7" firstAttribute="top" secondItem="9qh-tM-9BI" secondAttribute="top" id="VUi-Fm-ZPp"/>
+                            <constraint firstItem="aSO-UB-Nbe" firstAttribute="top" secondItem="7MR-aB-lQD" secondAttribute="bottom" id="n6o-Em-WMu"/>
+                            <constraint firstAttribute="trailing" secondItem="7MR-aB-lQD" secondAttribute="trailing" constant="48" id="zLy-Vv-tJu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="existingUser" destination="xq4-Ta-dyG" id="tmY-Fu-PSm"/>
+                        <outlet property="imgLoading" destination="dsQ-fs-n26" id="pax-i2-vua"/>
+                        <outlet property="instagramBtn" destination="FbP-5p-Es8" id="Xge-mC-lV2"/>
+                        <outlet property="platformBtm" destination="dHk-0N-9kQ" id="JIz-V5-I9B"/>
+                        <outlet property="viewLoading" destination="TsF-Sw-HJ7" id="GmA-Sv-b3S"/>
+                        <outlet property="youtubeBtn" destination="mH2-Mm-Q4M" id="WaV-Os-JQc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gh-QZ-Qyk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-107.24637681159422" y="140.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="dark-purple">
+            <color red="0.32199999690055847" green="0.31000000238418579" blue="0.63099998235702515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

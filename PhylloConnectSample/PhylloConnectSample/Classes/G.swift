@@ -25,6 +25,7 @@ struct G {
     static let client_secret =  ""
     static let sdkVersion = "1.0"
     
+   
     //these parameters will be set from developer-app
     static var developerName = ""
     static var deepLinkURL = ""

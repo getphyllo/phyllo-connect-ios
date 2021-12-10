@@ -21,11 +21,13 @@ class NetworkHandler: NSObject {
         let postData: Data? = try? JSONSerialization.data(withJSONObject: mapData, options: [])
         request.httpBody = postData
         request.setValue("\(UInt((postData?.count)!))", forHTTPHeaderField: "Content-Length")
-        //
+
+        //Basic auth
         let loginString = String(format: "%@:%@", G.client_id, G.client_secret)
         let loginData = loginString.data(using: String.Encoding.utf8)!
         let base64LoginString = loginData.base64EncodedString()
         request.addValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
+
         URLSession(configuration: URLSessionConfiguration.default).dataTask(with: request) { (data, response, error) -> Void in
             var resp: [String:Any]?
             if let data = data {

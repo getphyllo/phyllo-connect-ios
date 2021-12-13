@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     var phylloConfig = PhylloConfig()
     //Set enviroment
-    var env = PhylloEnvironment.sandbox
+   
     
     @IBOutlet weak var imgLoading: UIImageView!
     @IBOutlet weak var viewLoading: UIView!
@@ -92,7 +92,7 @@ class ViewController: UIViewController {
         }
         else{
             showLoading()
-            NetworkHandler.post(suffix: "/v1/users", mapData: ["name" : G.randomString(length: 8), "external_id" : G.randomString(length: 20)], env: env, completion: {
+            NetworkHandler.post(suffix: "/v1/users", mapData: ["name" : G.randomString(length: 8), "external_id" : G.randomString(length: 20)], env: Config.env, completion: {
                     [weak self] (rs, e) in
                     self?.hideLoading()
                     guard self != nil else {
@@ -109,7 +109,7 @@ class ViewController: UIViewController {
     
     func getSDKToken(workPlatformId : String){
         showLoading()
-        NetworkHandler.post(suffix: "/v1/sdk-tokens", mapData: ["user_id" : G.userId, "products" : ["IDENTITY","ENGAGEMENT","INCOME"]], env: env, completion: {
+        NetworkHandler.post(suffix: "/v1/sdk-tokens", mapData: ["user_id" : G.userId, "products" : ["IDENTITY","ENGAGEMENT","INCOME"]], env: Config.env, completion: {
                 [weak self] (rs, e) in
             self?.hideLoading()
                 guard self != nil else {
@@ -128,7 +128,7 @@ class ViewController: UIViewController {
         phylloConfig.deepLinkURL = "https://etsy.ai"
         phylloConfig.sdkToken = G.sdkToken
         phylloConfig.userId = G.userId
-        phylloConfig.env = env
+        phylloConfig.env = Config.env
         phylloConfig.phylloVC = getTopViewController()!
         
         let phyllo = PhylloConnectSDK(configuration: phylloConfig)

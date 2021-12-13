@@ -7,168 +7,160 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5036542327620EEF009FB791 /* PhylloConnect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5036542227620EEF009FB791 /* PhylloConnect.xcframework */; };
-		5036542927620FF8009FB791 /* G.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5036542827620FF8009FB791 /* G.swift */; };
-		5036542B2762100C009FB791 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5036542A2762100C009FB791 /* Extensions.swift */; };
-		5036542D27621083009FB791 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5036542C27621083009FB791 /* NetworkHandler.swift */; };
-		503951BA27622CEC00905370 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 503951B927622CEC00905370 /* loading.gif */; };
-		50DA801B275F545600FE9549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50DA801A275F545600FE9549 /* Assets.xcassets */; };
-		50DA801E275F545600FE9549 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50DA801D275F545600FE9549 /* Preview Assets.xcassets */; };
-		50DA8020275F545600FE9549 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DA801F275F545600FE9549 /* Persistence.swift */; };
-		50DA8023275F545600FE9549 /* PhylloConnectSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50DA8021275F545600FE9549 /* PhylloConnectSample.xcdatamodeld */; };
-		50DA804B275F59DD00FE9549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DA804A275F59DD00FE9549 /* AppDelegate.swift */; };
-		50DA8052275F5B0C00FE9549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50DA8051275F5B0C00FE9549 /* Main.storyboard */; };
-		50DA8056275F5B7400FE9549 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DA8055275F5B7400FE9549 /* ViewController.swift */; };
-		50F15DE7275F86E100AB255E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F15DE6275F86E100AB255E /* LaunchScreen.storyboard */; };
+		50C728012767383F00044FFA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C727F02767383F00044FFA /* Persistence.swift */; };
+		50C728022767383F00044FFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C727F12767383F00044FFA /* AppDelegate.swift */; };
+		50C728032767383F00044FFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C727F32767383F00044FFA /* ViewController.swift */; };
+		50C728042767383F00044FFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C727F52767383F00044FFA /* LaunchScreen.storyboard */; };
+		50C728052767383F00044FFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C727F62767383F00044FFA /* Main.storyboard */; };
+		50C728062767383F00044FFA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C727F82767383F00044FFA /* Config.swift */; };
+		50C728072767383F00044FFA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C727F92767383F00044FFA /* Extensions.swift */; };
+		50C728082767383F00044FFA /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C727FA2767383F00044FFA /* NetworkHandler.swift */; };
+		50C728092767383F00044FFA /* G.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C727FB2767383F00044FFA /* G.swift */; };
+		50C7280A2767383F00044FFA /* PhylloConnectSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50C727FD2767383F00044FFA /* PhylloConnectSample.xcdatamodeld */; };
+		50C7280B2767383F00044FFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C727FF2767383F00044FFA /* Assets.xcassets */; };
+		50C7280C2767383F00044FFA /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 50C728002767383F00044FFA /* loading.gif */; };
+		AE8AF6E4A82C3867A9C7C2EC /* Pods_PhylloConnectSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63325279FCF835920AB50EE /* Pods_PhylloConnectSample.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		50461B4427610141009488BC /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		5036542227620EEF009FB791 /* PhylloConnect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PhylloConnect.xcframework; sourceTree = "<group>"; };
-		5036542827620FF8009FB791 /* G.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = G.swift; sourceTree = "<group>"; };
-		5036542A2762100C009FB791 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		5036542C27621083009FB791 /* NetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
-		503951B927622CEC00905370 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
-		50DA8013275F545300FE9549 /* PhylloConnectSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhylloConnectSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		50DA801A275F545600FE9549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		50DA801D275F545600FE9549 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		50DA801F275F545600FE9549 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		50DA8022275F545600FE9549 /* PhylloConnectSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhylloConnectSample.xcdatamodel; sourceTree = "<group>"; };
-		50DA804A275F59DD00FE9549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		50DA804E275F5A6700FE9549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		50DA8051275F5B0C00FE9549 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		50DA8055275F5B7400FE9549 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		50F15DE6275F86E100AB255E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15399B848304C14474BBE211 /* Pods-PhylloConnectSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhylloConnectSample.debug.xcconfig"; path = "Target Support Files/Pods-PhylloConnectSample/Pods-PhylloConnectSample.debug.xcconfig"; sourceTree = "<group>"; };
+		50C727BC276737F800044FFA /* PhylloConnectSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhylloConnectSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C727F02767383F00044FFA /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		50C727F12767383F00044FFA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50C727F32767383F00044FFA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50C727F52767383F00044FFA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50C727F62767383F00044FFA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		50C727F82767383F00044FFA /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		50C727F92767383F00044FFA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		50C727FA2767383F00044FFA /* NetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		50C727FB2767383F00044FFA /* G.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = G.swift; sourceTree = "<group>"; };
+		50C727FE2767383F00044FFA /* PhylloConnectSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhylloConnectSample.xcdatamodel; sourceTree = "<group>"; };
+		50C727FF2767383F00044FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50C728002767383F00044FFA /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		50C7280D2767391000044FFA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD02052C6D165E40758BCB0C /* Pods-PhylloConnectSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhylloConnectSample.release.xcconfig"; path = "Target Support Files/Pods-PhylloConnectSample/Pods-PhylloConnectSample.release.xcconfig"; sourceTree = "<group>"; };
+		E63325279FCF835920AB50EE /* Pods_PhylloConnectSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhylloConnectSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		50DA8010275F545300FE9549 /* Frameworks */ = {
+		50C727B9276737F800044FFA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5036542327620EEF009FB791 /* PhylloConnect.xcframework in Frameworks */,
+				AE8AF6E4A82C3867A9C7C2EC /* Pods_PhylloConnectSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5036542427620F9F009FB791 /* Views */ = {
+		1473E451A50AE19C63405A5A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				50DA8051275F5B0C00FE9549 /* Main.storyboard */,
-				50F15DE6275F86E100AB255E /* LaunchScreen.storyboard */,
+				15399B848304C14474BBE211 /* Pods-PhylloConnectSample.debug.xcconfig */,
+				AD02052C6D165E40758BCB0C /* Pods-PhylloConnectSample.release.xcconfig */,
 			);
-			path = Views;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		5036542527620FAE009FB791 /* Framework */ = {
+		34D8F01926CE8F7EDD885EAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5036542227620EEF009FB791 /* PhylloConnect.xcframework */,
+				E63325279FCF835920AB50EE /* Pods_PhylloConnectSample.framework */,
 			);
-			path = Framework;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5036542627620FD1009FB791 /* Resources */ = {
+		50C727B3276737F800044FFA = {
 			isa = PBXGroup;
 			children = (
-				503951B927622CEC00905370 /* loading.gif */,
-				50DA801A275F545600FE9549 /* Assets.xcassets */,
-				50DA8021275F545600FE9549 /* PhylloConnectSample.xcdatamodeld */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		5036542727620FE6009FB791 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				5036542827620FF8009FB791 /* G.swift */,
-				5036542A2762100C009FB791 /* Extensions.swift */,
-				5036542C27621083009FB791 /* NetworkHandler.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		50DA800A275F545200FE9549 = {
-			isa = PBXGroup;
-			children = (
-				50DA8015275F545300FE9549 /* PhylloConnectSample */,
-				5036542527620FAE009FB791 /* Framework */,
-				50DA8014275F545300FE9549 /* Products */,
+				50C727BE276737F800044FFA /* PhylloConnectSample */,
+				50C727BD276737F800044FFA /* Products */,
+				1473E451A50AE19C63405A5A /* Pods */,
+				34D8F01926CE8F7EDD885EAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		50DA8014275F545300FE9549 /* Products */ = {
+		50C727BD276737F800044FFA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				50DA8013275F545300FE9549 /* PhylloConnectSample.app */,
+				50C727BC276737F800044FFA /* PhylloConnectSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		50DA8015275F545300FE9549 /* PhylloConnectSample */ = {
+		50C727BE276737F800044FFA /* PhylloConnectSample */ = {
 			isa = PBXGroup;
 			children = (
-				5036542727620FE6009FB791 /* Classes */,
-				5036542627620FD1009FB791 /* Resources */,
-				5036542427620F9F009FB791 /* Views */,
-				50DA8054275F5B5D00FE9549 /* ViewControllers */,
-				50DA8053275F5B1A00FE9549 /* Shared */,
-				50DA804E275F5A6700FE9549 /* Info.plist */,
-				50DA801C275F545600FE9549 /* Preview Content */,
+				50C727F72767383F00044FFA /* Classes */,
+				50C727FC2767383F00044FFA /* Resources */,
+				50C727EF2767383F00044FFA /* Shared */,
+				50C727F22767383F00044FFA /* ViewControllers */,
+				50C727F42767383F00044FFA /* Views */,
+				50C7280D2767391000044FFA /* Info.plist */,
 			);
 			path = PhylloConnectSample;
 			sourceTree = "<group>";
 		};
-		50DA801C275F545600FE9549 /* Preview Content */ = {
+		50C727EF2767383F00044FFA /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				50DA801D275F545600FE9549 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		50DA8053275F5B1A00FE9549 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				50DA804A275F59DD00FE9549 /* AppDelegate.swift */,
-				50DA801F275F545600FE9549 /* Persistence.swift */,
+				50C727F02767383F00044FFA /* Persistence.swift */,
+				50C727F12767383F00044FFA /* AppDelegate.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		50DA8054275F5B5D00FE9549 /* ViewControllers */ = {
+		50C727F22767383F00044FFA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				50DA8055275F5B7400FE9549 /* ViewController.swift */,
+				50C727F32767383F00044FFA /* ViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		50C727F42767383F00044FFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50C727F52767383F00044FFA /* LaunchScreen.storyboard */,
+				50C727F62767383F00044FFA /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		50C727F72767383F00044FFA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				50C727F82767383F00044FFA /* Config.swift */,
+				50C727F92767383F00044FFA /* Extensions.swift */,
+				50C727FA2767383F00044FFA /* NetworkHandler.swift */,
+				50C727FB2767383F00044FFA /* G.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		50C727FC2767383F00044FFA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				50C727FD2767383F00044FFA /* PhylloConnectSample.xcdatamodeld */,
+				50C727FF2767383F00044FFA /* Assets.xcassets */,
+				50C728002767383F00044FFA /* loading.gif */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		50DA8012275F545300FE9549 /* PhylloConnectSample */ = {
+		50C727BB276737F800044FFA /* PhylloConnectSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50DA8026275F545600FE9549 /* Build configuration list for PBXNativeTarget "PhylloConnectSample" */;
+			buildConfigurationList = 50C727E6276737F800044FFA /* Build configuration list for PBXNativeTarget "PhylloConnectSample" */;
 			buildPhases = (
-				50DA800F275F545300FE9549 /* Sources */,
-				50DA8010275F545300FE9549 /* Frameworks */,
-				50DA8011275F545300FE9549 /* Resources */,
-				50461B4427610141009488BC /* Embed Frameworks */,
+				03F0A8112839290A05181543 /* [CP] Check Pods Manifest.lock */,
+				50C727B8276737F800044FFA /* Sources */,
+				50C727B9276737F800044FFA /* Frameworks */,
+				50C727BA276737F800044FFA /* Resources */,
+				F454CCBD1BCE500075768FB0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,25 +168,25 @@
 			);
 			name = PhylloConnectSample;
 			productName = PhylloConnectSample;
-			productReference = 50DA8013275F545300FE9549 /* PhylloConnectSample.app */;
+			productReference = 50C727BC276737F800044FFA /* PhylloConnectSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		50DA800B275F545200FE9549 /* Project object */ = {
+		50C727B4276737F800044FFA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					50DA8012275F545300FE9549 = {
+					50C727BB276737F800044FFA = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = 50DA800E275F545200FE9549 /* Build configuration list for PBXProject "PhylloConnectSample" */;
+			buildConfigurationList = 50C727B7276737F800044FFA /* Build configuration list for PBXProject "PhylloConnectSample" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -202,50 +194,92 @@
 				en,
 				Base,
 			);
-			mainGroup = 50DA800A275F545200FE9549;
-			productRefGroup = 50DA8014275F545300FE9549 /* Products */;
+			mainGroup = 50C727B3276737F800044FFA;
+			productRefGroup = 50C727BD276737F800044FFA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				50DA8012275F545300FE9549 /* PhylloConnectSample */,
+				50C727BB276737F800044FFA /* PhylloConnectSample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		50DA8011275F545300FE9549 /* Resources */ = {
+		50C727BA276737F800044FFA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50DA801E275F545600FE9549 /* Preview Assets.xcassets in Resources */,
-				50F15DE7275F86E100AB255E /* LaunchScreen.storyboard in Resources */,
-				503951BA27622CEC00905370 /* loading.gif in Resources */,
-				50DA801B275F545600FE9549 /* Assets.xcassets in Resources */,
-				50DA8052275F5B0C00FE9549 /* Main.storyboard in Resources */,
+				50C728042767383F00044FFA /* LaunchScreen.storyboard in Resources */,
+				50C7280C2767383F00044FFA /* loading.gif in Resources */,
+				50C7280B2767383F00044FFA /* Assets.xcassets in Resources */,
+				50C728052767383F00044FFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03F0A8112839290A05181543 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhylloConnectSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F454CCBD1BCE500075768FB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhylloConnectSample/Pods-PhylloConnectSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhylloConnectSample/Pods-PhylloConnectSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhylloConnectSample/Pods-PhylloConnectSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		50DA800F275F545300FE9549 /* Sources */ = {
+		50C727B8276737F800044FFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50DA8056275F5B7400FE9549 /* ViewController.swift in Sources */,
-				5036542B2762100C009FB791 /* Extensions.swift in Sources */,
-				50DA804B275F59DD00FE9549 /* AppDelegate.swift in Sources */,
-				5036542927620FF8009FB791 /* G.swift in Sources */,
-				50DA8023275F545600FE9549 /* PhylloConnectSample.xcdatamodeld in Sources */,
-				50DA8020275F545600FE9549 /* Persistence.swift in Sources */,
-				5036542D27621083009FB791 /* NetworkHandler.swift in Sources */,
+				50C7280A2767383F00044FFA /* PhylloConnectSample.xcdatamodeld in Sources */,
+				50C728072767383F00044FFA /* Extensions.swift in Sources */,
+				50C728032767383F00044FFA /* ViewController.swift in Sources */,
+				50C728062767383F00044FFA /* Config.swift in Sources */,
+				50C728092767383F00044FFA /* G.swift in Sources */,
+				50C728022767383F00044FFA /* AppDelegate.swift in Sources */,
+				50C728012767383F00044FFA /* Persistence.swift in Sources */,
+				50C728082767383F00044FFA /* NetworkHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		50DA8024275F545600FE9549 /* Debug */ = {
+		50C727E4276737F800044FFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -306,7 +340,7 @@
 			};
 			name = Debug;
 		};
-		50DA8025275F545600FE9549 /* Release */ = {
+		50C727E5276737F800044FFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -361,106 +395,83 @@
 			};
 			name = Release;
 		};
-		50DA8027275F545600FE9549 /* Debug */ = {
+		50C727E7276737F800044FFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15399B848304C14474BBE211 /* Pods-PhylloConnectSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PhylloConnectSample/Preview Content\"";
-				DEVELOPMENT_TEAM = 526T25R6A9;
-				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/",
-					"$(PROJECT_DIR)/PhylloConnectSample",
-					"$(PROJECT_DIR)",
-				);
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/PhylloConnect.framework/**";
 				INFOPLIST_FILE = PhylloConnectSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.phylloconnect.PhylloConnectSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.getphyllo.phylloconnect.PhylloConnectSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dev_wildcard;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		50DA8028275F545600FE9549 /* Release */ = {
+		50C727E8276737F800044FFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD02052C6D165E40758BCB0C /* Pods-PhylloConnectSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PhylloConnectSample/Preview Content\"";
-				DEVELOPMENT_TEAM = 526T25R6A9;
-				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/",
-					"$(PROJECT_DIR)/PhylloConnectSample",
-					"$(PROJECT_DIR)",
-				);
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/PhylloConnect.framework/**";
 				INFOPLIST_FILE = PhylloConnectSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.phylloconnect.PhylloConnectSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.getphyllo.phylloconnect.PhylloConnectSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = dev_wildcard;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		50DA800E275F545200FE9549 /* Build configuration list for PBXProject "PhylloConnectSample" */ = {
+		50C727B7276737F800044FFA /* Build configuration list for PBXProject "PhylloConnectSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				50DA8024275F545600FE9549 /* Debug */,
-				50DA8025275F545600FE9549 /* Release */,
+				50C727E4276737F800044FFA /* Debug */,
+				50C727E5276737F800044FFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50DA8026275F545600FE9549 /* Build configuration list for PBXNativeTarget "PhylloConnectSample" */ = {
+		50C727E6276737F800044FFA /* Build configuration list for PBXNativeTarget "PhylloConnectSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				50DA8027275F545600FE9549 /* Debug */,
-				50DA8028275F545600FE9549 /* Release */,
+				50C727E7276737F800044FFA /* Debug */,
+				50C727E8276737F800044FFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -468,17 +479,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		50DA8021275F545600FE9549 /* PhylloConnectSample.xcdatamodeld */ = {
+		50C727FD2767383F00044FFA /* PhylloConnectSample.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				50DA8022275F545600FE9549 /* PhylloConnectSample.xcdatamodel */,
+				50C727FE2767383F00044FFA /* PhylloConnectSample.xcdatamodel */,
 			);
-			currentVersion = 50DA8022275F545600FE9549 /* PhylloConnectSample.xcdatamodel */;
+			currentVersion = 50C727FE2767383F00044FFA /* PhylloConnectSample.xcdatamodel */;
 			path = PhylloConnectSample.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 50DA800B275F545200FE9549 /* Project object */;
+	rootObject = 50C727B4276737F800044FFA /* Project object */;
 }

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "846C14EC-DA35-4F16-9B61-D5A9D9C11F9A"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48DACC8C-EB6A-4DD8-BF67-C22EF08F79AA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhylloConnectSample/ViewControllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "launchSDK(workPlatformId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D052E89-F1CC-44B6-BCEC-E8111E83F3E1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhylloConnectSample/ViewControllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "launchSDK(workPlatformId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6056F038-88FD-4549-8D25-3ED92BFBDC92"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhylloConnectSample/Classes/NetworkHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "post(suffix:mapData:env:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC4CE332-F0EC-4C98-A802-97AB21592738"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhylloConnectSample/ViewControllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "getUserId(workPlatformId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AC4CE332-F0EC-4C98-A802-97AB21592738 - 52efcd5ac76e8e4f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhylloConnectSample.ViewController.getUserId(workPlatformId: Swift.String) -&gt; ()"
+                  moduleName = "PhylloConnectSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pankajpatel/Desktop/Work/Phyllo/phyllo-connect-ios-example/phyllo-connect-ios/PhylloConnectSample/PhylloConnectSample/ViewControllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "800">
+               </Location>
+               <Location
+                  uuid = "AC4CE332-F0EC-4C98-A802-97AB21592738 - a74bd7e13521cdee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Dictionary&lt;Swift.String, Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PhylloConnectSample.ViewController.getUserId(workPlatformId: Swift.String) -&gt; ()"
+                  moduleName = "PhylloConnectSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pankajpatel/Desktop/Work/Phyllo/phyllo-connect-ios-example/phyllo-connect-ios/PhylloConnectSample/PhylloConnectSample/ViewControllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9BF0431C-CAE1-4AD8-96AC-34C0509EB177"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhylloConnectSample/ViewControllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "getSDKToken(workPlatformId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9BF0431C-CAE1-4AD8-96AC-34C0509EB177 - c12ace28ec5ea277"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhylloConnectSample.ViewController.getSDKToken(workPlatformId: Swift.String) -&gt; ()"
+                  moduleName = "PhylloConnectSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pankajpatel/Desktop/Work/Phyllo/phyllo-connect-ios-example/phyllo-connect-ios/PhylloConnectSample/PhylloConnectSample/ViewControllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "816">
+               </Location>
+               <Location
+                  uuid = "9BF0431C-CAE1-4AD8-96AC-34C0509EB177 - 5db424d91739892d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Dictionary&lt;Swift.String, Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PhylloConnectSample.ViewController.getSDKToken(workPlatformId: Swift.String) -&gt; ()"
+                  moduleName = "PhylloConnectSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pankajpatel/Desktop/Work/Phyllo/phyllo-connect-ios-example/phyllo-connect-ios/PhylloConnectSample/PhylloConnectSample/ViewControllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "120">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -15,17 +15,17 @@ struct G {
     //vew controller of developer app
     static var developerVC = UIViewController()
     
+   
     //custom-headers in Network Requests
     static let sdkTypeHeaderKey = "sdk-type"
     static let sdkVersionHeaderKey = "sdk-version"
     static let clientHeaderKey = "client_id"
     static let clientSecretHeaderKey = "client_secret"
     static let sdkType = "IOS"
-    static let client_id = ""
-    static let client_secret =  ""
+    
+    
     static let sdkVersion = "1.0"
     
-   
     //these parameters will be set from developer-app
     static var developerName = ""
     static var deepLinkURL = ""

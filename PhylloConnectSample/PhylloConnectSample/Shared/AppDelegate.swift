@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import PhylloConnect
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

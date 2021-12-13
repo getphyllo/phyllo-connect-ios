@@ -14,6 +14,7 @@ class NetworkHandler: NSObject {
     static var newToken = "";static var updatingRemoteToken = false
 
     static func post(suffix : String,mapData: [String:Any],env:PhylloEnvironment, completion handler: @escaping (_ response: [String: Any], _ error: Error?) -> Void) {
+        print("API Url ====> \(env.rawValue+suffix)")
         var request = URLRequest(url: URL(string: env.rawValue+suffix)!)
         request.httpMethod="POST"
         request.cachePolicy = URLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData
@@ -21,13 +22,12 @@ class NetworkHandler: NSObject {
         let postData: Data? = try? JSONSerialization.data(withJSONObject: mapData, options: [])
         request.httpBody = postData
         request.setValue("\(UInt((postData?.count)!))", forHTTPHeaderField: "Content-Length")
-
         //Basic auth
-        let loginString = String(format: "%@:%@", G.client_id, G.client_secret)
+        let loginString = String(format: "%@:%@", Config.client_id, Config.client_secret)
         let loginData = loginString.data(using: String.Encoding.utf8)!
         let base64LoginString = loginData.base64EncodedString()
         request.addValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
-
+        
         URLSession(configuration: URLSessionConfiguration.default).dataTask(with: request) { (data, response, error) -> Void in
             var resp: [String:Any]?
             if let data = data {

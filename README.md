@@ -14,7 +14,7 @@ Detailed instructions on how to integrate with PhylloConnect for iOS can be foun
 ```ruby
 target 'YourAppTargetName' do
     use_frameworks!
-    pod 'iOSDFULibrary'
+    pod 'PhylloConnect'
 end
 ```
 

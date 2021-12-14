@@ -18,7 +18,7 @@ pod 'PhylloConnect'
 
 # Using Manual(Framework)
 
-Get the latest version of the PhylloConnect.xcframework and embed it into your application, for example by dragging and dropping the XCFramework bundle onto the Embed Frameworks build phase of your application target in Xcode as shown below.
+Get the latest version of the PhylloConnect.xcframework and embed it into your application, for example by dragging and dropping the XCFramework bundle onto the Embed Frameworks build phase of your application target in Xcode.
 
 ## Author
 

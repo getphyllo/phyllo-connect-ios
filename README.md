@@ -7,16 +7,18 @@ Detailed instructions on how to integrate with PhylloConnect for iOS can be foun
 
 ## Installation
 
-# Using CocoaPods
+**For Cocoapods:**
 
-PhylloConnect is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+- Create/Update your **Podfile** with the following contents
 
 ```ruby
-pod 'PhylloConnect'
+target 'YourAppTargetName' do
+    use_frameworks!
+    pod 'iOSDFULibrary'
+end
 ```
 
-# Using Manual(Framework)
+**For Manual(XcFramework):**
 
 Get the latest version of the PhylloConnect.xcframework and embed it into your application, for example by dragging and dropping the XCFramework bundle onto the Embed Frameworks build phase of your application target in Xcode.
 

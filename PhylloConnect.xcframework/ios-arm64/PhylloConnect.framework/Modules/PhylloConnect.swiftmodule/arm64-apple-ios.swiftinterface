@@ -23,7 +23,7 @@ public struct PhylloConfig {
   public var sdkToken: Swift.String
   public var userId: Swift.String
 }
-public class PhylloConnectSDK {
+public class PhylloConnect {
   required public init(configuration: PhylloConnect.PhylloConfig)
   public func launchSDK(workPlatformId: Swift.String)
   @objc deinit

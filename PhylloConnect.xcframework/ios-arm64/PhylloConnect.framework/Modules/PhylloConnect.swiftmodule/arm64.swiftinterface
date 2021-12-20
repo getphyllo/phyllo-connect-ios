@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PhylloConnect
 import Foundation
 @_exported import PhylloConnect
@@ -13,6 +13,15 @@ import _Concurrency
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SVGImageView : UIKit.UIView {
+  @objc dynamic public init()
+  @objc override dynamic public func awakeFromNib()
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) public func load(url: Swift.String)
+}
+extension PhylloConnect.SVGImageView : WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+}
 public struct PhylloConfig {
   public static var shared: PhylloConnect.PhylloConfig
   public init()
@@ -23,7 +32,7 @@ public struct PhylloConfig {
   public var sdkToken: Swift.String
   public var userId: Swift.String
 }
-public class PhylloConnectSDK {
+public class PhylloConnect {
   required public init(configuration: PhylloConnect.PhylloConfig)
   public func launchSDK(workPlatformId: Swift.String)
   @objc deinit

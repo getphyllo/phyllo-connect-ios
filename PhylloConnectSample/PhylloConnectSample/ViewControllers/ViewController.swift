@@ -124,8 +124,8 @@ class ViewController: UIViewController {
     
     func launchSDK(workPlatformId : String){
         //Phyllo configuration
-        phylloConfig.developerName =  "Etzy"
-        phylloConfig.deepLinkURL = "https://etsy.ai"
+        phylloConfig.developerName =  "" //Developer
+        phylloConfig.deepLinkURL = "" // DeepLink
         phylloConfig.sdkToken = G.sdkToken
         phylloConfig.userId = G.userId
         phylloConfig.env = Config.env

@@ -131,7 +131,7 @@ class ViewController: UIViewController {
         phylloConfig.env = Config.env
         phylloConfig.phylloVC = getTopViewController()!
         
-        let phyllo = PhylloConnectSDK(configuration: phylloConfig)
+        let phyllo = PhylloConnect(configuration: phylloConfig)
         phyllo.launchSDK(workPlatformId: workPlatformId)
     }
     

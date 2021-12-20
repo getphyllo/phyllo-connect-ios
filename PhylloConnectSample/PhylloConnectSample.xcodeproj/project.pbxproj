@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2471116FF2749D51DF6B9E /* Pods_PhylloConnectSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CBFF42D8237764859CD2E9C /* Pods_PhylloConnectSample.framework */; };
 		50C728012767383F00044FFA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C727F02767383F00044FFA /* Persistence.swift */; };
 		50C728022767383F00044FFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C727F12767383F00044FFA /* AppDelegate.swift */; };
 		50C728032767383F00044FFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C727F32767383F00044FFA /* ViewController.swift */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CBFF42D8237764859CD2E9C /* Pods_PhylloConnectSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhylloConnectSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		392DCCEE22F4DF98E80D5D1C /* Pods-PhylloConnectSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhylloConnectSample.debug.xcconfig"; path = "Target Support Files/Pods-PhylloConnectSample/Pods-PhylloConnectSample.debug.xcconfig"; sourceTree = "<group>"; };
 		50C727BC276737F800044FFA /* PhylloConnectSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhylloConnectSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C727F02767383F00044FFA /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		50C727F12767383F00044FFA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		50C727FF2767383F00044FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50C728002767383F00044FFA /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		50C7280D2767391000044FFA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B103E015EFC36D8A63BBC14 /* Pods-PhylloConnectSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhylloConnectSample.release.xcconfig"; path = "Target Support Files/Pods-PhylloConnectSample/Pods-PhylloConnectSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2471116FF2749D51DF6B9E /* Pods_PhylloConnectSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,8 @@
 			children = (
 				50C727BE276737F800044FFA /* PhylloConnectSample */,
 				50C727BD276737F800044FFA /* Products */,
+				FA8963D6002977BB2767BAD2 /* Pods */,
+				827142DA6E8C4E28BE75C9E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		827142DA6E8C4E28BE75C9E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CBFF42D8237764859CD2E9C /* Pods_PhylloConnectSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA8963D6002977BB2767BAD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				392DCCEE22F4DF98E80D5D1C /* Pods-PhylloConnectSample.debug.xcconfig */,
+				9B103E015EFC36D8A63BBC14 /* Pods-PhylloConnectSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50C727E6276737F800044FFA /* Build configuration list for PBXNativeTarget "PhylloConnectSample" */;
 			buildPhases = (
+				20EBCFC80091BC541BE11988 /* [CP] Check Pods Manifest.lock */,
 				50C727B8276737F800044FFA /* Sources */,
 				50C727B9276737F800044FFA /* Frameworks */,
 				50C727BA276737F800044FFA /* Resources */,
+				181DE618FCE87A48F4097EE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +217,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		181DE618FCE87A48F4097EE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhylloConnectSample/Pods-PhylloConnectSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhylloConnectSample/Pods-PhylloConnectSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhylloConnectSample/Pods-PhylloConnectSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20EBCFC80091BC541BE11988 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhylloConnectSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		50C727B8276737F800044FFA /* Sources */ = {
@@ -329,12 +397,14 @@
 		};
 		50C727E7276737F800044FFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 392DCCEE22F4DF98E80D5D1C /* Pods-PhylloConnectSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 526T25R6A9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhylloConnectSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -349,7 +419,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.getphyllo.phylloconnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = dev_wildcard;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,12 +428,14 @@
 		};
 		50C727E8276737F800044FFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B103E015EFC36D8A63BBC14 /* Pods-PhylloConnectSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 526T25R6A9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhylloConnectSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -378,7 +450,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.getphyllo.phylloconnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = dev_wildcard;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

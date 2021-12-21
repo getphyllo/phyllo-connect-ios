@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5097F1072771A93A00E221F2 /* PhylloConnect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5097F1052771A93400E221F2 /* PhylloConnect.xcframework */; };
-		5097F1082771A93A00E221F2 /* PhylloConnect.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5097F1052771A93400E221F2 /* PhylloConnect.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		50C728012767383F00044FFA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C727F02767383F00044FFA /* Persistence.swift */; };
 		50C728022767383F00044FFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C727F12767383F00044FFA /* AppDelegate.swift */; };
 		50C728032767383F00044FFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C727F32767383F00044FFA /* ViewController.swift */; };
@@ -30,7 +28,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5097F1082771A93A00E221F2 /* PhylloConnect.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,7 +35,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5097F1052771A93400E221F2 /* PhylloConnect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PhylloConnect.xcframework; sourceTree = "<group>"; };
 		50C727BC276737F800044FFA /* PhylloConnectSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhylloConnectSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C727F02767383F00044FFA /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		50C727F12767383F00044FFA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,27 +56,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5097F1072771A93A00E221F2 /* PhylloConnect.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5097F0FF2771A33D00E221F2 /* Framework */ = {
-			isa = PBXGroup;
-			children = (
-				5097F1052771A93400E221F2 /* PhylloConnect.xcframework */,
-			);
-			path = Framework;
-			sourceTree = "<group>";
-		};
 		50C727B3276737F800044FFA = {
 			isa = PBXGroup;
 			children = (
 				50C727BE276737F800044FFA /* PhylloConnectSample */,
-				5097F0FF2771A33D00E221F2 /* Framework */,
 				50C727BD276737F800044FFA /* Products */,
+				92495007D6B704B3A7892FF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +137,13 @@
 				50C728002767383F00044FFA /* loading.gif */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		92495007D6B704B3A7892FF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

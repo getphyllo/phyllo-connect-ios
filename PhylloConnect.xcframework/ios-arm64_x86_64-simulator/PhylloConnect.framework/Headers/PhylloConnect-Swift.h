@@ -190,9 +190,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import CoreGraphics;
 @import UIKit;
-@import WebKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -221,22 +219,6 @@ SWIFT_CLASS("_TtC13PhylloConnect19LoginViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-
-SWIFT_CLASS("_TtC13PhylloConnect12SVGImageView")
-@interface SVGImageView : UIView
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)awakeFromNib;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-@end
-
-@class WKWebView;
-@class WKNavigation;
-
-@interface SVGImageView (SWIFT_EXTENSION(PhylloConnect)) <WKNavigationDelegate>
-- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
-@end
 
 
 
@@ -445,9 +427,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import CoreGraphics;
 @import UIKit;
-@import WebKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -476,22 +456,6 @@ SWIFT_CLASS("_TtC13PhylloConnect19LoginViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-
-SWIFT_CLASS("_TtC13PhylloConnect12SVGImageView")
-@interface SVGImageView : UIView
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)awakeFromNib;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-@end
-
-@class WKWebView;
-@class WKNavigation;
-
-@interface SVGImageView (SWIFT_EXTENSION(PhylloConnect)) <WKNavigationDelegate>
-- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
-@end
 
 
 

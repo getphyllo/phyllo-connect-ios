@@ -13,19 +13,10 @@ import _Concurrency
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SVGImageView : UIKit.UIView {
-  @objc dynamic public init()
-  @objc override dynamic public func awakeFromNib()
-  @objc deinit
-  @_Concurrency.MainActor(unsafe) public func load(url: Swift.String)
-}
-extension PhylloConnect.SVGImageView : WebKit.WKNavigationDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
-}
 public struct PhylloConfig {
-  public static var shared: PhylloConnect.PhylloConfig
+  public static var shared: PhylloConfig
   public init()
-  public var env: PhylloConnect.PhylloEnvironment
+  public var env: PhylloEnvironment
   public var phylloVC: UIKit.UIViewController
   public var developerName: Swift.String
   public var deepLinkURL: Swift.String
@@ -33,7 +24,7 @@ public struct PhylloConfig {
   public var userId: Swift.String
 }
 public class PhylloConnect {
-  required public init(configuration: PhylloConnect.PhylloConfig)
+  required public init(configuration: PhylloConfig)
   public func launchSDK(workPlatformId: Swift.String)
   @objc deinit
 }
@@ -47,6 +38,6 @@ public enum PhylloEnvironment : Swift.String {
     get
   }
 }
-extension PhylloConnect.PhylloEnvironment : Swift.Equatable {}
-extension PhylloConnect.PhylloEnvironment : Swift.Hashable {}
-extension PhylloConnect.PhylloEnvironment : Swift.RawRepresentable {}
+extension PhylloEnvironment : Swift.Equatable {}
+extension PhylloEnvironment : Swift.Hashable {}
+extension PhylloEnvironment : Swift.RawRepresentable {}

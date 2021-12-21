@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kDXhWU5WF/iUsuM/FUeiYzq1N2o=
+		n4h0d6aFSYX4SVuSVwQOgcUolAE=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		kDXhWU5WF/iUsuM/FUeiYzq1N2o=
+		n4h0d6aFSYX4SVuSVwQOgcUolAE=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Vl6+h8wn+6M0WquK41HM1rfgpXg=
+		subXZN3PforokCXkhCfGC9yqXjU=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Vl6+h8wn+6M0WquK41HM1rfgpXg=
+		subXZN3PforokCXkhCfGC9yqXjU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -337,7 +337,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TY5J5YhDa3AxKWkn3hHHrwchNbBaV078m9uGtyxLnp0=
+			JdbQGfVsWwPsNmmsIlPAtacfctFJWNntTnNK/7AZZkc=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/arm64.swiftdoc</key>
@@ -358,7 +358,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TY5J5YhDa3AxKWkn3hHHrwchNbBaV078m9uGtyxLnp0=
+			JdbQGfVsWwPsNmmsIlPAtacfctFJWNntTnNK/7AZZkc=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -379,7 +379,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V840hDhgKktny4Dem3rg3DZmFoyOr9xyRqAsDX705S8=
+			XTtnPsRWAshtAfAlUc70VsP0CxMsZXEP0p+BG/czSVo=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64.swiftdoc</key>
@@ -400,7 +400,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V840hDhgKktny4Dem3rg3DZmFoyOr9xyRqAsDX705S8=
+			XTtnPsRWAshtAfAlUc70VsP0CxMsZXEP0p+BG/czSVo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

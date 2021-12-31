@@ -188,6 +188,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
+@import Foundation;
+@import QuartzCore;
 @import UIKit;
 #endif
 
@@ -206,6 +209,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+
+
+
+
 @class NSString;
 @class NSBundle;
 @class NSCoder;
@@ -216,6 +223,80 @@ SWIFT_CLASS("_TtC13PhylloConnect19LoginViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+@class NSData;
+
+/// Concrete implementation of <code>SVGParser</code> that uses Foundation’s <code>XMLParser</code> to parse a given SVG file.
+SWIFT_CLASS("_TtC13PhylloConnect14NSXMLSVGParser")
+@interface NSXMLSVGParser : NSXMLParser <NSXMLParserDelegate>
+/// :nodoc:
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// The <code>XMLParserDelegate</code> method called when the parser has started parsing an SVG element. This implementation will loop through all supported attributes and dispatch the attribiute value to the given curried function.
+- (void)parser:(NSXMLParser * _Nonnull)parser didStartElement:(NSString * _Nonnull)elementName namespaceURI:(NSString * _Nullable)namespaceURI qualifiedName:(NSString * _Nullable)qName attributes:(NSDictionary<NSString *, NSString *> * _Nonnull)attributeDict;
+/// The <code>XMLParserDelegate</code> method called when the parser has ended parsing an SVG element. This methods pops the last element parsed off the stack and checks if there is an enclosing container layer. Every valid SVG file is guaranteed to have at least one container layer (at a minimum, a <code>SVGRootElement</code> instance).
+/// If the parser has finished parsing a <code>SVGShapeElement</code>, it will resize the parser’s <code>containerLayer</code> bounding box to fit all subpaths
+/// If the parser has finished parsing a <code><svg></code> element, that <code>SVGRootElement</code>‘s container layer is added to this parser’s <code>containerLayer</code>.
+- (void)parser:(NSXMLParser * _Nonnull)parser didEndElement:(NSString * _Nonnull)elementName namespaceURI:(NSString * _Nullable)namespaceURI qualifiedName:(NSString * _Nullable)qName;
+/// The <code>XMLParserDelegate</code> method called when the parser has finished parsing the SVG document. All supported elements and attributes are guaranteed to be dispatched at this point, but there’s no guarantee that all elements have finished parsing.
+/// seealso:
+/// <code>CanManageAsychronousParsing</code> <code>finishedProcessing(shapeLayer:)</code>
+/// seealso:
+/// <code>XMLParserDelegate</code> (<code>parserDidEndDocument(_:)</code>)[https://developer.apple.com/documentation/foundation/xmlparserdelegate/1418172-parserdidenddocument]
+- (void)parserDidEndDocument:(NSXMLParser * _Nonnull)parser;
+/// The <code>XMLParserDelegate</code> method called when the parser has reached a fatal error in parsing. Parsing is stopped if an error is reached and you may want to check that your SVG file passes validation.
+/// seealso:
+/// <code>XMLParserDelegate</code> (<code>parser(_:parseErrorOccurred:)</code>)[https://developer.apple.com/documentation/foundation/xmlparserdelegate/1412379-parser]
+/// seealso:
+/// (SVG Validator)[https://validator.w3.org/]
+- (void)parser:(NSXMLParser * _Nonnull)parser parseErrorOccurred:(NSError * _Nonnull)parseError;
+- (nonnull instancetype)initWithData:(NSData * _Nonnull)data SWIFT_UNAVAILABLE;
+@end
+
+
+
+
+
+/// A <code>CAShapeLayer</code> subclass that allows you to easily work with sublayers and get sizing information
+SWIFT_CLASS("_TtC13PhylloConnect8SVGLayer")
+@interface SVGLayer : CAShapeLayer
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithLayer:(id _Nonnull)layer OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface SVGLayer (SWIFT_EXTENSION(PhylloConnect))
+/// Applies the given fill color to all sublayers
+@property (nonatomic) CGColorRef _Nullable fillColor;
+@end
+
+
+@class NSNumber;
+
+@interface SVGLayer (SWIFT_EXTENSION(PhylloConnect))
+/// Applies the given line width to all <code>CAShapeLayer</code>s
+@property (nonatomic) CGFloat lineWidth;
+/// Applies the given stroke color to all <code>CAShapeLayer</code>s
+@property (nonatomic) CGColorRef _Nullable strokeColor;
+@end
+
+
+/// A <code>UIView</code> subclass that can be used in Interface Builder where you can set the @IBInspectable propert <code>SVGName</code> in the side panel. Use the UIView extensions if you want to creates SVG views programmatically.
+SWIFT_CLASS("_TtC13PhylloConnect7SVGView")
+@interface SVGView : UIView
+/// The name of the SVG file in the main bundle
+@property (nonatomic, copy) IBInspectable NSString * _Nullable svgName;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
 
 
 

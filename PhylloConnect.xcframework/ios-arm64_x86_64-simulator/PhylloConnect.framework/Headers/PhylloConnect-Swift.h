@@ -269,11 +269,11 @@ SWIFT_CLASS("_TtC13PhylloConnect8SVGLayer")
 @end
 
 
+
 @interface SVGLayer (SWIFT_EXTENSION(PhylloConnect))
 /// Applies the given fill color to all sublayers
 @property (nonatomic) CGColorRef _Nullable fillColor;
 @end
-
 
 @class NSNumber;
 
@@ -587,11 +587,11 @@ SWIFT_CLASS("_TtC13PhylloConnect8SVGLayer")
 @end
 
 
+
 @interface SVGLayer (SWIFT_EXTENSION(PhylloConnect))
 /// Applies the given fill color to all sublayers
 @property (nonatomic) CGColorRef _Nullable fillColor;
 @end
-
 
 @class NSNumber;
 

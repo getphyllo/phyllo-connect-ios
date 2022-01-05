@@ -67,7 +67,6 @@
 			children = (
 				50C727BE276737F800044FFA /* PhylloConnectSample */,
 				50C727BD276737F800044FFA /* Products */,
-				92495007D6B704B3A7892FF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,13 +136,6 @@
 				50C728002767383F00044FFA /* loading.gif */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		92495007D6B704B3A7892FF5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

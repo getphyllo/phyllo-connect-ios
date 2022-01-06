@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		HgcBYYrpUbwC++x2MjLM4dyf9NY=
+		kpl9tmkkfgXpk9YZ7dhUJJPI100=
 		</data>
 		<key>Headers/PhylloConnect-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ccwmbANgQ2INbAUMIyT7qhYSlYc=
+		/FyrH9JzJEFFYp3Jf73hQ2SViJ4=
 		</data>
 		<key>Inter-Black.ttf</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dccnfc0Mobncq2HPHnI/RrikbxE=
+		ZZ/WoeQXpMofmAtUaFrRKOUKG/0=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		F9ijKko+CP+meMPnK/GdxitWWhM=
+		28V7yspeiJFTAbS+lOy55/iCZtw=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		dccnfc0Mobncq2HPHnI/RrikbxE=
+		ZZ/WoeQXpMofmAtUaFrRKOUKG/0=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		F9ijKko+CP+meMPnK/GdxitWWhM=
+		28V7yspeiJFTAbS+lOy55/iCZtw=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -86,11 +86,11 @@
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dFAOOXD09koYIb1VrkI58ErQH4c=
+		AwxgQd+0/9X5nxFfBcvSivGp7Ac=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		96hF9K7ht+2lFxStJLl3aU6aqZ8=
+		KydxjNcUR98ynT98dwLhG+q7OWU=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -98,11 +98,11 @@
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		dFAOOXD09koYIb1VrkI58ErQH4c=
+		AwxgQd+0/9X5nxFfBcvSivGp7Ac=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		96hF9K7ht+2lFxStJLl3aU6aqZ8=
+		KydxjNcUR98ynT98dwLhG+q7OWU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -331,7 +331,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vty1jEt9TTOyQA+xhWQ8SWq+FNZud+Jm1vUZ/FMzkDk=
+			RsZ/1U6oeMJLMAirBg1mBrZcWjuqFFD3pFFIZ6yMhEg=
 			</data>
 		</dict>
 		<key>Headers/PhylloConnect-Swift.h</key>
@@ -422,14 +422,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u3HJJDzybf/t684kjzuqPE2aL49zVSz+pxnkYQ3RhhU=
+			uvnZEK3sH/IYOO6Xu9iC5HcFZ8yYcYTU51JAHkTqo1A=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0JLwbMBSfRxWz+0uUj9U0eKlO3DjAuJWLADeF6/RlV0=
+			cDhttZOIsX7PaPlI9x3H2CeIt4OmX//gDLICMzznp9o=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/arm64.swiftdoc</key>
@@ -443,14 +443,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u3HJJDzybf/t684kjzuqPE2aL49zVSz+pxnkYQ3RhhU=
+			uvnZEK3sH/IYOO6Xu9iC5HcFZ8yYcYTU51JAHkTqo1A=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0JLwbMBSfRxWz+0uUj9U0eKlO3DjAuJWLADeF6/RlV0=
+			cDhttZOIsX7PaPlI9x3H2CeIt4OmX//gDLICMzznp9o=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -464,14 +464,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yYqQbbmwh6LUtuf25HguByMJzCdPb6Rg82IRLpamt1I=
+			AUqnG/LdwVX1deXuv5rlkeSpMXn39/0SmU3ZAixyT3Y=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O0riQwHntfPHdbIL/DSRDibvCgMeddtzo4eRD7L2BY8=
+			YWopmo0g195SN0JoVS9VqEgPUQ9jFphb4GHfut+9LN8=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64.swiftdoc</key>
@@ -485,14 +485,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yYqQbbmwh6LUtuf25HguByMJzCdPb6Rg82IRLpamt1I=
+			AUqnG/LdwVX1deXuv5rlkeSpMXn39/0SmU3ZAixyT3Y=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O0riQwHntfPHdbIL/DSRDibvCgMeddtzo4eRD7L2BY8=
+			YWopmo0g195SN0JoVS9VqEgPUQ9jFphb4GHfut+9LN8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

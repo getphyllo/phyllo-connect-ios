@@ -124,15 +124,14 @@ class ViewController: UIViewController {
     
     func launchSDK(workPlatformId : String){
         //Phyllo configuration
-        phylloConfig.developerName =  "" //Developer
-        phylloConfig.deepLinkURL = "" // DeepLink
-        phylloConfig.sdkToken = G.sdkToken
+        phylloConfig.clientDisplayName =  "" //Developer
+        phylloConfig.token = G.sdkToken
         phylloConfig.userId = G.userId
-        phylloConfig.env = Config.env
-        phylloConfig.phylloVC = getTopViewController()!
+        phylloConfig.environment = Config.env
+        phylloConfig.workPlatformId = workPlatformId
         
-        let phyllo = PhylloConnect(configuration: phylloConfig)
-        phyllo.launchSDK(workPlatformId: workPlatformId)
+        PhylloConnect.shared.initialize(config: phylloConfig)
+        PhylloConnect.shared.open()
     }
     
     func getTopViewController() -> UIViewController? {

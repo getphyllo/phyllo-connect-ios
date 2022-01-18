@@ -269,11 +269,11 @@ SWIFT_CLASS("_TtC13PhylloConnect8SVGLayer")
 @end
 
 
-
 @interface SVGLayer (SWIFT_EXTENSION(PhylloConnect))
 /// Applies the given fill color to all sublayers
 @property (nonatomic) CGColorRef _Nullable fillColor;
 @end
+
 
 @class NSNumber;
 
@@ -293,6 +293,7 @@ SWIFT_CLASS("_TtC13PhylloConnect7SVGView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 
@@ -587,11 +588,11 @@ SWIFT_CLASS("_TtC13PhylloConnect8SVGLayer")
 @end
 
 
-
 @interface SVGLayer (SWIFT_EXTENSION(PhylloConnect))
 /// Applies the given fill color to all sublayers
 @property (nonatomic) CGColorRef _Nullable fillColor;
 @end
+
 
 @class NSNumber;
 
@@ -611,6 +612,7 @@ SWIFT_CLASS("_TtC13PhylloConnect7SVGView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 

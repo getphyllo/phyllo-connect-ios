@@ -98,7 +98,7 @@ extension UIKit.UIBezierPath {
   @available(*, deprecated, message: "This method is deprecated. If you want to parse a single path, instantiate a new instance of SVGPath using the SVGPath(singlePathString:) initializer and pass the path string.")
   public class func pathWithSVGURL(_ SVGURL: Foundation.URL) -> UIKit.UIBezierPath?
 }
-@_hasMissingDesignatedInitializers public class PhylloConnect {
+@_hasMissingDesignatedInitializers open class PhylloConnect {
   public static let shared: PhylloConnect.PhylloConnect
   public func initialize(config: PhylloConnect.PhylloConfig = PhylloConfig())
   public func open()

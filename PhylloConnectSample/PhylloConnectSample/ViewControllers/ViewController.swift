@@ -13,25 +13,55 @@ class ViewController: UIViewController {
 
     var phylloConfig = PhylloConfig()
     //Set enviroment
+
    
+    @IBOutlet weak var height: NSLayoutConstraint!
+    @IBOutlet weak var width: NSLayoutConstraint!
     
-    @IBOutlet weak var imgLoading: UIImageView!
-    @IBOutlet weak var viewLoading: UIView!
-    
+    @IBOutlet weak var mainView: UIView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imgLoading.setGIFImage(name: "loading")
+        
+        //Set card view for iPad only
+        if UIDevice.current.userInterfaceIdiom == .pad {
+             // iPad
+            self.view.backgroundColor = UIColor(red: 178.0/255.0, green: 178.0/255.0, blue: 178.0/255.0, alpha: 1.0)
+            height.isActive = true
+            width.isActive = true
+            height.constant = 667.0
+            width.constant = 375.0
+            DispatchQueue.main.async {
+                self.mainView.dropShadow()
+                self.view.layoutIfNeeded()
+            }
+         } else {
+             height.isActive = false
+             width.isActive = false
+         }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        imgLoading.stopAnimating()
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
    
+    override var shouldAutorotate: Bool {
+        return false
+    }
+
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        return UIInterfaceOrientation.portrait
+    }
+    
     @IBOutlet weak var existingUser: UIButton!{
         didSet{
             if(G.userId.isEmpty){
@@ -66,12 +96,11 @@ class ViewController: UIViewController {
         initLaunch(workPlatformId: "")
     }
     
-    
     @IBAction func instagramBtnClicked(_ sender: Any) {
-        initLaunch(workPlatformId: "")
+        initLaunch(workPlatformId: "9bb8913b-ddd9-430b-a66a-d74d846e6c66")
     }
     @IBAction func youtubeBtnClicked(_ sender: Any) {
-        initLaunch(workPlatformId: "")
+        initLaunch(workPlatformId: "14d9ddf5-51c6-415e-bde6-f8ed36ad7054")
     }
     
     @IBAction func existingUserClicked(_ sender: UIButton) {
@@ -91,13 +120,16 @@ class ViewController: UIViewController {
             getSDKToken(workPlatformId : workPlatformId)
         }
         else{
-            showLoading()
+            //showLoading()
+            showActivityIndicator()
             NetworkHandler.post(suffix: "/v1/users", mapData: ["name" : G.randomString(length: 8), "external_id" : G.randomString(length: 20)], env: Config.env, completion: {
                     [weak self] (rs, e) in
-                    self?.hideLoading()
+                    //self?.hideLoading()
+                self?.hideActivityIndicator()
                     guard self != nil else {
                         return
                     }
+                
                     if((rs["id"]) != nil){
                         self!.existingUser.isEnabled = true
                         G.userId = rs["id"] as! String
@@ -108,23 +140,25 @@ class ViewController: UIViewController {
     }
     
     func getSDKToken(workPlatformId : String){
-        showLoading()
+        showActivityIndicator()
         NetworkHandler.post(suffix: "/v1/sdk-tokens", mapData: ["user_id" : G.userId, "products" : ["IDENTITY","ENGAGEMENT","INCOME"]], env: Config.env, completion: {
-                [weak self] (rs, e) in
-            self?.hideLoading()
-                guard self != nil else {
-                    return
-                }
+            [weak self] (rs, e) in
+            self?.hideActivityIndicator()
+            guard self != nil else {
+                return
+            }
             if((rs["sdk_token"]) != nil){
                 G.sdkToken = "Bearer " + ((rs["sdk_token"] as! String))
+                print("Token ==> \(G.sdkToken)")
                 self!.launchSDK(workPlatformId: workPlatformId)
             }
         })
     }
     
-    func launchSDK(workPlatformId : String){
+    func launchSDK(workPlatformId : String) {
         //Phyllo configuration
-        phylloConfig.clientDisplayName =  "" //Developer
+        var phylloConfig = PhylloConfig()
+        phylloConfig.clientDisplayName = "Creator"
         phylloConfig.token = G.sdkToken
         phylloConfig.userId = G.userId
         phylloConfig.environment = Config.env
@@ -133,22 +167,6 @@ class ViewController: UIViewController {
         PhylloConnect.shared.initialize(config: phylloConfig)
         PhylloConnect.shared.phylloConnectDelegate = self
         PhylloConnect.shared.open()
-    }
-    
-    func getTopViewController() -> UIViewController? {
-        var topController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController
-        while topController?.presentedViewController != nil {
-            topController = topController?.presentedViewController
-        }
-        return topController
-    }
-    
-    private func showLoading() {
-        viewLoading.isHidden = false
-    }
-    
-    private func hideLoading() {
-        viewLoading.isHidden = true
     }
 }
 
@@ -169,4 +187,20 @@ extension ViewController : PhylloConnectDelegate {
     func onExit(reason: String, user_id: String) {
         print("onExit => reason : \(reason),user_id : \(user_id)")
     }
+}
+
+extension UIView {
+
+  // OUTPUT 1
+  func dropShadow(scale: Bool = true) {
+    layer.masksToBounds = false
+    layer.shadowColor = UIColor.black.cgColor
+      layer.shadowOpacity = 0.5
+    layer.shadowOffset = CGSize.zero
+    layer.shadowRadius = 10
+    layer.cornerRadius = 10
+    layer.shadowPath = UIBezierPath(rect: bounds).cgPath
+    layer.shouldRasterize = true
+    layer.rasterizationScale = scale ? UIScreen.main.scale : 1
+  }
 }

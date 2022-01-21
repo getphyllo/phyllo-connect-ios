@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		506EA7A7279ACA20002A8DCB /* CustomLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506EA7A6279ACA20002A8DCB /* CustomLoader.swift */; };
 		50C728012767383F00044FFA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C727F02767383F00044FFA /* Persistence.swift */; };
 		50C728022767383F00044FFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C727F12767383F00044FFA /* AppDelegate.swift */; };
 		50C728032767383F00044FFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C727F32767383F00044FFA /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		506EA7A6279ACA20002A8DCB /* CustomLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoader.swift; sourceTree = "<group>"; };
 		50C727BC276737F800044FFA /* PhylloConnectSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhylloConnectSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C727F02767383F00044FFA /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		50C727F12767383F00044FFA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				50C727F82767383F00044FFA /* Config.swift */,
 				50C727F92767383F00044FFA /* Extensions.swift */,
+				506EA7A6279ACA20002A8DCB /* CustomLoader.swift */,
 				50C727FA2767383F00044FFA /* NetworkHandler.swift */,
 				50C727FB2767383F00044FFA /* G.swift */,
 			);
@@ -213,6 +216,7 @@
 			files = (
 				50C7280A2767383F00044FFA /* PhylloConnectSample.xcdatamodeld in Sources */,
 				50C728072767383F00044FFA /* Extensions.swift in Sources */,
+				506EA7A7279ACA20002A8DCB /* CustomLoader.swift in Sources */,
 				50C728032767383F00044FFA /* ViewController.swift in Sources */,
 				50C728062767383F00044FFA /* Config.swift in Sources */,
 				50C728092767383F00044FFA /* G.swift in Sources */,
@@ -355,6 +359,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
@@ -386,6 +391,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;

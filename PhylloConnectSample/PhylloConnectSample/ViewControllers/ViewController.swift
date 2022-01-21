@@ -131,6 +131,7 @@ class ViewController: UIViewController {
         phylloConfig.workPlatformId = workPlatformId
         
         PhylloConnect.shared.initialize(config: phylloConfig)
+        PhylloConnect.shared.phylloConnectDelegate = self
         PhylloConnect.shared.open()
     }
     
@@ -148,5 +149,24 @@ class ViewController: UIViewController {
     
     private func hideLoading() {
         viewLoading.isHidden = true
+    }
+}
+
+extension ViewController : PhylloConnectDelegate {
+    
+    func onAccountConnected(account_id: String, work_platform_id: String, user_id: String) {
+        print("onAccountConnected => account_id : \(account_id),work_platform_id : \(work_platform_id),user_id : \(user_id)")
+    }
+    
+    func onAccountDisconnected(account_id: String, work_platform_id: String, user_id: String) {
+        print("onAccountDisconnected => account_id : \(account_id),work_platform_id : \(work_platform_id),user_id : \(user_id)")
+    }
+    
+    func onTokenExpired(user_id: String) {
+        print("onTokenExpired => user_id : \(user_id)")
+    }
+    
+    func onExit(reason: String, user_id: String) {
+        print("onExit => reason : \(reason),user_id : \(user_id)")
     }
 }

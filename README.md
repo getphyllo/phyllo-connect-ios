@@ -88,7 +88,7 @@ You can optionally listen for events in your app. These event triggers are liste
 | -----------| ------------| --------- |
 | Account connected | Triggered when the user successfully connects a work platform account | onAccountConnected |
 | Account disconnected | Triggered when the user successfully disconnects a work platform account | onAccountConnected |
-| Token expired | Triggered when the token used to initialize the SDK is more than 7 days old | user_id, account_id, work_platform_id |
+| Token expired | Triggered when the token used to initialize the SDK is more than 7 days old | onTokenExpired |
 | Exit | Triggered when the user exits the SDK | onExit |
 
 ### Here is how you can do this for your iOS app.

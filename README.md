@@ -70,7 +70,7 @@ Get the latest version of the PhylloConnect.xcframework and embed it into your a
   phylloConfig.environment = environment  // the mode in which you want to use the SDK,  `sandbox` or `production`
   phylloConfig.workPlatformId = workPlatformId  // (optional) the unique work_platform_id of a specific work platform, if you want the creator to skip the platform selection screen and just be able to connect just with a single work platform
 
-  PhylloConnect.shared.initialize(config: PhylloConfig.shared)
+  PhylloConnect.shared.initialize(config: phylloConfig)
 ...
 
 ```

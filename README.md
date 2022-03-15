@@ -63,11 +63,12 @@ Get the latest version of the PhylloConnect.xcframework and embed it into your a
 
 ...
 
-  PhylloConfig.shared.clientDisplayName = clientDisplayName  // the name of your app that you want the creators to see while granting access
-  PhylloConfig.shared.environment = environment  // the mode in which you want to use the SDK,  `sandbox` or `production`
-  PhylloConfig.shared.userId = userId  // the unique user_id parameter returned by Phyllo API when you create a user (see https://docs.getphyllo.com/docs/api-reference/reference/openapi.v1.yml/paths/~1v1~1users/post)
-  PhylloConfig.shared.token = token
-  PhylloConfig.shared.workPlatformId = workPlatformId  // (optional) the unique work_platform_id of a specific work platform, if you want the creator to skip the platform selection screen and just be able to connect just with a single work platform
+  var phylloConfig = PhylloConfig()
+  phylloConfig.clientDisplayName = clientDisplayName  // the name of your app that you want the creators to see while granting access
+  phylloConfig.token = token
+  phylloConfig.userId = userId  // the unique user_id parameter returned by Phyllo API when you create a user (see https://docs.getphyllo.com/docs/api-reference/reference/openapi.v1.yml/paths/~1v1~1users/post)
+  phylloConfig.environment = environment  // the mode in which you want to use the SDK,  `sandbox` or `production`
+  phylloConfig.workPlatformId = workPlatformId  // (optional) the unique work_platform_id of a specific work platform, if you want the creator to skip the platform selection screen and just be able to connect just with a single work platform
 
   PhylloConnect.shared.initialize(config: PhylloConfig.shared)
 ...

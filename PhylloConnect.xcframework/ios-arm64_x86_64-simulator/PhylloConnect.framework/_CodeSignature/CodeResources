@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		OHS/Fz/+sN9Ze8gzlnhTM8o1Fhw=
+		j2o/5akc2oyLnUE5peQp0aqL0Ts=
 		</data>
 		<key>Headers/PhylloConnect-Swift.h</key>
 		<data>
-		3pqB6cK6lfDq8bhzTpGooDbwtTs=
+		2E9Y31PUv2nj3Bgj5On2bvfnvd4=
 		</data>
 		<key>Headers/PhylloConnect.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1TqEMHXllcBjFAFy5D0cKy2bH/Q=
+		gKG8w2fQu0uAWLPOjpVHJGCKDBI=
 		</data>
 		<key>Inter-Black.ttf</key>
 		<data>
@@ -58,51 +58,27 @@
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		fg7dvKlHzT5ZAEIOLBkNYK7XApU=
+		UUPlSpI6mZIX+YKcRWnt1shlykw=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dbyTiMRcNRlCyYQc9vwrpizbH8I=
+		L1DzN0imca8Rvq8t372QV1SXw98=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ntwcE8VdlLUDPbK2SIn/3l6/AW0=
-		</data>
-		<key>Modules/PhylloConnect.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		fg7dvKlHzT5ZAEIOLBkNYK7XApU=
-		</data>
-		<key>Modules/PhylloConnect.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		dbyTiMRcNRlCyYQc9vwrpizbH8I=
-		</data>
-		<key>Modules/PhylloConnect.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		ntwcE8VdlLUDPbK2SIn/3l6/AW0=
+		kxTvBi+rW9lTBfir2uX9Mo6cXKQ=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		JuVb5n0VOnntV7Pb1QENnnN+3hc=
+		abx/v6wiT430YUhLg63NzUEHFXw=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		C619SePzAjKryj2U317kwvN0OIw=
+		a3GfD+FHobx0fy/wmHIEK8mrgzo=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2v+/Csrg0cISGFUdqSZeVoExAKU=
-		</data>
-		<key>Modules/PhylloConnect.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		JuVb5n0VOnntV7Pb1QENnnN+3hc=
-		</data>
-		<key>Modules/PhylloConnect.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		C619SePzAjKryj2U317kwvN0OIw=
-		</data>
-		<key>Modules/PhylloConnect.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		2v+/Csrg0cISGFUdqSZeVoExAKU=
+		Y2mJ2Fp6hDkRPoUOWIOjhvpGjgk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -120,33 +96,69 @@
 		<data>
 		XkYkc2hsTH8IRrdZXDO0cFmFasg=
 		</data>
+		<key>PhylloConnect.storyboardc/G0R-Qa-Zwj-view-ZvW-n2-kAx.nib/objects-12.3+.nib</key>
+		<data>
+		pL5KSBBLD0M80WhdzoOwvaEaeUw=
+		</data>
+		<key>PhylloConnect.storyboardc/G0R-Qa-Zwj-view-ZvW-n2-kAx.nib/objects-13.0+.nib</key>
+		<data>
+		2oM3Cn6MioqeKBzJZdNw8Ygluoo=
+		</data>
+		<key>PhylloConnect.storyboardc/G0R-Qa-Zwj-view-ZvW-n2-kAx.nib/runtime.nib</key>
+		<data>
+		pL5KSBBLD0M80WhdzoOwvaEaeUw=
+		</data>
 		<key>PhylloConnect.storyboardc/HpE-Tz-eTm-view-3af-h0-rcU.nib/objects-12.3+.nib</key>
 		<data>
-		mirRpAQb/zk3WS6d44aX476IrnM=
+		h6LaYH83pfy5sWxrsZRAKcuOEs0=
 		</data>
 		<key>PhylloConnect.storyboardc/HpE-Tz-eTm-view-3af-h0-rcU.nib/objects-13.0+.nib</key>
 		<data>
-		0bDmqLZIxraFICmMjglMWQMOsl8=
+		80tLtBhcrq4wbusk3xjT6wgwPjo=
 		</data>
 		<key>PhylloConnect.storyboardc/HpE-Tz-eTm-view-3af-h0-rcU.nib/runtime.nib</key>
 		<data>
-		mirRpAQb/zk3WS6d44aX476IrnM=
+		h6LaYH83pfy5sWxrsZRAKcuOEs0=
 		</data>
 		<key>PhylloConnect.storyboardc/Info.plist</key>
 		<data>
-		8DId3fHNYjzbw8f1YnCu2G9v4ME=
+		Js48Z3ijJ+UA69Ss/PerTgOFrAQ=
+		</data>
+		<key>PhylloConnect.storyboardc/InstagramWorksViewController.nib/objects-12.3+.nib</key>
+		<data>
+		n+5x/CyOs8tWE3rxJc/R4/Tl0JE=
+		</data>
+		<key>PhylloConnect.storyboardc/InstagramWorksViewController.nib/objects-13.0+.nib</key>
+		<data>
+		n+5x/CyOs8tWE3rxJc/R4/Tl0JE=
+		</data>
+		<key>PhylloConnect.storyboardc/InstagramWorksViewController.nib/runtime.nib</key>
+		<data>
+		n+5x/CyOs8tWE3rxJc/R4/Tl0JE=
+		</data>
+		<key>PhylloConnect.storyboardc/LoginWithFBViewController.nib/objects-12.3+.nib</key>
+		<data>
+		YX3T0CsMTkrf+mC68fqbFB6JaUg=
+		</data>
+		<key>PhylloConnect.storyboardc/LoginWithFBViewController.nib/objects-13.0+.nib</key>
+		<data>
+		YX3T0CsMTkrf+mC68fqbFB6JaUg=
+		</data>
+		<key>PhylloConnect.storyboardc/LoginWithFBViewController.nib/runtime.nib</key>
+		<data>
+		YX3T0CsMTkrf+mC68fqbFB6JaUg=
 		</data>
 		<key>PhylloConnect.storyboardc/Rgt-dP-Kb3-view-bw3-0u-i2j.nib/objects-12.3+.nib</key>
 		<data>
-		WJJA0+yD1cVsXtbgWW+y8pe4+8o=
+		q5GGRudc/7JBWGbY623d7teR5V0=
 		</data>
 		<key>PhylloConnect.storyboardc/Rgt-dP-Kb3-view-bw3-0u-i2j.nib/objects-13.0+.nib</key>
 		<data>
-		d1s366isLh38ANOr6NeYGBFWwVw=
+		MC6XXPbViCgd9PtXd8fUcP+H8Cc=
 		</data>
 		<key>PhylloConnect.storyboardc/Rgt-dP-Kb3-view-bw3-0u-i2j.nib/runtime.nib</key>
 		<data>
-		WJJA0+yD1cVsXtbgWW+y8pe4+8o=
+		q5GGRudc/7JBWGbY623d7teR5V0=
 		</data>
 		<key>PhylloConnect.storyboardc/alertViewController.nib/objects-12.3+.nib</key>
 		<data>
@@ -160,29 +172,41 @@
 		<data>
 		c+K0rBo84ZCDCTV1a6VIopPIELU=
 		</data>
+		<key>PhylloConnect.storyboardc/eNu-qX-Sz4-view-Qc1-9X-bFT.nib/objects-12.3+.nib</key>
+		<data>
+		mWVY6++xEOwdcRKEOUcGrV+NInc=
+		</data>
+		<key>PhylloConnect.storyboardc/eNu-qX-Sz4-view-Qc1-9X-bFT.nib/objects-13.0+.nib</key>
+		<data>
+		esFli7xYd7c4p8sHAn7Lk6M++Qs=
+		</data>
+		<key>PhylloConnect.storyboardc/eNu-qX-Sz4-view-Qc1-9X-bFT.nib/runtime.nib</key>
+		<data>
+		mWVY6++xEOwdcRKEOUcGrV+NInc=
+		</data>
 		<key>PhylloConnect.storyboardc/gcl-ic-Rii-view-SD3-hL-LS0.nib/objects-12.3+.nib</key>
 		<data>
-		irscUAfUzKSuw4GiIjoMhxo2NYE=
+		rrBHb1GVyV3UWvmWUyx/CSkNz2M=
 		</data>
 		<key>PhylloConnect.storyboardc/gcl-ic-Rii-view-SD3-hL-LS0.nib/objects-13.0+.nib</key>
 		<data>
-		xHewzz6IdwSWwzetP6NyXDOcCEg=
+		ToYCqgcIgUTHp7hau3rJUJbePjM=
 		</data>
 		<key>PhylloConnect.storyboardc/gcl-ic-Rii-view-SD3-hL-LS0.nib/runtime.nib</key>
 		<data>
-		y5ZzdALCh8KvF/NjWgMN3uhI7KQ=
+		v9oipVUml6NRx//CENub9g3P43A=
 		</data>
 		<key>PhylloConnect.storyboardc/hW8-HQ-N02-view-ZpD-q2-dGQ.nib/objects-12.3+.nib</key>
 		<data>
-		pjDLWcBtEDgVNpXY9WU24TSMsTQ=
+		wGwULGoGosUDv21K13iTTcA7MtU=
 		</data>
 		<key>PhylloConnect.storyboardc/hW8-HQ-N02-view-ZpD-q2-dGQ.nib/objects-13.0+.nib</key>
 		<data>
-		3Op+rFAIy/cF9mIUy8sbFJ9hjks=
+		k+UHQCTZaM/qbHKgNf5iQCNovFQ=
 		</data>
 		<key>PhylloConnect.storyboardc/hW8-HQ-N02-view-ZpD-q2-dGQ.nib/runtime.nib</key>
 		<data>
-		pjDLWcBtEDgVNpXY9WU24TSMsTQ=
+		wGwULGoGosUDv21K13iTTcA7MtU=
 		</data>
 		<key>PhylloConnect.storyboardc/introViewController.nib/objects-12.3+.nib</key>
 		<data>
@@ -198,15 +222,15 @@
 		</data>
 		<key>PhylloConnect.storyboardc/njl-Op-G0a-view-iFY-Rn-RS1.nib/objects-12.3+.nib</key>
 		<data>
-		pLYtl91zcUgNsP5lM9h8zU/AtaY=
+		cQLJ36Zfk+3ilz1wvEdicvraAs4=
 		</data>
 		<key>PhylloConnect.storyboardc/njl-Op-G0a-view-iFY-Rn-RS1.nib/objects-13.0+.nib</key>
 		<data>
-		wbco8DQ0tPTfTECuSsrHl7TZ/Is=
+		KG0wkWcry5xNZ31T0FV1Y5Pqne4=
 		</data>
 		<key>PhylloConnect.storyboardc/njl-Op-G0a-view-iFY-Rn-RS1.nib/runtime.nib</key>
 		<data>
-		pLYtl91zcUgNsP5lM9h8zU/AtaY=
+		cQLJ36Zfk+3ilz1wvEdicvraAs4=
 		</data>
 		<key>PhylloConnect.storyboardc/platformViewController.nib/objects-12.3+.nib</key>
 		<data>
@@ -232,6 +256,10 @@
 		<data>
 		jIcEslr9PLGsft8w8c+WqjaeqLQ=
 		</data>
+		<key>insta_edu_gif.gif</key>
+		<data>
+		rzsupoiIQN4SiUHN1fzsEik7WzY=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -239,14 +267,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b0gZ1jRU7+AGIXKbAbDEvF6BVMjNx7XjIIWTA9UALHE=
+			t4eKTGD99gwx1d7XyUcOPrdYW0efJHhlIhrv5tzr4t8=
 			</data>
 		</dict>
 		<key>Headers/PhylloConnect-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7NLLeniROqSgiQdX3AaUA4M80FzWXs9od3KUhj4eiOc=
+			llMbndSiNHPwdJp80SjzksW9ZSIQevKgrukVUVn3H0g=
 			</data>
 		</dict>
 		<key>Headers/PhylloConnect.h</key>
@@ -323,84 +351,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OW7MHlWakoKSaXA+ajEh+i5x8waD+KGocCbCTEXtNaQ=
+			lG+Qv3tp/NM0dS36hJIs2Q7pmPS3UwXj1iwUXWfVQeY=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bXmNNi9DhARviIqszp3lmKgq9pksX10vLNMk4iaShzQ=
+			Wng8zJ+o2lwmcpWn0A9AUXHwApJZcs06H7AkNBSZdnU=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/WuM2PrKOPY/ictZunSi/e9K57aeK7SZ5T8ACHje+fU=
-			</data>
-		</dict>
-		<key>Modules/PhylloConnect.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OW7MHlWakoKSaXA+ajEh+i5x8waD+KGocCbCTEXtNaQ=
-			</data>
-		</dict>
-		<key>Modules/PhylloConnect.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			bXmNNi9DhARviIqszp3lmKgq9pksX10vLNMk4iaShzQ=
-			</data>
-		</dict>
-		<key>Modules/PhylloConnect.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/WuM2PrKOPY/ictZunSi/e9K57aeK7SZ5T8ACHje+fU=
+			79xzRWqmUCIBHScxh7WaAo/8/bRi5y3pel8VKhAmfJE=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0awEV6FQi1ehi8BqeDLuK+ktyVLGV1kXheF+q+5fNPg=
+			B2rOt5DK7IjlqzxfSxJ/lNkhGZTX38pcEuyYdSnKwJA=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j2kPa2ry0YJtEfkCpA8V/Jw4nNN8jVL1CGU4H/bH2ZE=
+			bPZjXdBjKL/afFWuStxyO60w/JtWJ/gU/ts/FMJx5zg=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4cOi+WJbp+qoYqw/vCVxL68Jna4kJJbJ/HBsQSaXwj0=
-			</data>
-		</dict>
-		<key>Modules/PhylloConnect.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0awEV6FQi1ehi8BqeDLuK+ktyVLGV1kXheF+q+5fNPg=
-			</data>
-		</dict>
-		<key>Modules/PhylloConnect.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			j2kPa2ry0YJtEfkCpA8V/Jw4nNN8jVL1CGU4H/bH2ZE=
-			</data>
-		</dict>
-		<key>Modules/PhylloConnect.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4cOi+WJbp+qoYqw/vCVxL68Jna4kJJbJ/HBsQSaXwj0=
+			uN9/2fc0WJKE7TxVMARCYxRF4GifoC86C3GyMPTFg5g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -431,53 +417,116 @@
 			yJc+PB2arVqNDcD+PhTg/vQPGkX8jLsNdpFFKPcyX5M=
 			</data>
 		</dict>
+		<key>PhylloConnect.storyboardc/G0R-Qa-Zwj-view-ZvW-n2-kAx.nib/objects-12.3+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k0EgF3AgS1zSTYu76MQB8lsccZy3+uDLHRqoqzxJffM=
+			</data>
+		</dict>
+		<key>PhylloConnect.storyboardc/G0R-Qa-Zwj-view-ZvW-n2-kAx.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Bikr2/2bYWCdau6Q2BzTODEvZUCx0IavvTMT+UxEx6o=
+			</data>
+		</dict>
+		<key>PhylloConnect.storyboardc/G0R-Qa-Zwj-view-ZvW-n2-kAx.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k0EgF3AgS1zSTYu76MQB8lsccZy3+uDLHRqoqzxJffM=
+			</data>
+		</dict>
 		<key>PhylloConnect.storyboardc/HpE-Tz-eTm-view-3af-h0-rcU.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mqy7atiUAuwMlnBOz5iLdPVyK2xUwZriYIxvkPm/6Go=
+			MNZkWB9LHxyqiKDxlPb+HbUwb/fADrD7714LhIOV9OE=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/HpE-Tz-eTm-view-3af-h0-rcU.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ERQSPV2+gCrbpMQT06U3Edj0QfHkwB3jpiAmb/6HcOI=
+			tYR4wyjG3N/FycsKS7L9EvMoS4SdTyL0u7a1vfY4q64=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/HpE-Tz-eTm-view-3af-h0-rcU.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mqy7atiUAuwMlnBOz5iLdPVyK2xUwZriYIxvkPm/6Go=
+			MNZkWB9LHxyqiKDxlPb+HbUwb/fADrD7714LhIOV9OE=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BmZfxrVrrnMY7rXHZeAUvtQenFxdL4kjzAIs4nnjybQ=
+			NoSm4GwK5F8hTTaBDlBhAo+psE+P1TgmXH6DM8r238s=
+			</data>
+		</dict>
+		<key>PhylloConnect.storyboardc/InstagramWorksViewController.nib/objects-12.3+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EXxmBUFs6MXBnxXn0gi3o6kvxYRTpUaWY5SOS2pAvKg=
+			</data>
+		</dict>
+		<key>PhylloConnect.storyboardc/InstagramWorksViewController.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EXxmBUFs6MXBnxXn0gi3o6kvxYRTpUaWY5SOS2pAvKg=
+			</data>
+		</dict>
+		<key>PhylloConnect.storyboardc/InstagramWorksViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EXxmBUFs6MXBnxXn0gi3o6kvxYRTpUaWY5SOS2pAvKg=
+			</data>
+		</dict>
+		<key>PhylloConnect.storyboardc/LoginWithFBViewController.nib/objects-12.3+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ixfrnM5GkZx1oLIJTkpeIfNvdJP8eH1Oc18RC18GCVU=
+			</data>
+		</dict>
+		<key>PhylloConnect.storyboardc/LoginWithFBViewController.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ixfrnM5GkZx1oLIJTkpeIfNvdJP8eH1Oc18RC18GCVU=
+			</data>
+		</dict>
+		<key>PhylloConnect.storyboardc/LoginWithFBViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ixfrnM5GkZx1oLIJTkpeIfNvdJP8eH1Oc18RC18GCVU=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/Rgt-dP-Kb3-view-bw3-0u-i2j.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			avUeoAUc3kET+UNGIcwioPZKpXpXVdasmcY664F1mrE=
+			VxUb6Z3XooQyVITA8gRI5GONuxy1JKG/js//jrR+WrY=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/Rgt-dP-Kb3-view-bw3-0u-i2j.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rwVPoZJwPfQz4ZbeYzuGrxebx2DjwUq8jPrqYiXevaA=
+			PN0FLCVwBvrD748uuPUEdTVW849/FstX37NM2HUFwlo=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/Rgt-dP-Kb3-view-bw3-0u-i2j.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			avUeoAUc3kET+UNGIcwioPZKpXpXVdasmcY664F1mrE=
+			VxUb6Z3XooQyVITA8gRI5GONuxy1JKG/js//jrR+WrY=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/alertViewController.nib/objects-12.3+.nib</key>
@@ -501,46 +550,67 @@
 			xSXHva1WQ2y2AjmstQrhg5xmCXcWoPiean/2nP9n9aM=
 			</data>
 		</dict>
+		<key>PhylloConnect.storyboardc/eNu-qX-Sz4-view-Qc1-9X-bFT.nib/objects-12.3+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YYAt8NX4LZ9384QS4ghGuh3VPqi11Er7GARTp7Jhjgg=
+			</data>
+		</dict>
+		<key>PhylloConnect.storyboardc/eNu-qX-Sz4-view-Qc1-9X-bFT.nib/objects-13.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+QGZieTogmxoMy1jWwUGdbqoswZtYve/7Pvp7Im/ozo=
+			</data>
+		</dict>
+		<key>PhylloConnect.storyboardc/eNu-qX-Sz4-view-Qc1-9X-bFT.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YYAt8NX4LZ9384QS4ghGuh3VPqi11Er7GARTp7Jhjgg=
+			</data>
+		</dict>
 		<key>PhylloConnect.storyboardc/gcl-ic-Rii-view-SD3-hL-LS0.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8IH3t10AZFUgUP5aIKOAVmjLEywPtbcW1LaFCI321No=
+			AfuPIcvdLWu3UyOoTV5Di5yUy1FcG8nzr6X7IiQ7dJE=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/gcl-ic-Rii-view-SD3-hL-LS0.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fPmnv/6wSWSUaiRcXVCppGJ9214d+j8oocG0x1nJMmw=
+			FRn5aOnc0R1OWhlFTAOrr5yNvp3BEqWxqO7VHt67kB8=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/gcl-ic-Rii-view-SD3-hL-LS0.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PLbXLMldF8yfkKK8K+EiycVAoiul7MrXjfKme2qSC6s=
+			MyHmy2198jAy3KtNThx4pNiduTpF5X8+VnlA0+aZOJM=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/hW8-HQ-N02-view-ZpD-q2-dGQ.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4PI1sgtBXCH9rRvhLjgR7BVNB4mX0GSfqsZILGf25IE=
+			3xYN2j9rnoJvzuZuhmBgxZQq7eb/qHZbNEJMSWjOG4U=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/hW8-HQ-N02-view-ZpD-q2-dGQ.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z9kuFUo+SqVJotbYIcpL7btIdPjeigCObz/OfpBpUkg=
+			V9yDXVrvEvc8TmJtucLtoo8lsCOWSaXvOSgNYnCzd0o=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/hW8-HQ-N02-view-ZpD-q2-dGQ.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4PI1sgtBXCH9rRvhLjgR7BVNB4mX0GSfqsZILGf25IE=
+			3xYN2j9rnoJvzuZuhmBgxZQq7eb/qHZbNEJMSWjOG4U=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/introViewController.nib/objects-12.3+.nib</key>
@@ -568,21 +638,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GP27U/t4OHHSpzNPuoZ6OfyYGU5ID9PfSoK0II0G6SU=
+			cYB3vvJbtJI+iDCzb2fBwejCYI0h18WeMnKA+pd9qXs=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/njl-Op-G0a-view-iFY-Rn-RS1.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1R4yn8AggDLe1EdJI8iQf678brO5ke/31oBOXUGTMo8=
+			sPUEKUraLukixubbVKYdX6ch5zvlwb09ckRl1LADtYU=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/njl-Op-G0a-view-iFY-Rn-RS1.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GP27U/t4OHHSpzNPuoZ6OfyYGU5ID9PfSoK0II0G6SU=
+			cYB3vvJbtJI+iDCzb2fBwejCYI0h18WeMnKA+pd9qXs=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/platformViewController.nib/objects-12.3+.nib</key>
@@ -625,6 +695,13 @@
 			<key>hash2</key>
 			<data>
 			IcM1N7/96AXWvMT2QYpQsZq3If9blCkmdrhniWD60nM=
+			</data>
+		</dict>
+		<key>insta_edu_gif.gif</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tWuFXdLqJsWzQE+Fzkdw1NmKiaTAldjXHQcAisBXtCg=
 			</data>
 		</dict>
 	</dict>

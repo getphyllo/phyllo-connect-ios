@@ -63,10 +63,18 @@ Get the latest version of the PhylloConnect.xcframework and embed it into your a
 
 ...
 
-  var phylloConfig = PhylloConfig()
-  phylloConfig.clientDisplayName = clientDisplayName  // the name of your app that you want the creators to see while granting access
-  phylloConfig.token = token
-  phylloConfig.userId = userId  // the unique user_id parameter returned by Phyllo API when you create a user (see https://docs.getphyllo.com/docs/api-reference/reference/openapi.v1.yml/paths/~1v1~1users/post)
+
+  let phylloConfig = PhylloConfig (
+                                            environment: < `sandbox` or `production` > ,
+                                            clientDisplayName: <your app that you want the creators to see>,
+                                            token: < token>
+                                            userId: < the unique user_id parameter returned by Phyllo API >,
+                                            delegate:self ,
+					    workPlatformId: workPlatformId
+                                        )
+   // clientDisplayName  the name of your app that you want the creators to see while granting access
+   // token it will be generated from your end
+   // userId   the unique user_id parameter returned by Phyllo API when you create a user (see https://docs.getphyllo.com/docs/api-reference/reference/openapi.v1.yml/paths/~1v1~1users/post)
   phylloConfig.environment = environment  // the mode in which you want to use the SDK,  `sandbox` or `production`
   phylloConfig.workPlatformId = workPlatformId  // (optional) the unique work_platform_id of a specific work platform, if you want the creator to skip the platform selection screen and just be able to connect just with a single work platform
 

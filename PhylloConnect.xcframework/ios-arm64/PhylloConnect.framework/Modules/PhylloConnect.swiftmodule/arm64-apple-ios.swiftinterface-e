@@ -1,22 +1,30 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PhylloConnect
+// swift-compiler-version: Apple Swift version 5.6 effective-4.2 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name PhylloConnect
 import AuthenticationServices
 import Foundation
+import ImageIO
 @_exported import PhylloConnect
 import SafariServices
 import Swift
 import UIKit
 import WebKit
 import _Concurrency
-public struct PhylloConfig {
-  public static var shared: PhylloConnect.PhylloConfig
-  public init()
-  public var environment: PhylloConnect.PhylloEnvironment
-  public var clientDisplayName: Swift.String
-  public var token: Swift.String
-  public var userId: Swift.String
-  public var workPlatformId: Swift.String
+public class PhylloConfig {
+  public init(environment: PhylloConnect.PhylloEnvironment, clientDisplayName: Swift.String, token: Swift.String, userId: Swift.String, delegate: PhylloConnect.PhylloConnectDelegate, workPlatformId: Swift.String? = nil)
+  @objc deinit
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) public func loadGif(name: Swift.String)
+  @available(iOS 9.0, *)
+  @_Concurrency.MainActor(unsafe) public func loadGif(asset: Swift.String)
+}
+extension UIKit.UIImage {
+  public class func gif(data: Foundation.Data) -> UIKit.UIImage?
+  public class func gif(url: Swift.String) -> UIKit.UIImage?
+  public class func gif(name: Swift.String) -> UIKit.UIImage?
+  @available(iOS 9.0, *)
+  public class func gif(asset: Swift.String) -> UIKit.UIImage?
 }
 public protocol PhylloConnectDelegate : AnyObject {
   func onAccountConnected(account_id: Swift.String, work_platform_id: Swift.String, user_id: Swift.String)
@@ -29,7 +37,7 @@ public protocol PhylloConnectDelegate : AnyObject {
     get
   }
   weak public var phylloConnectDelegate: PhylloConnect.PhylloConnectDelegate?
-  public func initialize(config: PhylloConnect.PhylloConfig = PhylloConfig())
+  public func initialize(config: PhylloConnect.PhylloConfig)
   public func open()
   @objc deinit
 }

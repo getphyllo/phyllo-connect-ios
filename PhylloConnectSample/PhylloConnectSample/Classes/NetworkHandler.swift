@@ -46,7 +46,7 @@ class NetworkHandler: NSObject {
         var request = URLRequest(url: URL(string: env.rawValue + suffix)!)
         request.httpMethod="GET"
         request.cachePolicy = URLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData
-        request.addValue(G.sdkToken, forHTTPHeaderField: "Authorization")
+        request.addValue(Constants.sdkToken, forHTTPHeaderField: "Authorization")
         URLSession(configuration: URLSessionConfiguration.default).dataTask(with: request) { (data, response, error) -> Void in
             var resp: [String:Any]?
             if let data = data {

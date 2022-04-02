@@ -11,9 +11,6 @@ import PhylloConnect
 
 class ViewController: UIViewController {
 
-    var phylloConfig = PhylloConfig()
-    //Set enviroment
-
    
     @IBOutlet weak var height: NSLayoutConstraint!
     @IBOutlet weak var width: NSLayoutConstraint!
@@ -64,7 +61,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var existingUser: UIButton!{
         didSet{
-            if(G.userId.isEmpty){
+            if(Constants.userId.isEmpty){
                 existingUser.isEnabled = false
             }
             existingUser.setImage(UIImage(named:"unchecked"), for: .normal)
@@ -104,7 +101,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func existingUserClicked(_ sender: UIButton) {
-        if(G.userId.isEmpty){
+        if(Constants.userId.isEmpty){
             return;
         }
         sender.isSelected = !sender.isSelected
@@ -122,7 +119,7 @@ class ViewController: UIViewController {
         else{
             //showLoading()
             showActivityIndicator()
-            NetworkHandler.post(suffix: "/v1/users", mapData: ["name" : G.randomString(length: 8), "external_id" : G.randomString(length: 20)], env: Config.env, completion: {
+            NetworkHandler.post(suffix: "/v1/users", mapData: ["name" : Constants.randomString(length: 8), "external_id" : Constants.randomString(length: 20)], env: Config.env, completion: {
                     [weak self] (rs, e) in
                     //self?.hideLoading()
                 self?.hideActivityIndicator()
@@ -132,7 +129,7 @@ class ViewController: UIViewController {
                 
                     if((rs["id"]) != nil){
                         self!.existingUser.isEnabled = true
-                        G.userId = rs["id"] as! String
+                        Constants.userId = rs["id"] as! String
                         self!.getSDKToken(workPlatformId: workPlatformId)
                     }
             })
@@ -141,15 +138,15 @@ class ViewController: UIViewController {
     
     func getSDKToken(workPlatformId : String){
         showActivityIndicator()
-        NetworkHandler.post(suffix: "/v1/sdk-tokens", mapData: ["user_id" : G.userId, "products" : ["IDENTITY","ENGAGEMENT","INCOME"]], env: Config.env, completion: {
+        NetworkHandler.post(suffix: "/v1/sdk-tokens", mapData: ["user_id" : Constants.userId, "products" : ["IDENTITY","ENGAGEMENT","INCOME"]], env: Config.env, completion: {
             [weak self] (rs, e) in
             self?.hideActivityIndicator()
             guard self != nil else {
                 return
             }
             if((rs["sdk_token"]) != nil){
-                G.sdkToken = "Bearer " + ((rs["sdk_token"] as! String))
-                print("Token ==> \(G.sdkToken)")
+                Constants.sdkToken = "Bearer " + ((rs["sdk_token"] as! String))
+                print("Token ==> \(Constants.sdkToken)")
                 self!.launchSDK(workPlatformId: workPlatformId)
             }
         })
@@ -157,17 +154,19 @@ class ViewController: UIViewController {
     
     func launchSDK(workPlatformId : String) {
         //Phyllo configuration
-        var phylloConfig = PhylloConfig()
-        phylloConfig.clientDisplayName = "Creator"
-        phylloConfig.token = G.sdkToken
-        phylloConfig.userId = G.userId
-        phylloConfig.environment = Config.env
-        phylloConfig.workPlatformId = workPlatformId
+    
+        let phylloConfig = PhylloConfig (
+                                            environment: Config.env,
+                                            clientDisplayName: Constants.clientDisplayName,
+                                            token: Constants.sdkToken,
+                                            userId: Constants.userId,
+                                            delegate:self,workPlatformId: workPlatformId
+                                        )
         
         PhylloConnect.shared.initialize(config: phylloConfig)
-        PhylloConnect.shared.phylloConnectDelegate = self
         PhylloConnect.shared.open()
     }
+
 }
 
 extension ViewController : PhylloConnectDelegate {

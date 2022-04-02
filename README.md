@@ -34,7 +34,7 @@ end
 ```ruby
  pod install
 ```
-The current SDK version is 0.1.24.
+The current SDK version is 0.1.25.
 
 4 . Run the following command from a terminal to update your pods :
 ```ruby
@@ -69,8 +69,8 @@ Get the latest version of the PhylloConnect.xcframework and embed it into your a
                                             clientDisplayName: <your app that you want the creators to see>,
                                             token: < token>
                                             userId: < the unique user_id parameter returned by Phyllo API >,
-                                            delegate:self ,
-					    workPlatformId: workPlatformId
+                                            delegate:self < Delegate > ,
+					    workPlatformId: < (optional) the unique work_platform_id of a specific work platform>
                                         )
    // clientDisplayName  the name of your app that you want the creators to see while granting access
    // token it will be generated from your end

@@ -34,7 +34,7 @@ end
 ```ruby
  pod install
 ```
-The current SDK version is 0.1.20.
+The current SDK version is 0.1.24.
 
 4 . Run the following command from a terminal to update your pods :
 ```ruby

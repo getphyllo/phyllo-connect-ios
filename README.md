@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/cocoapods/l/PhylloConnect.svg?style=flat)](http://cocoadocs.org/docsets/PhylloConnect)
 [![Platform](https://img.shields.io/cocoapods/p/PhylloConnect.svg?style=flat)](http://cocoadocs.org/docsets/PhylloConnect)
 
-Detailed instructions on how to integrate with PhylloConnect for iOS can be found in our main documentation at https://docs.getphyllo.com/docs/api-reference/ZG9jOjEwMzE3ODQ5-i-os-sdk-integration.
+Detailed instructions on how to integrate with PhylloConnect for iOS can be found in our main documentation at https://docs.getphyllo.com/docs/api-reference/b4a5896a9f1c0-i-os-sdk-integration.
 
 ## Requirements
 

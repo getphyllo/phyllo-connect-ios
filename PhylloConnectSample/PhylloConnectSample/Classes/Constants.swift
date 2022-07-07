@@ -12,12 +12,6 @@ struct Constants {
     static var userId = ""
     static var clientDisplayName = "Creator.co"
         
-    //Status mapping for Accounts List View
-    static let statusDict : [String : Any] = [
-        "CONNECTED" : ["color" : "dark-purple", "text" : "Connected", "image" : "icon_logout"],
-        "EXPIRED" : ["color" : "warn", "text" : "Session Expired- Reconnect", "image" : "icon_sessionexpired"]
-    ]
-    
     // Generating Random String
     static func randomString(length: Int) -> String {
         let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"

@@ -37,6 +37,12 @@ class ViewController: UIViewController {
              height.isActive = false
              width.isActive = false
          }
+        
+        //Light Mode
+        
+        if #available(iOS 13.0, *) {
+            self.overrideUserInterfaceStyle = .light
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -145,7 +151,7 @@ class ViewController: UIViewController {
                 return
             }
             if((rs["sdk_token"]) != nil){
-                Constants.sdkToken = "Bearer " + ((rs["sdk_token"] as! String))
+                Constants.sdkToken = ((rs["sdk_token"] as! String))
                 print("Token ==> \(Constants.sdkToken)")
                 self!.launchSDK(workPlatformId: workPlatformId)
             }
@@ -185,6 +191,10 @@ extension ViewController : PhylloConnectDelegate {
     
     func onExit(reason: String, user_id: String) {
         print("onExit => reason : \(reason),user_id : \(user_id)")
+    }
+    
+    func connectionFailure(reason: String, user_id: String) {
+        print("connectionFailure => reason : \(reason),user_id : \(user_id)")
     }
 }
 

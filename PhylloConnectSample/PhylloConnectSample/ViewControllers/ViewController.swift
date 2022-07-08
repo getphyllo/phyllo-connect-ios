@@ -192,7 +192,7 @@ extension ViewController : PhylloConnectDelegate {
     func onExit(reason: String, user_id: String) {
         print("onExit => reason : \(reason),user_id : \(user_id)")
     }
-    
+    //Options method 
     func connectionFailure(reason: String, user_id: String) {
         print("connectionFailure => reason : \(reason),user_id : \(user_id)")
     }

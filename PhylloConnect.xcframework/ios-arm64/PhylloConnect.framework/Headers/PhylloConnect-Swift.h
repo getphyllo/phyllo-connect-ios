@@ -212,6 +212,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class NSString;
+
+SWIFT_PROTOCOL("_TtP13PhylloConnect21PhylloConnectDelegate_")
+@protocol PhylloConnectDelegate
+- (void)onAccountConnectedWithAccount_id:(NSString * _Nonnull)account_id work_platform_id:(NSString * _Nonnull)work_platform_id user_id:(NSString * _Nonnull)user_id;
+- (void)onAccountDisconnectedWithAccount_id:(NSString * _Nonnull)account_id work_platform_id:(NSString * _Nonnull)work_platform_id user_id:(NSString * _Nonnull)user_id;
+- (void)onTokenExpiredWithUser_id:(NSString * _Nonnull)user_id;
+- (void)onExitWithReason:(NSString * _Nonnull)reason user_id:(NSString * _Nonnull)user_id;
+@optional
+- (void)connectionFailureWithReason:(NSString * _Nonnull)reason user_id:(NSString * _Nonnull)user_id;
+@end
+
 
 
 #if __has_attribute(external_source_symbol)

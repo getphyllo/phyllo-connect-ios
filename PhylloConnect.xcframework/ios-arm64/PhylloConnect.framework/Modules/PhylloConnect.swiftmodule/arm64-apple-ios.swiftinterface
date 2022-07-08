@@ -18,12 +18,12 @@ public class PhylloConfig {
   public init(environment: PhylloEnvironment, clientDisplayName: Swift.String, token: Swift.String, userId: Swift.String, delegate: PhylloConnectDelegate, workPlatformId: Swift.String? = nil)
   @objc deinit
 }
-public protocol PhylloConnectDelegate : AnyObject {
-  func onAccountConnected(account_id: Swift.String, work_platform_id: Swift.String, user_id: Swift.String)
-  func onAccountDisconnected(account_id: Swift.String, work_platform_id: Swift.String, user_id: Swift.String)
-  func onTokenExpired(user_id: Swift.String)
-  func onExit(reason: Swift.String, user_id: Swift.String)
-  func connectionFailure(reason: Swift.String, user_id: Swift.String)
+@objc public protocol PhylloConnectDelegate {
+  @objc func onAccountConnected(account_id: Swift.String, work_platform_id: Swift.String, user_id: Swift.String)
+  @objc func onAccountDisconnected(account_id: Swift.String, work_platform_id: Swift.String, user_id: Swift.String)
+  @objc func onTokenExpired(user_id: Swift.String)
+  @objc func onExit(reason: Swift.String, user_id: Swift.String)
+  @objc optional func connectionFailure(reason: Swift.String, user_id: Swift.String)
 }
 @_hasMissingDesignatedInitializers public class PhylloConnect {
   public class var shared: PhylloConnect {

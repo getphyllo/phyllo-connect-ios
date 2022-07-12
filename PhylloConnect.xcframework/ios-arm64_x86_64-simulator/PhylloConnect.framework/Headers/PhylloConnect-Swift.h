@@ -223,7 +223,7 @@ SWIFT_PROTOCOL("_TtP13PhylloConnect21PhylloConnectDelegate_")
 - (void)onTokenExpiredWithUser_id:(NSString * _Nonnull)user_id;
 - (void)onExitWithReason:(NSString * _Nonnull)reason user_id:(NSString * _Nonnull)user_id;
 @optional
-- (void)connectionFailureWithReason:(NSString * _Nonnull)reason user_id:(NSString * _Nonnull)user_id;
+- (void)onConnectionFailureWithReason:(NSString * _Nonnull)reason work_platform_id:(NSString * _Nonnull)work_platform_id user_id:(NSString * _Nonnull)user_id;
 @end
 
 
@@ -458,7 +458,7 @@ SWIFT_PROTOCOL("_TtP13PhylloConnect21PhylloConnectDelegate_")
 - (void)onTokenExpiredWithUser_id:(NSString * _Nonnull)user_id;
 - (void)onExitWithReason:(NSString * _Nonnull)reason user_id:(NSString * _Nonnull)user_id;
 @optional
-- (void)connectionFailureWithReason:(NSString * _Nonnull)reason user_id:(NSString * _Nonnull)user_id;
+- (void)onConnectionFailureWithReason:(NSString * _Nonnull)reason work_platform_id:(NSString * _Nonnull)work_platform_id user_id:(NSString * _Nonnull)user_id;
 @end
 
 

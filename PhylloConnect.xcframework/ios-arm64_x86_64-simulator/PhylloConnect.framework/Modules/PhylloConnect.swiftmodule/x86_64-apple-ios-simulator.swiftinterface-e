@@ -23,7 +23,7 @@ public class PhylloConfig {
   @objc func onAccountDisconnected(account_id: Swift.String, work_platform_id: Swift.String, user_id: Swift.String)
   @objc func onTokenExpired(user_id: Swift.String)
   @objc func onExit(reason: Swift.String, user_id: Swift.String)
-  @objc optional func connectionFailure(reason: Swift.String, user_id: Swift.String)
+  @objc optional func onConnectionFailure(reason: Swift.String, work_platform_id: Swift.String, user_id: Swift.String)
 }
 @_hasMissingDesignatedInitializers public class PhylloConnect {
   public class var shared: PhylloConnect.PhylloConnect {

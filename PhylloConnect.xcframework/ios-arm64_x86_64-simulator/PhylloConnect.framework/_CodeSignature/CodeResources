@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/PhylloConnect-Swift.h</key>
 		<data>
-		A8lFoor3eDPIFZXPLY1vU4wTS6I=
+		yLUoDYELnsXU5vpSO1+QPBxqL6g=
 		</data>
 		<key>Headers/PhylloConnect.h</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		UCmcPA4QvVmdhcgbuhbbtI3T6vo=
+		f5plWEv5gvIqW3hLgr9PeqTMkeM=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rWR7HPtFcixlba2oblqPBs9/xVE=
+		jNvY6k3Xaz2CfI2nLSCU/c2uVlE=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		a+b6Io+EOkfcfDVWikLLn7Rt3RI=
+		rkJtilbAMkjR+ePktDA+dpRdkfc=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZbghXFudDemKzXFSB7d84/h/ZEk=
+		ULlpwYBC3ggIFgVRzUxGbyv9qXY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hsJTjz6PcMqaeMN9D0OzrkVI8C8JCrrjFYhaDWtYtE8=
+			b6aY3cV7ZUo60dXdIZFDvNwFHJ021ROj24EDQB6YvCM=
 			</data>
 		</dict>
 		<key>Headers/PhylloConnect.h</key>
@@ -103,14 +103,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Ff2bv/ZGdsoqyVIDbK8Clbz4pS2t/o/0uZrNU4s1Ic=
+			L3OThesUnZKx2PwWI0J8If7N7cClWWzPFDFCmHX+aDU=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5HedZZG2kjplYNBdWZZKGAbMGW5NMx6u7sgdxCU4UyQ=
+			Y5CaWQR580FF/7I8cRgVdHnghiH4cz+2/9TuQrYkyjk=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -124,14 +124,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o1qFrq2f3aTh9Br5ytZ8KFxmJFfe5C6Ic5anPDFexsU=
+			qfDrIzPukXO2y49Tf0xWE/zffpRaduFI087Xppoeq+k=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BeFwByUyjwGUx6HTvvBMmeLsLE1isZGjL+YnViPKVpA=
+			MKQ3M16nEqkBgBgaBFws9lQHGDVAEuV+b2u8WcwN2aE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

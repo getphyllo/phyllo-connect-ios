@@ -6,6 +6,6 @@ target 'PhylloConnectSample' do
   use_frameworks!
 
   # Pods for PhylloConnectSample
-  pod 'PhylloConnect', '~> 0.1.25'
+  pod 'PhylloConnect'
 
 end

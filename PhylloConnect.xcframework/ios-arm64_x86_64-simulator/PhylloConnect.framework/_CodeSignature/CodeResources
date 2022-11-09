@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Udvlpp6eDWfspZtg7HN5szX2zcI=
+		ptdEmRpFSxIOTQKbQQpRHJvqE6Y=
 		</data>
 		<key>Headers/PhylloConnect-Swift.h</key>
 		<data>
-		yLUoDYELnsXU5vpSO1+QPBxqL6g=
+		HQjziin8Y0I8ii2htUIz17/wuVo=
 		</data>
 		<key>Headers/PhylloConnect.h</key>
 		<data>
@@ -18,39 +18,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ms6XrIfuClRqkvS1BW75osxmImY=
+		JjJMDIIQaqORLplEd3wUAnKMnlo=
+		</data>
+		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		PXeAFwJ5UsxlLYY5y4bK09y37Ps=
+		</data>
+		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		bDerxgAhW29o1hlPUcMYv4wyCYE=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		8hJBZp4I+Xt3OpuIVmKa192BUFY=
+		6j3pbQD0kso2jCoEV+hckof40pI=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		f5plWEv5gvIqW3hLgr9PeqTMkeM=
+		bDerxgAhW29o1hlPUcMYv4wyCYE=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jNvY6k3Xaz2CfI2nLSCU/c2uVlE=
+		VvSHVpV1t6viaqJnVVxir/wejT4=
+		</data>
+		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		PXeAFwJ5UsxlLYY5y4bK09y37Ps=
+		</data>
+		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		OziaEqkRaiVDKHMAaZwr547I1Ng=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		CAI8sJHSGezYQrpvwN/rxB9Tdd0=
+		vCMqoeh8IeCL8FWl9b78moiHmAM=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		rkJtilbAMkjR+ePktDA+dpRdkfc=
+		OziaEqkRaiVDKHMAaZwr547I1Ng=
 		</data>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ULlpwYBC3ggIFgVRzUxGbyv9qXY=
+		nhREopp9zUFCMj8+20ykiz5Zztc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		sTNX3ftFMk1MQvtkSAPND+AiHf4=
+		y3A76rf/qyVNtVaL+LrTHmnJlj8=
 		</data>
 		<key>PhylloConnect.storyboardc/0ob-n3-EEF-view-B4P-aG-uAW.nib</key>
 		<data>
-		yA6DChYGfrzoLLbXd8Tiwzl4ts4=
+		iR0pkdJlKkMnr34ewa25ZTW/VTs=
 		</data>
 		<key>PhylloConnect.storyboardc/Info.plist</key>
 		<data>
@@ -58,7 +74,7 @@
 		</data>
 		<key>PhylloConnect.storyboardc/WebViewController.nib</key>
 		<data>
-		UQNJMXJpSDuwKTa1viwNUDa0iNk=
+		Sm5ffHsOKla6skEhqqlPKLcO1f8=
 		</data>
 		<key>PhylloConnect.storyboardc/WebViewModelController.nib</key>
 		<data>
@@ -66,7 +82,7 @@
 		</data>
 		<key>PhylloConnect.storyboardc/d0P-P5-alM-view-QNe-hg-QpZ.nib</key>
 		<data>
-		OO+djYdCPaD9b1FmBI9CUd0/ALM=
+		cFDs1GMRG7MkB67ifEe4Slc0/mI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,14 +91,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7G28bD4UisulmpDCt54y4hSKV6QK6rlTR7uiF4AL304=
+			6EdSN92/v6r/gK2OAZT3eOdSAmd6E2Wr1R4Q2KREJhs=
 			</data>
 		</dict>
 		<key>Headers/PhylloConnect-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b6aY3cV7ZUo60dXdIZFDvNwFHJ021ROj24EDQB6YvCM=
+			4dQVRbwHJWD9CBCsoguWeLHTGjhE+IJ7WJoKA+4+wmU=
 			</data>
 		</dict>
 		<key>Headers/PhylloConnect.h</key>
@@ -92,60 +108,88 @@
 			+M24nA1oXNFbY7Tv4VfLTK3MFDzzKPcEdrVgdS0Sa1k=
 			</data>
 		</dict>
+		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gSvzbTKGFmhBwEBUCjdTDWSflqahBuzoav0d3/vtzRM=
+			</data>
+		</dict>
+		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AN0qtOHKp1fyjSi5JHJ/Wb/Q4q/ATdHRWLkLdaYAc8w=
+			</data>
+		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+uGFFOBi35udYL4Llw2O03RK97gr5TfXB8cIsf3lYhY=
+			gr6imbsmo2kLvUk78uLIVs18KrIGV5yTYl0BbX1Ub1A=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L3OThesUnZKx2PwWI0J8If7N7cClWWzPFDFCmHX+aDU=
+			AN0qtOHKp1fyjSi5JHJ/Wb/Q4q/ATdHRWLkLdaYAc8w=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y5CaWQR580FF/7I8cRgVdHnghiH4cz+2/9TuQrYkyjk=
+			EAhuyb8RczGKN6YL0BcoYCgaY+r+nuobH1giPBgYkqA=
+			</data>
+		</dict>
+		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gSvzbTKGFmhBwEBUCjdTDWSflqahBuzoav0d3/vtzRM=
+			</data>
+		</dict>
+		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			L2GTTDIH+dtQkBjlyqbSUabH/JFv9exiOZRu/EMBE90=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KSTcy3g1679ikIOaRjH38qjOojuv5nngOp3yP4dmGpQ=
+			u37znpzQzj9bmkA8Y4LDsiyO/9fzvt5TDYZRoAaFozI=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qfDrIzPukXO2y49Tf0xWE/zffpRaduFI087Xppoeq+k=
+			L2GTTDIH+dtQkBjlyqbSUabH/JFv9exiOZRu/EMBE90=
 			</data>
 		</dict>
 		<key>Modules/PhylloConnect.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MKQ3M16nEqkBgBgaBFws9lQHGDVAEuV+b2u8WcwN2aE=
+			NI8DhAw+/eOsxOSA615ZdlZLsjUueZ7ZgQPHmjcRWGI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uf5eUYtogZgDz/OzEVWo8LGrEu0HUpPAki9NVAXaGFg=
+			0+vcl6MJWi4uHS6+0GI5CpUHKiA3/CoPyfzSgV8FWvE=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/0ob-n3-EEF-view-B4P-aG-uAW.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ztZ14pFpj3YKFW5XFtLPsYo/Y3g/gZN722DfyrKsmr4=
+			/BVnGfFvfFWRpxLVLrWs5lFDQOOuUyam3FHZejfCylU=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/Info.plist</key>
@@ -159,7 +203,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			77xaO8WpLSE/ACT1gJyv6ROD47qUliTfC0eofrkQHnI=
+			eJSGoTWsjEvPyleMvIe2vVSUeTGM4TzAJtcbE3NTCFs=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/WebViewModelController.nib</key>
@@ -173,7 +217,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KBjdKKdEOvOKESoiXNAxFfTio7TnLliu5TiepP7M8jI=
+			nibMo4HS7N7WRuB0LUDjlfFKPkP8WC5k0HGPsXP2eUs=
 			</data>
 		</dict>
 	</dict>

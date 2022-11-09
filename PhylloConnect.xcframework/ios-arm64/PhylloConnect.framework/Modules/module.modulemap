@@ -6,6 +6,6 @@ framework module PhylloConnect {
 }
 
 module PhylloConnect.Swift {
-    header "PhylloConnect-Swift.h"
-    requires objc
+  header "PhylloConnect-Swift.h"
+  requires objc
 }

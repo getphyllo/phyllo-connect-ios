@@ -1,0 +1,1327 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect"
+      },
+      {
+        "kind": "Import",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PhylloConnectDelegate",
+        "printedName": "PhylloConnectDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onAccountConnected",
+            "printedName": "onAccountConnected(account_id:work_platform_id:user_id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PhylloConnect@objc(pl)PhylloConnectDelegate(im)onAccountConnectedWithAccount_id:work_platform_id:user_id:",
+            "mangledName": "$s13PhylloConnect0aB8DelegateP18onAccountConnected10account_id014work_platform_H005user_H0ySS_S2StF",
+            "moduleName": "PhylloConnect",
+            "genericSig": "<τ_0_0 where τ_0_0 : PhylloConnect.PhylloConnectDelegate>",
+            "sugared_genericSig": "<Self where Self : PhylloConnect.PhylloConnectDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAccountDisconnected",
+            "printedName": "onAccountDisconnected(account_id:work_platform_id:user_id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PhylloConnect@objc(pl)PhylloConnectDelegate(im)onAccountDisconnectedWithAccount_id:work_platform_id:user_id:",
+            "mangledName": "$s13PhylloConnect0aB8DelegateP21onAccountDisconnected10account_id014work_platform_H005user_H0ySS_S2StF",
+            "moduleName": "PhylloConnect",
+            "genericSig": "<τ_0_0 where τ_0_0 : PhylloConnect.PhylloConnectDelegate>",
+            "sugared_genericSig": "<Self where Self : PhylloConnect.PhylloConnectDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onTokenExpired",
+            "printedName": "onTokenExpired(user_id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PhylloConnect@objc(pl)PhylloConnectDelegate(im)onTokenExpiredWithUser_id:",
+            "mangledName": "$s13PhylloConnect0aB8DelegateP14onTokenExpired7user_idySS_tF",
+            "moduleName": "PhylloConnect",
+            "genericSig": "<τ_0_0 where τ_0_0 : PhylloConnect.PhylloConnectDelegate>",
+            "sugared_genericSig": "<Self where Self : PhylloConnect.PhylloConnectDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onExit",
+            "printedName": "onExit(reason:user_id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PhylloConnect@objc(pl)PhylloConnectDelegate(im)onExitWithReason:user_id:",
+            "mangledName": "$s13PhylloConnect0aB8DelegateP6onExit6reason7user_idySS_SStF",
+            "moduleName": "PhylloConnect",
+            "genericSig": "<τ_0_0 where τ_0_0 : PhylloConnect.PhylloConnectDelegate>",
+            "sugared_genericSig": "<Self where Self : PhylloConnect.PhylloConnectDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onConnectionFailure",
+            "printedName": "onConnectionFailure(reason:work_platform_id:user_id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PhylloConnect@objc(pl)PhylloConnectDelegate(im)onConnectionFailureWithReason:work_platform_id:user_id:",
+            "mangledName": "$s13PhylloConnect0aB8DelegateP19onConnectionFailure6reason16work_platform_id05user_J0ySS_S2StF",
+            "moduleName": "PhylloConnect",
+            "genericSig": "<τ_0_0 where τ_0_0 : PhylloConnect.PhylloConnectDelegate>",
+            "sugared_genericSig": "<Self where Self : PhylloConnect.PhylloConnectDelegate>",
+            "protocolReq": true,
+            "objc_name": "onConnectionFailureWithReason:work_platform_id:user_id:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@PhylloConnect@objc(pl)PhylloConnectDelegate",
+        "mangledName": "$s13PhylloConnect0aB8DelegateP",
+        "moduleName": "PhylloConnect",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PhylloConnect",
+        "printedName": "PhylloConnect",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PhylloConnect",
+                "printedName": "PhylloConnect.PhylloConnect",
+                "usr": "s:13PhylloConnectAAC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PhylloConnectAAC6sharedABvpZ",
+            "mangledName": "$s13PhylloConnectAAC6sharedABvpZ",
+            "moduleName": "PhylloConnect",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PhylloConnect",
+                    "printedName": "PhylloConnect.PhylloConnect",
+                    "usr": "s:13PhylloConnectAAC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PhylloConnectAAC6sharedABvgZ",
+                "mangledName": "$s13PhylloConnectAAC6sharedABvgZ",
+                "moduleName": "PhylloConnect",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "phylloConnectDelegate",
+            "printedName": "phylloConnectDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "PhylloConnect.PhylloConnectDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PhylloConnectAAC06phylloB8DelegateAA0abD0_pSgvp",
+            "mangledName": "$s13PhylloConnectAAC06phylloB8DelegateAA0abD0_pSgvp",
+            "moduleName": "PhylloConnect",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PhylloConnect.PhylloConnectDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PhylloConnectDelegate",
+                        "printedName": "PhylloConnect.PhylloConnectDelegate",
+                        "usr": "c:@M@PhylloConnect@objc(pl)PhylloConnectDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PhylloConnectAAC06phylloB8DelegateAA0abD0_pSgvg",
+                "mangledName": "$s13PhylloConnectAAC06phylloB8DelegateAA0abD0_pSgvg",
+                "moduleName": "PhylloConnect",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PhylloConnect.PhylloConnectDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PhylloConnectDelegate",
+                        "printedName": "PhylloConnect.PhylloConnectDelegate",
+                        "usr": "c:@M@PhylloConnect@objc(pl)PhylloConnectDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PhylloConnectAAC06phylloB8DelegateAA0abD0_pSgvs",
+                "mangledName": "$s13PhylloConnectAAC06phylloB8DelegateAA0abD0_pSgvs",
+                "moduleName": "PhylloConnect",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PhylloConnectAAC06phylloB8DelegateAA0abD0_pSgvM",
+                "mangledName": "$s13PhylloConnectAAC06phylloB8DelegateAA0abD0_pSgvM",
+                "moduleName": "PhylloConnect",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PhylloConnectAAC10initialize6configySDySSypG_tF",
+            "mangledName": "$s13PhylloConnectAAC10initialize6configySDySSypG_tF",
+            "moduleName": "PhylloConnect",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "open",
+            "printedName": "open()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PhylloConnectAAC4openyyF",
+            "mangledName": "$s13PhylloConnectAAC4openyyF",
+            "moduleName": "PhylloConnect",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13PhylloConnectAAC",
+        "mangledName": "$s13PhylloConnectAAC",
+        "moduleName": "PhylloConnect",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PhylloEnvironment",
+        "printedName": "PhylloEnvironment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "dev",
+            "printedName": "dev",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PhylloConnect.PhylloEnvironment.Type) -> PhylloConnect.PhylloEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PhylloEnvironment",
+                    "printedName": "PhylloConnect.PhylloEnvironment",
+                    "usr": "s:13PhylloConnect0A11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PhylloConnect.PhylloEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PhylloEnvironment",
+                        "printedName": "PhylloConnect.PhylloEnvironment",
+                        "usr": "s:13PhylloConnect0A11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13PhylloConnect0A11EnvironmentO3devyA2CmF",
+            "mangledName": "$s13PhylloConnect0A11EnvironmentO3devyA2CmF",
+            "moduleName": "PhylloConnect"
+          },
+          {
+            "kind": "Var",
+            "name": "sandbox",
+            "printedName": "sandbox",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PhylloConnect.PhylloEnvironment.Type) -> PhylloConnect.PhylloEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PhylloEnvironment",
+                    "printedName": "PhylloConnect.PhylloEnvironment",
+                    "usr": "s:13PhylloConnect0A11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PhylloConnect.PhylloEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PhylloEnvironment",
+                        "printedName": "PhylloConnect.PhylloEnvironment",
+                        "usr": "s:13PhylloConnect0A11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13PhylloConnect0A11EnvironmentO7sandboxyA2CmF",
+            "mangledName": "$s13PhylloConnect0A11EnvironmentO7sandboxyA2CmF",
+            "moduleName": "PhylloConnect"
+          },
+          {
+            "kind": "Var",
+            "name": "prod",
+            "printedName": "prod",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PhylloConnect.PhylloEnvironment.Type) -> PhylloConnect.PhylloEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PhylloEnvironment",
+                    "printedName": "PhylloConnect.PhylloEnvironment",
+                    "usr": "s:13PhylloConnect0A11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PhylloConnect.PhylloEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PhylloEnvironment",
+                        "printedName": "PhylloConnect.PhylloEnvironment",
+                        "usr": "s:13PhylloConnect0A11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13PhylloConnect0A11EnvironmentO4prodyA2CmF",
+            "mangledName": "$s13PhylloConnect0A11EnvironmentO4prodyA2CmF",
+            "moduleName": "PhylloConnect"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PhylloConnect.PhylloEnvironment?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PhylloEnvironment",
+                    "printedName": "PhylloConnect.PhylloEnvironment",
+                    "usr": "s:13PhylloConnect0A11EnvironmentO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13PhylloConnect0A11EnvironmentO8rawValueACSgSS_tcfc",
+            "mangledName": "$s13PhylloConnect0A11EnvironmentO8rawValueACSgSS_tcfc",
+            "moduleName": "PhylloConnect",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PhylloConnect0A11EnvironmentO8rawValueSSvp",
+            "mangledName": "$s13PhylloConnect0A11EnvironmentO8rawValueSSvp",
+            "moduleName": "PhylloConnect",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PhylloConnect0A11EnvironmentO8rawValueSSvg",
+                "mangledName": "$s13PhylloConnect0A11EnvironmentO8rawValueSSvg",
+                "moduleName": "PhylloConnect",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13PhylloConnect0A11EnvironmentO",
+        "mangledName": "$s13PhylloConnect0A11EnvironmentO",
+        "moduleName": "PhylloConnect",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect"
+      },
+      {
+        "kind": "Import",
+        "name": "SafariServices",
+        "printedName": "SafariServices",
+        "declKind": "Import",
+        "moduleName": "PhylloConnect"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URL",
+        "printedName": "URL",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "queryParameters",
+            "printedName": "queryParameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10Foundation3URLV13PhylloConnectE15queryParametersSDyS2SGSgvp",
+            "mangledName": "$s10Foundation3URLV13PhylloConnectE15queryParametersSDyS2SGSgvp",
+            "moduleName": "PhylloConnect",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10Foundation3URLV13PhylloConnectE15queryParametersSDyS2SGSgvg",
+                "mangledName": "$s10Foundation3URLV13PhylloConnectE15queryParametersSDyS2SGSgvg",
+                "moduleName": "PhylloConnect",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10Foundation3URLV",
+        "mangledName": "$s10Foundation3URLV",
+        "moduleName": "Foundation",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSURL",
+                    "printedName": "Foundation.NSURL",
+                    "usr": "c:objc(cs)NSURL"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSURL",
+                    "printedName": "Foundation.NSURL",
+                    "usr": "c:objc(cs)NSURL"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_CustomPlaygroundQuickLookable",
+            "printedName": "_CustomPlaygroundQuickLookable",
+            "usr": "s:s30_CustomPlaygroundQuickLookableP",
+            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByFileReferenceLiteral",
+            "printedName": "_ExpressibleByFileReferenceLiteral",
+            "usr": "s:s34_ExpressibleByFileReferenceLiteralP",
+            "mangledName": "$ss34_ExpressibleByFileReferenceLiteralP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Extension\/NotificationName.swift",
+      "kind": "StringLiteral",
+      "offset": 199,
+      "length": 20,
+      "value": "\"onAccountConnected\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Extension\/NotificationName.swift",
+      "kind": "StringLiteral",
+      "offset": 278,
+      "length": 23,
+      "value": "\"onAccountDisconnected\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Extension\/NotificationName.swift",
+      "kind": "StringLiteral",
+      "offset": 353,
+      "length": 16,
+      "value": "\"onTokenExpired\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Extension\/NotificationName.swift",
+      "kind": "StringLiteral",
+      "offset": 426,
+      "length": 21,
+      "value": "\"onConnectionFailure\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Extension\/NotificationName.swift",
+      "kind": "StringLiteral",
+      "offset": 491,
+      "length": 8,
+      "value": "\"onExit\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Extension\/NotificationName.swift",
+      "kind": "StringLiteral",
+      "offset": 589,
+      "length": 21,
+      "value": "\"openAfterInitialize\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Extension\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 206,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 166,
+      "length": 8,
+      "value": "\"phyllo\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 204,
+      "length": 15,
+      "value": "\"phyllo:\/\/auth\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 248,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 277,
+      "length": 89,
+      "value": "\"There was an error in connecting to our servers. Please check your input and try again.\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 418,
+      "length": 15,
+      "value": "\"phyllo:\/\/auth\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 452,
+      "length": 15,
+      "value": "\"phyllo:\/\/exit\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 494,
+      "length": 16,
+      "value": "\"onTokenExpired\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 544,
+      "length": 23,
+      "value": "\"phyllo:\/\/disconnected\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 589,
+      "length": 18,
+      "value": "\"phyllo:\/\/expired\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 638,
+      "length": 20,
+      "value": "\"phyllo:\/\/connected\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 680,
+      "length": 18,
+      "value": "\"phyllo:\/\/failure\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 418,
+      "length": 15,
+      "value": "\"phyllo:\/\/auth\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 452,
+      "length": 15,
+      "value": "\"phyllo:\/\/exit\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 494,
+      "length": 16,
+      "value": "\"onTokenExpired\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 544,
+      "length": 23,
+      "value": "\"phyllo:\/\/disconnected\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 589,
+      "length": 18,
+      "value": "\"phyllo:\/\/expired\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 638,
+      "length": 20,
+      "value": "\"phyllo:\/\/connected\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 680,
+      "length": 18,
+      "value": "\"phyllo:\/\/failure\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Utilities\/PhylloEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 172,
+      "length": 31,
+      "value": "\"https:\/\/api.dev.getphyllo.com\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Utilities\/PhylloEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 223,
+      "length": 35,
+      "value": "\"https:\/\/api.sandbox.getphyllo.com\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Utilities\/PhylloEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 275,
+      "length": 27,
+      "value": "\"https:\/\/api.getphyllo.com\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Utilities\/PhylloEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 172,
+      "length": 31,
+      "value": "\"https:\/\/api.dev.getphyllo.com\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Utilities\/PhylloEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 223,
+      "length": 35,
+      "value": "\"https:\/\/api.sandbox.getphyllo.com\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Utilities\/PhylloEnvironment.swift",
+      "kind": "StringLiteral",
+      "offset": 275,
+      "length": 27,
+      "value": "\"https:\/\/api.getphyllo.com\""
+    }
+  ]
+}

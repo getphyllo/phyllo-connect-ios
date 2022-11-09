@@ -13,6 +13,6 @@ struct Config {
     
     static var client_id = "<client id here>"
     static var client_secret =  "<client secret here>"
-    static let env = PhylloEnvironment.dev
+    static let env = PhylloEnvironment.sandbox
 }
 

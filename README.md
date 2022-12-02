@@ -45,6 +45,11 @@ or
 ```ruby
  pod repo update
 ```
+or
+ 
+```ruby
+ pod update PhylloConnect
+```
 
 ## Author
 

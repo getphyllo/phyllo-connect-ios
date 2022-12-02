@@ -170,6 +170,8 @@ class ViewController: UIViewController {
         
         PhylloConnect.shared.initialize(config: phylloConfig)
         PhylloConnect.shared.open()
+        print("Version Details => \(PhylloConnect.shared.version())")
+        
     }
     
 

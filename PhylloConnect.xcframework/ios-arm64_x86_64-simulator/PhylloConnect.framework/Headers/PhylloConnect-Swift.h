@@ -230,6 +230,8 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
+@import ObjectiveC;
 #endif
 
 #endif
@@ -250,10 +252,100 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+
+
+@class SEGConfiguration;
+
+SWIFT_CLASS_NAMED("ObjCAnalytics")
+@interface SEGAnalytics : NSObject
+- (nonnull instancetype)initWithConfiguration:(SEGConfiguration * _Nonnull)configuration OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
 @class NSString;
 
+@interface SEGAnalytics (SWIFT_EXTENSION(PhylloConnect))
+@property (nonatomic, readonly, copy) NSString * _Nonnull anonymousId;
+@property (nonatomic, readonly, copy) NSString * _Nullable userId;
+- (NSDictionary<NSString *, id> * _Nullable)traits SWIFT_WARN_UNUSED_RESULT;
+- (void)flush;
+- (void)reset;
+- (NSDictionary<NSString *, id> * _Nullable)settings SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)version SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface SEGAnalytics (SWIFT_EXTENSION(PhylloConnect))
+- (void)track:(NSString * _Nonnull)name;
+- (void)track:(NSString * _Nonnull)name properties:(NSDictionary<NSString *, id> * _Nullable)properties;
+/// Associate a user with their unique ID and record traits about them.
+/// \param userId A database ID (or email address) for this user.
+/// For more information on how we generate the UUID and Apple’s policies on IDs, see
+/// https://segment.io/libraries/ios#ids
+/// In the case when user logs out, make sure to call <code>reset()</code> to clear user’s identity info.
+///
+- (void)identify:(NSString * _Nonnull)userId;
+/// Associate a user with their unique ID and record traits about them.
+/// \param userId A database ID (or email address) for this user.
+/// For more information on how we generate the UUID and Apple’s policies on IDs, see
+/// https://segment.io/libraries/ios#ids
+///
+/// \param traits A dictionary of traits you know about the user. Things like: email, name, plan, etc.
+/// In the case when user logs out, make sure to call <code>reset()</code> to clear user’s identity info.
+///
+- (void)identify:(NSString * _Nonnull)userId traits:(NSDictionary<NSString *, id> * _Nullable)traits;
+/// Track a screen change with a title, category and other properties.
+/// \param screenTitle The title of the screen being tracked.
+///
+- (void)screen:(NSString * _Nonnull)title;
+/// Track a screen change with a title, category and other properties.
+/// \param screenTitle The title of the screen being tracked.
+///
+/// \param category A category to the type of screen if it applies.
+///
+- (void)screen:(NSString * _Nonnull)title category:(NSString * _Nullable)category;
+/// Track a screen change with a title, category and other properties.
+/// \param screenTitle The title of the screen being tracked.
+///
+/// \param category A category to the type of screen if it applies.
+///
+/// \param properties Any extra metadata associated with the screen. e.g. method of access, size, etc.
+///
+- (void)screen:(NSString * _Nonnull)title category:(NSString * _Nullable)category properties:(NSDictionary<NSString *, id> * _Nullable)properties;
+/// Associate a user with a group such as a company, organization, project, etc.
+/// \param groupId A unique identifier for the group identification in your system.
+///
+- (void)group:(NSString * _Nonnull)groupId;
+/// Associate a user with a group such as a company, organization, project, etc.
+/// \param groupId A unique identifier for the group identification in your system.
+///
+/// \param traits Traits of the group you may be interested in such as email, phone or name.
+///
+- (void)group:(NSString * _Nonnull)groupId traits:(NSDictionary<NSString *, id> * _Nullable)traits;
+- (void)alias:(NSString * _Nonnull)newId;
+@end
+
+
+SWIFT_CLASS_NAMED("ObjCConfiguration")
+@interface SEGConfiguration : NSObject
+@property (nonatomic) id _Nullable application;
+@property (nonatomic) BOOL trackApplicationLifecycleEvents;
+@property (nonatomic) BOOL trackDeeplinks;
+@property (nonatomic) NSInteger flushAt;
+@property (nonatomic) NSTimeInterval flushInterval;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull defaultSettings;
+@property (nonatomic) BOOL autoAddSegmentDestination;
+@property (nonatomic, copy) NSString * _Nonnull apiHost;
+@property (nonatomic, copy) NSString * _Nonnull cdnHost;
+- (nonnull instancetype)initWithWriteKey:(NSString * _Nonnull)writeKey OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
 SWIFT_PROTOCOL("_TtP13PhylloConnect21PhylloConnectDelegate_")
-@protocol PhylloConnectDelegate
+@protocol PhylloConnectDelegate <NSObject>
 - (void)onAccountConnectedWithAccount_id:(NSString * _Nonnull)account_id work_platform_id:(NSString * _Nonnull)work_platform_id user_id:(NSString * _Nonnull)user_id;
 - (void)onAccountDisconnectedWithAccount_id:(NSString * _Nonnull)account_id work_platform_id:(NSString * _Nonnull)work_platform_id user_id:(NSString * _Nonnull)user_id;
 - (void)onTokenExpiredWithUser_id:(NSString * _Nonnull)user_id;
@@ -261,6 +353,7 @@ SWIFT_PROTOCOL("_TtP13PhylloConnect21PhylloConnectDelegate_")
 @optional
 - (void)onConnectionFailureWithReason:(NSString * _Nonnull)reason work_platform_id:(NSString * _Nonnull)work_platform_id user_id:(NSString * _Nonnull)user_id;
 @end
+
 
 
 
@@ -504,6 +597,8 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
+@import ObjectiveC;
 #endif
 
 #endif
@@ -524,10 +619,100 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+
+
+@class SEGConfiguration;
+
+SWIFT_CLASS_NAMED("ObjCAnalytics")
+@interface SEGAnalytics : NSObject
+- (nonnull instancetype)initWithConfiguration:(SEGConfiguration * _Nonnull)configuration OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
 @class NSString;
 
+@interface SEGAnalytics (SWIFT_EXTENSION(PhylloConnect))
+@property (nonatomic, readonly, copy) NSString * _Nonnull anonymousId;
+@property (nonatomic, readonly, copy) NSString * _Nullable userId;
+- (NSDictionary<NSString *, id> * _Nullable)traits SWIFT_WARN_UNUSED_RESULT;
+- (void)flush;
+- (void)reset;
+- (NSDictionary<NSString *, id> * _Nullable)settings SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)version SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface SEGAnalytics (SWIFT_EXTENSION(PhylloConnect))
+- (void)track:(NSString * _Nonnull)name;
+- (void)track:(NSString * _Nonnull)name properties:(NSDictionary<NSString *, id> * _Nullable)properties;
+/// Associate a user with their unique ID and record traits about them.
+/// \param userId A database ID (or email address) for this user.
+/// For more information on how we generate the UUID and Apple’s policies on IDs, see
+/// https://segment.io/libraries/ios#ids
+/// In the case when user logs out, make sure to call <code>reset()</code> to clear user’s identity info.
+///
+- (void)identify:(NSString * _Nonnull)userId;
+/// Associate a user with their unique ID and record traits about them.
+/// \param userId A database ID (or email address) for this user.
+/// For more information on how we generate the UUID and Apple’s policies on IDs, see
+/// https://segment.io/libraries/ios#ids
+///
+/// \param traits A dictionary of traits you know about the user. Things like: email, name, plan, etc.
+/// In the case when user logs out, make sure to call <code>reset()</code> to clear user’s identity info.
+///
+- (void)identify:(NSString * _Nonnull)userId traits:(NSDictionary<NSString *, id> * _Nullable)traits;
+/// Track a screen change with a title, category and other properties.
+/// \param screenTitle The title of the screen being tracked.
+///
+- (void)screen:(NSString * _Nonnull)title;
+/// Track a screen change with a title, category and other properties.
+/// \param screenTitle The title of the screen being tracked.
+///
+/// \param category A category to the type of screen if it applies.
+///
+- (void)screen:(NSString * _Nonnull)title category:(NSString * _Nullable)category;
+/// Track a screen change with a title, category and other properties.
+/// \param screenTitle The title of the screen being tracked.
+///
+/// \param category A category to the type of screen if it applies.
+///
+/// \param properties Any extra metadata associated with the screen. e.g. method of access, size, etc.
+///
+- (void)screen:(NSString * _Nonnull)title category:(NSString * _Nullable)category properties:(NSDictionary<NSString *, id> * _Nullable)properties;
+/// Associate a user with a group such as a company, organization, project, etc.
+/// \param groupId A unique identifier for the group identification in your system.
+///
+- (void)group:(NSString * _Nonnull)groupId;
+/// Associate a user with a group such as a company, organization, project, etc.
+/// \param groupId A unique identifier for the group identification in your system.
+///
+/// \param traits Traits of the group you may be interested in such as email, phone or name.
+///
+- (void)group:(NSString * _Nonnull)groupId traits:(NSDictionary<NSString *, id> * _Nullable)traits;
+- (void)alias:(NSString * _Nonnull)newId;
+@end
+
+
+SWIFT_CLASS_NAMED("ObjCConfiguration")
+@interface SEGConfiguration : NSObject
+@property (nonatomic) id _Nullable application;
+@property (nonatomic) BOOL trackApplicationLifecycleEvents;
+@property (nonatomic) BOOL trackDeeplinks;
+@property (nonatomic) NSInteger flushAt;
+@property (nonatomic) NSTimeInterval flushInterval;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull defaultSettings;
+@property (nonatomic) BOOL autoAddSegmentDestination;
+@property (nonatomic, copy) NSString * _Nonnull apiHost;
+@property (nonatomic, copy) NSString * _Nonnull cdnHost;
+- (nonnull instancetype)initWithWriteKey:(NSString * _Nonnull)writeKey OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
 SWIFT_PROTOCOL("_TtP13PhylloConnect21PhylloConnectDelegate_")
-@protocol PhylloConnectDelegate
+@protocol PhylloConnectDelegate <NSObject>
 - (void)onAccountConnectedWithAccount_id:(NSString * _Nonnull)account_id work_platform_id:(NSString * _Nonnull)work_platform_id user_id:(NSString * _Nonnull)user_id;
 - (void)onAccountDisconnectedWithAccount_id:(NSString * _Nonnull)account_id work_platform_id:(NSString * _Nonnull)work_platform_id user_id:(NSString * _Nonnull)user_id;
 - (void)onTokenExpiredWithUser_id:(NSString * _Nonnull)user_id;
@@ -535,6 +720,7 @@ SWIFT_PROTOCOL("_TtP13PhylloConnect21PhylloConnectDelegate_")
 @optional
 - (void)onConnectionFailureWithReason:(NSString * _Nonnull)reason work_platform_id:(NSString * _Nonnull)work_platform_id user_id:(NSString * _Nonnull)user_id;
 @end
+
 
 
 

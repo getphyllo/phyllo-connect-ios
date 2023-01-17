@@ -10,7 +10,7 @@ struct Constants {
     
     static var sdkToken = ""
     static var userId = ""
-    static var clientDisplayName = "Creator.co"
+    static var clientDisplayName = "Sample App"
         
     // Generating Random String
     static func randomString(length: Int) -> String {

@@ -161,11 +161,11 @@ class ViewController: UIViewController {
     func launchSDK(workPlatformId : String) {
         //Phyllo configuration
         var phylloConfig = [String:Any]()
-        phylloConfig["environment"] = Config.env
-        phylloConfig["clientDisplayName"] = Constants.clientDisplayName
-        phylloConfig["token"] = Constants.sdkToken
-        phylloConfig["userId"] = Constants.userId
-        phylloConfig["delegate"] = self
+        phylloConfig["environment"] = Config.env //String
+        phylloConfig["clientDisplayName"] = Constants.clientDisplayName //String
+        phylloConfig["token"] = Constants.sdkToken //String
+        phylloConfig["userId"] = Constants.userId //String
+        phylloConfig["delegate"] = self //self is the current ViewController
         phylloConfig["workPlatformId"] = workPlatformId
         
         PhylloConnect.shared.initialize(config: phylloConfig)

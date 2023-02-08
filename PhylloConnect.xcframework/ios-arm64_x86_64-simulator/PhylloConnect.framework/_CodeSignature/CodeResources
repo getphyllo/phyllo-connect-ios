@@ -6,11 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		8cfEDq/5Bq8P8BrCvSKsPBKNTsU=
-		</data>
-		<key>Headers/PhylloConnect-Swift.h</key>
-		<data>
-		/+M000m6Yusl1WhMsxEKFuI12Nw=
+		+20YF0gJpF0ZnN9VvI2ddJO39tA=
 		</data>
 		<key>Headers/PhylloConnect.h</key>
 		<data>
@@ -62,7 +58,7 @@
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		y3A76rf/qyVNtVaL+LrTHmnJlj8=
+		oWtHN7AzzJKuX7CY4Gg1EBAmoVI=
 		</data>
 		<key>PhylloConnect.storyboardc/0ob-n3-EEF-view-B4P-aG-uAW.nib</key>
 		<data>
@@ -91,14 +87,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2i2/X6PYz2Pnht5YYDGoVOHMFoXXbdI5Op3fpTXZyo4=
-			</data>
-		</dict>
-		<key>Headers/PhylloConnect-Swift.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Oqsr/afkg9DNs9QQUjz53NfLOhuFZ9330efn51Xxr80=
+			Gkj+rHYTG3bHMR/j2edMwfC/xjEGNkJWYwfiGYJbxOA=
 			</data>
 		</dict>
 		<key>Headers/PhylloConnect.h</key>
@@ -182,7 +171,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0+vcl6MJWi4uHS6+0GI5CpUHKiA3/CoPyfzSgV8FWvE=
+			bhD5bTsJyuoil8njrrCApoI8HXhKiKI5rzQ+d+Ha6Cc=
 			</data>
 		</dict>
 		<key>PhylloConnect.storyboardc/0ob-n3-EEF-view-B4P-aG-uAW.nib</key>

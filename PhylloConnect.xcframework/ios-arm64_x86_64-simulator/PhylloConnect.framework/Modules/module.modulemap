@@ -4,3 +4,8 @@ framework module PhylloConnect {
   export *
   module * { export * }
 }
+
+module PhylloConnect.Swift {
+  header "PhylloConnect-Swift.h"
+  requires objc
+}

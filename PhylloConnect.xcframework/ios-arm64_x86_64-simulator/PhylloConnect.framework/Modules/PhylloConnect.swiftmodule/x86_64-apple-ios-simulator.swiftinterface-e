@@ -480,37 +480,6 @@ extension PhylloConnect.Analytics : PhylloConnect.Subscriber {
     set
   }
 }
-@objc(SEGAnalytics) public class ObjCAnalytics : ObjectiveC.NSObject {
-  final public let analytics: PhylloConnect.Analytics
-  @objc public init(configuration: PhylloConnect.ObjCConfiguration)
-  public init(wrapping analytics: PhylloConnect.Analytics)
-  @objc deinit
-}
-@objc extension PhylloConnect.ObjCAnalytics {
-  @objc(track:) dynamic public func track(name: Swift.String)
-  @objc(track:properties:) dynamic public func track(name: Swift.String, properties: [Swift.String : Any]?)
-  @objc(identify:) dynamic public func identify(userId: Swift.String)
-  @objc(identify:traits:) dynamic public func identify(userId: Swift.String, traits: [Swift.String : Any]?)
-  @objc(screen:) dynamic public func screen(title: Swift.String)
-  @objc(screen:category:) dynamic public func screen(title: Swift.String, category: Swift.String?)
-  @objc(screen:category:properties:) dynamic public func screen(title: Swift.String, category: Swift.String?, properties: [Swift.String : Any]?)
-  @objc(group:) dynamic public func group(groupId: Swift.String)
-  @objc(group:traits:) dynamic public func group(groupId: Swift.String, traits: [Swift.String : Any]?)
-  @objc(alias:) dynamic public func alias(newId: Swift.String)
-}
-@objc extension PhylloConnect.ObjCAnalytics {
-  @objc dynamic public var anonymousId: Swift.String {
-    @objc get
-  }
-  @objc dynamic public var userId: Swift.String? {
-    @objc get
-  }
-  @objc dynamic public func traits() -> [Swift.String : Any]?
-  @objc dynamic public func flush()
-  @objc dynamic public func reset()
-  @objc dynamic public func settings() -> [Swift.String : Any]?
-  @objc dynamic public func version() -> Swift.String
-}
 public protocol State {
 }
 public typealias Handler<T> = (T) -> Swift.Void where T : PhylloConnect.State
@@ -616,46 +585,6 @@ extension PhylloConnect.Analytics {
   public func identify(userId: Swift.String, traits: [Swift.String : Any]? = nil)
   public func screen(title: Swift.String, category: Swift.String? = nil, properties: [Swift.String : Any]? = nil)
   public func group(groupId: Swift.String, traits: [Swift.String : Any]?)
-}
-@objc(SEGConfiguration) public class ObjCConfiguration : ObjectiveC.NSObject {
-  @objc public var application: Any? {
-    @objc get
-    @objc set(value)
-  }
-  @objc public var trackApplicationLifecycleEvents: Swift.Bool {
-    @objc get
-    @objc set(value)
-  }
-  @objc public var trackDeeplinks: Swift.Bool {
-    @objc get
-    @objc set(value)
-  }
-  @objc public var flushAt: Swift.Int {
-    @objc get
-    @objc set(value)
-  }
-  @objc public var flushInterval: Foundation.TimeInterval {
-    @objc get
-    @objc set(value)
-  }
-  @objc public var defaultSettings: [Swift.String : Any] {
-    @objc get
-    @objc set(value)
-  }
-  @objc public var autoAddSegmentDestination: Swift.Bool {
-    @objc get
-    @objc set(value)
-  }
-  @objc public var apiHost: Swift.String {
-    @objc get
-    @objc set(value)
-  }
-  @objc public var cdnHost: Swift.String {
-    @objc get
-    @objc set(value)
-  }
-  @objc public init(writeKey: Swift.String)
-  @objc deinit
 }
 public enum PluginType : Swift.Int, Swift.CaseIterable {
   case before

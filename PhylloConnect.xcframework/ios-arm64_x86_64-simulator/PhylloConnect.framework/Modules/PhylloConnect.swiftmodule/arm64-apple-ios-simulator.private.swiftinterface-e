@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.8.1 effective-4.2 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name PhylloConnect
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name PhylloConnect
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AuthenticationServices
 import CoreTelephony
@@ -15,31 +15,31 @@ import _Concurrency
 import _StringProcessing
 import os.log
 import os
-extension LogTarget {
+extension PhylloConnect.LogTarget {
   public func flush()
 }
 public protocol Action {
-  associatedtype StateType : State
+  associatedtype StateType : PhylloConnect.State
   func reduce(state: Self.StateType) -> Self.StateType
 }
 public protocol AsyncAction {
-  associatedtype StateType : State
+  associatedtype StateType : PhylloConnect.State
   associatedtype ResultType
   func operation(state: Self.StateType, completion: @escaping (Self.ResultType?) -> Swift.Void)
   func reduce(state: Self.StateType, operationResult: Self.ResultType?) -> Self.StateType
 }
-@_hasMissingDesignatedInitializers public class StartupQueue : Plugin, Subscriber {
-  @Atomic public var running: Swift.Bool {
+@_hasMissingDesignatedInitializers public class StartupQueue : PhylloConnect.Plugin, PhylloConnect.Subscriber {
+  @PhylloConnect.Atomic public var running: Swift.Bool {
     get
     set
     _modify
   }
-  final public let type: PluginType
-  public var analytics: Analytics? {
+  final public let type: PhylloConnect.PluginType
+  public var analytics: PhylloConnect.Analytics? {
     get
     set
   }
-  public func execute<T>(event: T?) -> T? where T : RawEvent
+  public func execute<T>(event: T?) -> T? where T : PhylloConnect.RawEvent
   @objc deinit
 }
 public struct DestinationMetadata : Swift.Codable {
@@ -52,130 +52,130 @@ public protocol RawEvent : Swift.Decodable, Swift.Encodable {
   var messageId: Swift.String? { get set }
   var userId: Swift.String? { get set }
   var timestamp: Swift.String? { get set }
-  var context: JSON? { get set }
-  var integrations: JSON? { get set }
-  var metrics: [JSON]? { get set }
-  var _metadata: DestinationMetadata? { get set }
+  var context: PhylloConnect.JSON? { get set }
+  var integrations: PhylloConnect.JSON? { get set }
+  var metrics: [PhylloConnect.JSON]? { get set }
+  var _metadata: PhylloConnect.DestinationMetadata? { get set }
 }
-public struct TrackEvent : RawEvent {
+public struct TrackEvent : PhylloConnect.RawEvent {
   public var type: Swift.String?
   public var anonymousId: Swift.String?
   public var messageId: Swift.String?
   public var userId: Swift.String?
   public var timestamp: Swift.String?
-  public var context: JSON?
-  public var integrations: JSON?
-  public var metrics: [JSON]?
-  public var _metadata: DestinationMetadata?
+  public var context: PhylloConnect.JSON?
+  public var integrations: PhylloConnect.JSON?
+  public var metrics: [PhylloConnect.JSON]?
+  public var _metadata: PhylloConnect.DestinationMetadata?
   public var event: Swift.String
-  public var properties: JSON?
-  public init(event: Swift.String, properties: JSON?)
-  public init(existing: TrackEvent)
+  public var properties: PhylloConnect.JSON?
+  public init(event: Swift.String, properties: PhylloConnect.JSON?)
+  public init(existing: PhylloConnect.TrackEvent)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct IdentifyEvent : RawEvent {
+public struct IdentifyEvent : PhylloConnect.RawEvent {
   public var type: Swift.String?
   public var anonymousId: Swift.String?
   public var messageId: Swift.String?
   public var userId: Swift.String?
   public var timestamp: Swift.String?
-  public var context: JSON?
-  public var integrations: JSON?
-  public var metrics: [JSON]?
-  public var _metadata: DestinationMetadata?
-  public var traits: JSON?
-  public init(userId: Swift.String? = nil, traits: JSON? = nil)
-  public init(existing: IdentifyEvent)
+  public var context: PhylloConnect.JSON?
+  public var integrations: PhylloConnect.JSON?
+  public var metrics: [PhylloConnect.JSON]?
+  public var _metadata: PhylloConnect.DestinationMetadata?
+  public var traits: PhylloConnect.JSON?
+  public init(userId: Swift.String? = nil, traits: PhylloConnect.JSON? = nil)
+  public init(existing: PhylloConnect.IdentifyEvent)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct ScreenEvent : RawEvent {
+public struct ScreenEvent : PhylloConnect.RawEvent {
   public var type: Swift.String?
   public var anonymousId: Swift.String?
   public var messageId: Swift.String?
   public var userId: Swift.String?
   public var timestamp: Swift.String?
-  public var context: JSON?
-  public var integrations: JSON?
-  public var metrics: [JSON]?
-  public var _metadata: DestinationMetadata?
+  public var context: PhylloConnect.JSON?
+  public var integrations: PhylloConnect.JSON?
+  public var metrics: [PhylloConnect.JSON]?
+  public var _metadata: PhylloConnect.DestinationMetadata?
   public var name: Swift.String?
   public var category: Swift.String?
-  public var properties: JSON?
-  public init(title: Swift.String? = nil, category: Swift.String?, properties: JSON? = nil)
-  public init(existing: ScreenEvent)
+  public var properties: PhylloConnect.JSON?
+  public init(title: Swift.String? = nil, category: Swift.String?, properties: PhylloConnect.JSON? = nil)
+  public init(existing: PhylloConnect.ScreenEvent)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct GroupEvent : RawEvent {
+public struct GroupEvent : PhylloConnect.RawEvent {
   public var type: Swift.String?
   public var anonymousId: Swift.String?
   public var messageId: Swift.String?
   public var userId: Swift.String?
   public var timestamp: Swift.String?
-  public var context: JSON?
-  public var integrations: JSON?
-  public var metrics: [JSON]?
-  public var _metadata: DestinationMetadata?
+  public var context: PhylloConnect.JSON?
+  public var integrations: PhylloConnect.JSON?
+  public var metrics: [PhylloConnect.JSON]?
+  public var _metadata: PhylloConnect.DestinationMetadata?
   public var groupId: Swift.String?
-  public var traits: JSON?
-  public init(groupId: Swift.String? = nil, traits: JSON? = nil)
-  public init(existing: GroupEvent)
+  public var traits: PhylloConnect.JSON?
+  public init(groupId: Swift.String? = nil, traits: PhylloConnect.JSON? = nil)
+  public init(existing: PhylloConnect.GroupEvent)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct AliasEvent : RawEvent {
+public struct AliasEvent : PhylloConnect.RawEvent {
   public var type: Swift.String?
   public var anonymousId: Swift.String?
   public var messageId: Swift.String?
   public var timestamp: Swift.String?
-  public var context: JSON?
-  public var integrations: JSON?
-  public var metrics: [JSON]?
-  public var _metadata: DestinationMetadata?
+  public var context: PhylloConnect.JSON?
+  public var integrations: PhylloConnect.JSON?
+  public var metrics: [PhylloConnect.JSON]?
+  public var _metadata: PhylloConnect.DestinationMetadata?
   public var userId: Swift.String?
   public var previousId: Swift.String?
   public init(newId: Swift.String? = nil)
-  public init(existing: AliasEvent)
+  public init(existing: PhylloConnect.AliasEvent)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-extension RawEvent {
+extension PhylloConnect.RawEvent {
   public mutating func disableCloudIntegrations(exceptKeys: [Swift.String]? = nil)
   public mutating func enableCloudIntegrations(exceptKeys: [Swift.String]? = nil)
   public mutating func disableIntegration(key: Swift.String)
   public mutating func enableIntegration(key: Swift.String)
 }
-@_hasMissingDesignatedInitializers public class SegmentDestination : DestinationPlugin {
-  final public let type: PluginType
+@_hasMissingDesignatedInitializers public class SegmentDestination : PhylloConnect.DestinationPlugin {
+  final public let type: PhylloConnect.PluginType
   final public let key: Swift.String
-  final public let timeline: Timeline
-  public var analytics: Analytics? {
+  final public let timeline: PhylloConnect.Timeline
+  public var analytics: PhylloConnect.Analytics? {
     get
     set
   }
-  public func update(settings: Settings, type: UpdateType)
-  public func execute<T>(event: T?) -> T? where T : RawEvent
+  public func update(settings: PhylloConnect.Settings, type: PhylloConnect.UpdateType)
+  public func execute<T>(event: T?) -> T? where T : PhylloConnect.RawEvent
   public func flush()
   @objc deinit
 }
-extension SegmentDestination : VersionedPlugin {
+extension PhylloConnect.SegmentDestination : PhylloConnect.VersionedPlugin {
   public static func version() -> Swift.String
 }
-public protocol RemoteNotifications : Plugin {
+public protocol RemoteNotifications : PhylloConnect.Plugin {
   func registeredForRemoteNotifications(deviceToken: Foundation.Data)
   func failedToRegisterForRemoteNotification(error: (any Swift.Error)?)
   func receivedRemoteNotification(userInfo: [Swift.AnyHashable : Any])
   func handleAction(identifier: Swift.String, userInfo: [Swift.String : Any])
 }
-extension RemoteNotifications {
+extension PhylloConnect.RemoteNotifications {
   public func registeredForRemoteNotifications(deviceToken: Foundation.Data)
   public func failedToRegisterForRemoteNotification(error: (any Swift.Error)?)
   public func receivedRemoteNotification(userInfo: [Swift.AnyHashable : Any])
   public func handleAction(identifier: Swift.String, userInfo: [Swift.String : Any])
 }
-extension Analytics {
+extension PhylloConnect.Analytics {
   public func registeredForRemoteNotifications(deviceToken: Foundation.Data)
   public func failedToRegisterForRemoteNotification(error: (any Swift.Error)?)
   public func receivedRemoteNotification(userInfo: [Swift.AnyHashable : Any])
@@ -184,13 +184,13 @@ extension Analytics {
 public protocol UserActivities {
   func continueUserActivity(_ activity: Foundation.NSUserActivity)
 }
-extension Analytics {
+extension PhylloConnect.Analytics {
   public func continueUserActivity(_ activity: Foundation.NSUserActivity)
 }
 public protocol OpeningURLs {
   func openURL(_ url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any])
 }
-extension Analytics {
+extension PhylloConnect.Analytics {
   public func openURL(_ url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:])
 }
 public class Analytics {
@@ -198,12 +198,12 @@ public class Analytics {
     get
     set
   }
-  public var timeline: Timeline
-  public init(configuration: Configuration)
-  public func process(event: any RawEvent)
+  public var timeline: PhylloConnect.Timeline
+  public init(configuration: PhylloConnect.Configuration)
+  public func process(event: any PhylloConnect.RawEvent)
   @objc deinit
 }
-extension Analytics {
+extension PhylloConnect.Analytics {
   public var anonymousId: Swift.String {
     get
   }
@@ -217,11 +217,11 @@ extension Analytics {
   public func version() -> Swift.String
   public static func version() -> Swift.String
 }
-extension Analytics {
-  public func settings() -> Settings?
-  public func manuallyEnableDestination(plugin: any DestinationPlugin)
+extension PhylloConnect.Analytics {
+  public func settings() -> PhylloConnect.Settings?
+  public func manuallyEnableDestination(plugin: any PhylloConnect.DestinationPlugin)
 }
-extension Analytics {
+extension PhylloConnect.Analytics {
   public var hasUnsentEvents: Swift.Bool {
     get
   }
@@ -246,7 +246,7 @@ public protocol iOSLifecycle {
   func applicationSignificantTimeChange(application: UIKit.UIApplication?)
   func applicationBackgroundRefreshDidChange(application: UIKit.UIApplication?, refreshStatus: UIKit.UIBackgroundRefreshStatus)
 }
-extension iOSLifecycle {
+extension PhylloConnect.iOSLifecycle {
   public func applicationDidEnterBackground(application: UIKit.UIApplication?)
   public func applicationWillEnterForeground(application: UIKit.UIApplication?)
   public func application(_ application: UIKit.UIApplication?, didFinishLaunchingWithOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?)
@@ -257,7 +257,7 @@ extension iOSLifecycle {
   public func applicationSignificantTimeChange(application: UIKit.UIApplication?)
   public func applicationBackgroundRefreshDidChange(application: UIKit.UIApplication?, refreshStatus: UIKit.UIBackgroundRefreshStatus)
 }
-extension SegmentDestination : iOSLifecycle {
+extension PhylloConnect.SegmentDestination : PhylloConnect.iOSLifecycle {
   public func applicationWillEnterForeground(application: UIKit.UIApplication?)
   public func applicationDidEnterBackground(application: UIKit.UIApplication?)
 }
@@ -271,39 +271,39 @@ public class Configuration {
   public init(writeKey: Swift.String)
   @objc deinit
 }
-extension Configuration {
+extension PhylloConnect.Configuration {
   @discardableResult
-  public func application(_ value: Any?) -> Configuration
+  public func application(_ value: Any?) -> PhylloConnect.Configuration
   @discardableResult
-  public func trackApplicationLifecycleEvents(_ enabled: Swift.Bool) -> Configuration
+  public func trackApplicationLifecycleEvents(_ enabled: Swift.Bool) -> PhylloConnect.Configuration
   @discardableResult
-  public func trackDeeplinks(_ enabled: Swift.Bool) -> Configuration
+  public func trackDeeplinks(_ enabled: Swift.Bool) -> PhylloConnect.Configuration
   @discardableResult
-  public func flushAt(_ count: Swift.Int) -> Configuration
+  public func flushAt(_ count: Swift.Int) -> PhylloConnect.Configuration
   @discardableResult
-  public func flushInterval(_ interval: Foundation.TimeInterval) -> Configuration
+  public func flushInterval(_ interval: Foundation.TimeInterval) -> PhylloConnect.Configuration
   @discardableResult
-  public func defaultSettings(_ settings: Settings) -> Configuration
+  public func defaultSettings(_ settings: PhylloConnect.Settings) -> PhylloConnect.Configuration
   @discardableResult
-  public func autoAddSegmentDestination(_ value: Swift.Bool) -> Configuration
+  public func autoAddSegmentDestination(_ value: Swift.Bool) -> PhylloConnect.Configuration
   @discardableResult
-  public func apiHost(_ value: Swift.String) -> Configuration
+  public func apiHost(_ value: Swift.String) -> PhylloConnect.Configuration
   @discardableResult
-  public func cdnHost(_ value: Swift.String) -> Configuration
+  public func cdnHost(_ value: Swift.String) -> PhylloConnect.Configuration
 }
 public enum JSON : Swift.Equatable {
   case null
   case bool(Swift.Bool)
   case number(Foundation.Decimal)
   case string(Swift.String)
-  case array([JSON])
-  case object([Swift.String : JSON])
+  case array([PhylloConnect.JSON])
+  case object([Swift.String : PhylloConnect.JSON])
   public init(_ object: [Swift.String : Any]) throws
   public init<T>(with value: T) throws where T : Swift.Decodable, T : Swift.Encodable
   public init(_ value: Any) throws
-  public static func == (a: JSON, b: JSON) -> Swift.Bool
+  public static func == (a: PhylloConnect.JSON, b: PhylloConnect.JSON) -> Swift.Bool
 }
-extension JSON : Swift.Codable {
+extension PhylloConnect.JSON : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -312,7 +312,7 @@ extension Swift.Encodable {
   public func toString() -> Swift.String
   public func toString(pretty: Swift.Bool) -> Swift.String
 }
-extension JSON {
+extension PhylloConnect.JSON {
   public func codableValue<T>() -> T? where T : Swift.Decodable, T : Swift.Encodable
   public var boolValue: Swift.Bool? {
     get
@@ -342,46 +342,46 @@ extension JSON {
     get
   }
 }
-extension JSON {
-  public func mapTransform(_ keys: [Swift.String : Swift.String], valueTransform: ((_ key: Swift.String, _ value: Any) -> Any)? = nil) throws -> JSON
-  public func add(value: Any) throws -> JSON?
-  public func add(value: Any, forKey key: Swift.String) throws -> JSON?
-  public func remove(key: Swift.String) throws -> JSON?
-  public subscript(index: Swift.Int) -> JSON? {
+extension PhylloConnect.JSON {
+  public func mapTransform(_ keys: [Swift.String : Swift.String], valueTransform: ((_ key: Swift.String, _ value: Any) -> Any)? = nil) throws -> PhylloConnect.JSON
+  public func add(value: Any) throws -> PhylloConnect.JSON?
+  public func add(value: Any, forKey key: Swift.String) throws -> PhylloConnect.JSON?
+  public func remove(key: Swift.String) throws -> PhylloConnect.JSON?
+  public subscript(index: Swift.Int) -> PhylloConnect.JSON? {
     get
   }
-  public subscript(key: Swift.String) -> JSON? {
+  public subscript(key: Swift.String) -> PhylloConnect.JSON? {
     get
   }
-  public subscript<T>(keyPath keyPath: KeyPath) -> T? where T : Swift.Decodable, T : Swift.Encodable {
+  public subscript<T>(keyPath keyPath: PhylloConnect.KeyPath) -> T? where T : Swift.Decodable, T : Swift.Encodable {
     get
     set(newValue)
   }
-  public func value<T>(forKeyPath keyPath: KeyPath) -> T? where T : Swift.Decodable, T : Swift.Encodable
-  public mutating func setValue<T>(_ value: T?, forKeyPath keyPath: KeyPath) where T : Swift.Decodable, T : Swift.Encodable
+  public func value<T>(forKeyPath keyPath: PhylloConnect.KeyPath) -> T? where T : Swift.Decodable, T : Swift.Encodable
+  public mutating func setValue<T>(_ value: T?, forKeyPath keyPath: PhylloConnect.KeyPath) where T : Swift.Decodable, T : Swift.Encodable
 }
 extension Swift.Dictionary where Key == Swift.String, Value == Any {
   public func mapTransform(_ keys: [Swift.String : Swift.String], valueTransform: ((_ key: Key, _ value: Value) -> Any)? = nil) throws -> [Key : Value]
 }
 public class DeviceToken {
-  final public let type: PluginType
-  public var analytics: Analytics?
+  final public let type: PhylloConnect.PluginType
+  public var analytics: PhylloConnect.Analytics?
   public var token: Swift.String?
   required public init()
-  public func execute<T>(event: T?) -> T? where T : RawEvent
+  public func execute<T>(event: T?) -> T? where T : PhylloConnect.RawEvent
   @objc deinit
 }
-extension Analytics {
+extension PhylloConnect.Analytics {
   public func setDeviceToken(_ token: Swift.String)
 }
 @_hasMissingDesignatedInitializers public class Context {
-  final public let type: PluginType
-  public var analytics: Analytics?
-  public func execute<T>(event: T?) -> T? where T : RawEvent
+  final public let type: PhylloConnect.PluginType
+  public var analytics: PhylloConnect.Analytics?
+  public func execute<T>(event: T?) -> T? where T : PhylloConnect.RawEvent
   @objc deinit
 }
 public protocol LogTarget {
-  func parseLog(_ log: any LogMessage)
+  func parseLog(_ log: any PhylloConnect.LogMessage)
   func flush()
 }
 public enum LogFilterKind : Swift.Int {
@@ -399,27 +399,27 @@ public struct LoggingType : Swift.Hashable {
     case log
     case metric
     case history
-    public static func == (a: LoggingType.LogDestination, b: LoggingType.LogDestination) -> Swift.Bool
+    public static func == (a: PhylloConnect.LoggingType.LogDestination, b: PhylloConnect.LoggingType.LogDestination) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
-  public init(types: [LoggingType.LogDestination])
+  public init(types: [PhylloConnect.LoggingType.LogDestination])
   public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: LoggingType, b: LoggingType) -> Swift.Bool
+  public static func == (a: PhylloConnect.LoggingType, b: PhylloConnect.LoggingType) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
 }
 public protocol LogMessage {
-  var kind: LogFilterKind { get }
+  var kind: PhylloConnect.LogFilterKind { get }
   var title: Swift.String? { get }
   var message: Swift.String { get }
-  var event: (any RawEvent)? { get }
+  var event: (any PhylloConnect.RawEvent)? { get }
   var function: Swift.String? { get }
   var line: Swift.Int? { get }
-  var logType: LoggingType.LogDestination { get }
+  var logType: PhylloConnect.LoggingType.LogDestination { get }
   var dateTime: Foundation.Date { get }
 }
 public enum MetricType : Swift.Int {
@@ -431,13 +431,13 @@ public enum MetricType : Swift.Int {
     get
   }
 }
-extension Analytics {
-  public func log(message: Swift.String, kind: LogFilterKind? = nil, function: Swift.String = #function, line: Swift.Int = #line)
-  public func metric(_ type: MetricType, name: Swift.String, value: Swift.Double, tags: [Swift.String]? = nil)
-  public func history(event: any RawEvent, sender: Swift.AnyObject, function: Swift.String = #function, line: Swift.Int = #line)
+extension PhylloConnect.Analytics {
+  public func log(message: Swift.String, kind: PhylloConnect.LogFilterKind? = nil, function: Swift.String = #function, line: Swift.Int = #line)
+  public func metric(_ type: PhylloConnect.MetricType, name: Swift.String, value: Swift.Double, tags: [Swift.String]? = nil)
+  public func history(event: any PhylloConnect.RawEvent, sender: Swift.AnyObject, function: Swift.String = #function, line: Swift.Int = #line)
 }
-extension Analytics {
-  public func add(target: any LogTarget, type: LoggingType)
+extension PhylloConnect.Analytics {
+  public func add(target: any PhylloConnect.LogTarget, type: PhylloConnect.LoggingType)
   public func logFlush()
 }
 public typealias SubscriptionID = Swift.Int
@@ -446,12 +446,12 @@ public class Store {
   public func encode(to encoder: any Swift.Encoder) throws
   public init()
   @discardableResult
-  public func subscribe<T>(_ subscriber: any Subscriber, initialState: Swift.Bool = false, queue: Dispatch.DispatchQueue = .main, handler: @escaping Handler<T>) -> SubscriptionID where T : State
-  public func unsubscribe(identifier: SubscriptionID)
-  public func provide<T>(state: T) where T : State
-  public func dispatch<T>(action: T) where T : Action
-  public func dispatch<T>(action: T) where T : AsyncAction
-  public func currentState<T>() -> T? where T : State
+  public func subscribe<T>(_ subscriber: any PhylloConnect.Subscriber, initialState: Swift.Bool = false, queue: Dispatch.DispatchQueue = .main, handler: @escaping PhylloConnect.Handler<T>) -> PhylloConnect.SubscriptionID where T : PhylloConnect.State
+  public func unsubscribe(identifier: PhylloConnect.SubscriptionID)
+  public func provide<T>(state: T) where T : PhylloConnect.State
+  public func dispatch<T>(action: T) where T : PhylloConnect.Action
+  public func dispatch<T>(action: T) where T : PhylloConnect.AsyncAction
+  public func currentState<T>() -> T? where T : PhylloConnect.State
   @objc deinit
 }
 @objc public protocol PhylloConnectDelegate : ObjectiveC.NSObjectProtocol {
@@ -462,16 +462,16 @@ public class Store {
   @objc optional func onConnectionFailure(reason: Swift.String, work_platform_id: Swift.String, user_id: Swift.String)
 }
 @_hasMissingDesignatedInitializers public class PhylloConnect {
-  public class var shared: PhylloConnect {
+  public class var shared: PhylloConnect.PhylloConnect {
     get
   }
-  weak public var phylloConnectDelegate: (any PhylloConnectDelegate)?
+  weak public var phylloConnectDelegate: (any PhylloConnect.PhylloConnectDelegate)?
   public func initialize(config: [Swift.String : Any])
   public func open()
   public func version() -> [Swift.String : Swift.String]
   @objc deinit
 }
-extension Analytics : Subscriber {
+extension PhylloConnect.Analytics : PhylloConnect.Subscriber {
 }
 @propertyWrapper public struct Atomic<T> {
   public init(wrappedValue value: T)
@@ -482,53 +482,53 @@ extension Analytics : Subscriber {
 }
 public protocol State {
 }
-public typealias Handler<T> = (T) -> Swift.Void where T : State
-public class Timeline : Subscriber {
+public typealias Handler<T> = (T) -> Swift.Void where T : PhylloConnect.State
+public class Timeline : PhylloConnect.Subscriber {
   public init()
   @objc deinit
 }
-extension Plugin {
-  public func execute<T>(event: T?) -> T? where T : RawEvent
-  public func update(settings: Settings, type: UpdateType)
+extension PhylloConnect.Plugin {
+  public func execute<T>(event: T?) -> T? where T : PhylloConnect.RawEvent
+  public func update(settings: PhylloConnect.Settings, type: PhylloConnect.UpdateType)
   public func shutdown()
 }
-extension EventPlugin {
-  public func execute<T>(event: T?) -> T? where T : RawEvent
-  public func identify(event: IdentifyEvent) -> IdentifyEvent?
-  public func track(event: TrackEvent) -> TrackEvent?
-  public func screen(event: ScreenEvent) -> ScreenEvent?
-  public func group(event: GroupEvent) -> GroupEvent?
-  public func alias(event: AliasEvent) -> AliasEvent?
+extension PhylloConnect.EventPlugin {
+  public func execute<T>(event: T?) -> T? where T : PhylloConnect.RawEvent
+  public func identify(event: PhylloConnect.IdentifyEvent) -> PhylloConnect.IdentifyEvent?
+  public func track(event: PhylloConnect.TrackEvent) -> PhylloConnect.TrackEvent?
+  public func screen(event: PhylloConnect.ScreenEvent) -> PhylloConnect.ScreenEvent?
+  public func group(event: PhylloConnect.GroupEvent) -> PhylloConnect.GroupEvent?
+  public func alias(event: PhylloConnect.AliasEvent) -> PhylloConnect.AliasEvent?
   public func flush()
   public func reset()
 }
-extension DestinationPlugin {
-  public func execute<T>(event: T?) -> T? where T : RawEvent
+extension PhylloConnect.DestinationPlugin {
+  public func execute<T>(event: T?) -> T? where T : PhylloConnect.RawEvent
 }
 public struct Settings : Swift.Codable {
-  public var integrations: JSON?
-  public var plan: JSON?
-  public var edgeFunction: JSON?
-  public var middlewareSettings: JSON?
+  public var integrations: PhylloConnect.JSON?
+  public var plan: PhylloConnect.JSON?
+  public var edgeFunction: PhylloConnect.JSON?
+  public var middlewareSettings: PhylloConnect.JSON?
   public init(writeKey: Swift.String, apiHost: Swift.String)
   public init(writeKey: Swift.String)
   public init(from decoder: any Swift.Decoder) throws
   public func integrationSettings(forKey key: Swift.String) -> [Swift.String : Any]?
   public func integrationSettings<T>(forKey key: Swift.String) -> T? where T : Swift.Decodable, T : Swift.Encodable
-  public func integrationSettings<T>(forPlugin plugin: any DestinationPlugin) -> T? where T : Swift.Decodable, T : Swift.Encodable
-  public func hasIntegrationSettings(forPlugin plugin: any DestinationPlugin) -> Swift.Bool
+  public func integrationSettings<T>(forPlugin plugin: any PhylloConnect.DestinationPlugin) -> T? where T : Swift.Decodable, T : Swift.Encodable
+  public func hasIntegrationSettings(forPlugin plugin: any PhylloConnect.DestinationPlugin) -> Swift.Bool
   public func hasIntegrationSettings(key: Swift.String) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
 }
-extension Settings : Swift.Equatable {
-  public static func == (lhs: Settings, rhs: Settings) -> Swift.Bool
+extension PhylloConnect.Settings : Swift.Equatable {
+  public static func == (lhs: PhylloConnect.Settings, rhs: PhylloConnect.Settings) -> Swift.Bool
 }
 public struct BasicHandler {
 }
 public struct KeyPath {
   public init(_ string: Swift.String)
 }
-extension KeyPath : Swift.ExpressibleByStringLiteral {
+extension PhylloConnect.KeyPath : Swift.ExpressibleByStringLiteral {
   public init(stringLiteral value: Swift.String)
   public init(unicodeScalarLiteral value: Swift.String)
   public init(extendedGraphemeClusterLiteral value: Swift.String)
@@ -537,15 +537,15 @@ extension KeyPath : Swift.ExpressibleByStringLiteral {
   public typealias UnicodeScalarLiteralType = Swift.String
 }
 extension Swift.Dictionary where Key : Swift.StringProtocol {
-  public subscript(keyPath keyPath: KeyPath) -> Any? {
+  public subscript(keyPath keyPath: PhylloConnect.KeyPath) -> Any? {
     get
     set
   }
-  public subscript(keyPath keyPath: KeyPath, reference reference: Any?) -> Any? {
+  public subscript(keyPath keyPath: PhylloConnect.KeyPath, reference reference: Any?) -> Any? {
     get
     set
   }
-  public func exists(keyPath: KeyPath, reference: Any? = nil) -> Swift.Bool
+  public func exists(keyPath: PhylloConnect.KeyPath, reference: Any? = nil) -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers public class HTTPClient {
   @objc deinit
@@ -561,14 +561,14 @@ public enum PhylloEnvironment : Swift.String {
     get
   }
 }
-@_hasMissingDesignatedInitializers public class DestinationMetadataPlugin : Plugin {
-  final public let type: PluginType
-  public var analytics: Analytics?
-  public func update(settings: Settings, type: UpdateType)
-  public func execute<T>(event: T?) -> T? where T : RawEvent
+@_hasMissingDesignatedInitializers public class DestinationMetadataPlugin : PhylloConnect.Plugin {
+  final public let type: PhylloConnect.PluginType
+  public var analytics: PhylloConnect.Analytics?
+  public func update(settings: PhylloConnect.Settings, type: PhylloConnect.UpdateType)
+  public func execute<T>(event: T?) -> T? where T : PhylloConnect.RawEvent
   @objc deinit
 }
-extension Analytics {
+extension PhylloConnect.Analytics {
   public func track<P>(name: Swift.String, properties: P?) where P : Swift.Decodable, P : Swift.Encodable
   public func track(name: Swift.String)
   public func identify<T>(userId: Swift.String, traits: T?) where T : Swift.Decodable, T : Swift.Encodable
@@ -580,7 +580,7 @@ extension Analytics {
   public func group(groupId: Swift.String)
   public func alias(newId: Swift.String)
 }
-extension Analytics {
+extension PhylloConnect.Analytics {
   public func track(name: Swift.String, properties: [Swift.String : Any]? = nil)
   public func identify(userId: Swift.String, traits: [Swift.String : Any]? = nil)
   public func screen(title: Swift.String, category: Swift.String? = nil, properties: [Swift.String : Any]? = nil)
@@ -593,9 +593,9 @@ public enum PluginType : Swift.Int, Swift.CaseIterable {
   case after
   case utility
   public init?(rawValue: Swift.Int)
-  public typealias AllCases = [PluginType]
+  public typealias AllCases = [PhylloConnect.PluginType]
   public typealias RawValue = Swift.Int
-  public static var allCases: [PluginType] {
+  public static var allCases: [PhylloConnect.PluginType] {
     get
   }
   public var rawValue: Swift.Int {
@@ -605,76 +605,76 @@ public enum PluginType : Swift.Int, Swift.CaseIterable {
 public enum UpdateType {
   case initial
   case refresh
-  public static func == (a: UpdateType, b: UpdateType) -> Swift.Bool
+  public static func == (a: PhylloConnect.UpdateType, b: PhylloConnect.UpdateType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
 public protocol Plugin : AnyObject {
-  var type: PluginType { get }
-  var analytics: Analytics? { get set }
-  func configure(analytics: Analytics)
-  func update(settings: Settings, type: UpdateType)
-  func execute<T>(event: T?) -> T? where T : RawEvent
+  var type: PhylloConnect.PluginType { get }
+  var analytics: PhylloConnect.Analytics? { get set }
+  func configure(analytics: PhylloConnect.Analytics)
+  func update(settings: PhylloConnect.Settings, type: PhylloConnect.UpdateType)
+  func execute<T>(event: T?) -> T? where T : PhylloConnect.RawEvent
   func shutdown()
 }
-public protocol EventPlugin : Plugin {
-  func identify(event: IdentifyEvent) -> IdentifyEvent?
-  func track(event: TrackEvent) -> TrackEvent?
-  func group(event: GroupEvent) -> GroupEvent?
-  func alias(event: AliasEvent) -> AliasEvent?
-  func screen(event: ScreenEvent) -> ScreenEvent?
+public protocol EventPlugin : PhylloConnect.Plugin {
+  func identify(event: PhylloConnect.IdentifyEvent) -> PhylloConnect.IdentifyEvent?
+  func track(event: PhylloConnect.TrackEvent) -> PhylloConnect.TrackEvent?
+  func group(event: PhylloConnect.GroupEvent) -> PhylloConnect.GroupEvent?
+  func alias(event: PhylloConnect.AliasEvent) -> PhylloConnect.AliasEvent?
+  func screen(event: PhylloConnect.ScreenEvent) -> PhylloConnect.ScreenEvent?
   func reset()
   func flush()
 }
-public protocol DestinationPlugin : EventPlugin {
+public protocol DestinationPlugin : PhylloConnect.EventPlugin {
   var key: Swift.String { get }
-  var timeline: Timeline { get }
-  func add(plugin: any Plugin) -> any Plugin
-  func apply(closure: (any Plugin) -> Swift.Void)
-  func remove(plugin: any Plugin)
+  var timeline: PhylloConnect.Timeline { get }
+  func add(plugin: any PhylloConnect.Plugin) -> any PhylloConnect.Plugin
+  func apply(closure: (any PhylloConnect.Plugin) -> Swift.Void)
+  func remove(plugin: any PhylloConnect.Plugin)
 }
-public protocol UtilityPlugin : EventPlugin {
+public protocol UtilityPlugin : PhylloConnect.EventPlugin {
 }
 public protocol VersionedPlugin {
   static func version() -> Swift.String
 }
-extension Plugin {
-  public func configure(analytics: Analytics)
+extension PhylloConnect.Plugin {
+  public func configure(analytics: PhylloConnect.Analytics)
 }
-extension DestinationPlugin {
-  public func configure(analytics: Analytics)
-  public func apply(closure: (any Plugin) -> Swift.Void)
+extension PhylloConnect.DestinationPlugin {
+  public func configure(analytics: PhylloConnect.Analytics)
+  public func apply(closure: (any PhylloConnect.Plugin) -> Swift.Void)
   @discardableResult
-  public func add(plugin: any Plugin) -> any Plugin
-  public func remove(plugin: any Plugin)
+  public func add(plugin: any PhylloConnect.Plugin) -> any PhylloConnect.Plugin
+  public func remove(plugin: any PhylloConnect.Plugin)
 }
-extension Analytics {
-  public func apply(closure: (any Plugin) -> Swift.Void)
+extension PhylloConnect.Analytics {
+  public func apply(closure: (any PhylloConnect.Plugin) -> Swift.Void)
   @discardableResult
-  public func add(plugin: any Plugin) -> any Plugin
-  public func remove(plugin: any Plugin)
-  public func find<T>(pluginType: T.Type) -> T? where T : Plugin
-  public func find(key: Swift.String) -> (any DestinationPlugin)?
+  public func add(plugin: any PhylloConnect.Plugin) -> any PhylloConnect.Plugin
+  public func remove(plugin: any PhylloConnect.Plugin)
+  public func find<T>(pluginType: T.Type) -> T? where T : PhylloConnect.Plugin
+  public func find(key: Swift.String) -> (any PhylloConnect.DestinationPlugin)?
 }
 public protocol Subscriber : AnyObject {
 }
-extension DeviceToken : Plugin {}
-extension Context : Plugin {}
-extension LogFilterKind : Swift.Equatable {}
-extension LogFilterKind : Swift.Hashable {}
-extension LogFilterKind : Swift.RawRepresentable {}
-extension LoggingType.LogDestination : Swift.Equatable {}
-extension LoggingType.LogDestination : Swift.Hashable {}
-extension MetricType : Swift.Equatable {}
-extension MetricType : Swift.Hashable {}
-extension MetricType : Swift.RawRepresentable {}
-extension PhylloEnvironment : Swift.Equatable {}
-extension PhylloEnvironment : Swift.Hashable {}
-extension PhylloEnvironment : Swift.RawRepresentable {}
-extension PluginType : Swift.Equatable {}
-extension PluginType : Swift.Hashable {}
-extension PluginType : Swift.RawRepresentable {}
-extension UpdateType : Swift.Equatable {}
-extension UpdateType : Swift.Hashable {}
+extension PhylloConnect.DeviceToken : PhylloConnect.Plugin {}
+extension PhylloConnect.Context : PhylloConnect.Plugin {}
+extension PhylloConnect.LogFilterKind : Swift.Equatable {}
+extension PhylloConnect.LogFilterKind : Swift.Hashable {}
+extension PhylloConnect.LogFilterKind : Swift.RawRepresentable {}
+extension PhylloConnect.LoggingType.LogDestination : Swift.Equatable {}
+extension PhylloConnect.LoggingType.LogDestination : Swift.Hashable {}
+extension PhylloConnect.MetricType : Swift.Equatable {}
+extension PhylloConnect.MetricType : Swift.Hashable {}
+extension PhylloConnect.MetricType : Swift.RawRepresentable {}
+extension PhylloConnect.PhylloEnvironment : Swift.Equatable {}
+extension PhylloConnect.PhylloEnvironment : Swift.Hashable {}
+extension PhylloConnect.PhylloEnvironment : Swift.RawRepresentable {}
+extension PhylloConnect.PluginType : Swift.Equatable {}
+extension PhylloConnect.PluginType : Swift.Hashable {}
+extension PhylloConnect.PluginType : Swift.RawRepresentable {}
+extension PhylloConnect.UpdateType : Swift.Equatable {}
+extension PhylloConnect.UpdateType : Swift.Hashable {}

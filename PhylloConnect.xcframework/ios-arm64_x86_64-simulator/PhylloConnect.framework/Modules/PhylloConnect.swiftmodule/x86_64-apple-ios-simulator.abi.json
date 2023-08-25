@@ -26431,140 +26431,133 @@
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "StringLiteral",
-      "offset": 7111,
+      "offset": 7069,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "StringLiteral",
-      "offset": 7140,
+      "offset": 7098,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "StringLiteral",
-      "offset": 7375,
+      "offset": 7333,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "StringLiteral",
-      "offset": 7421,
+      "offset": 7379,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "StringLiteral",
-      "offset": 7450,
+      "offset": 7408,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "BooleanLiteral",
-      "offset": 7633,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7980,
+      "offset": 7672,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "StringLiteral",
-      "offset": 8027,
+      "offset": 7719,
       "length": 20,
       "value": "\"onAccountConnected\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "BooleanLiteral",
-      "offset": 8213,
+      "offset": 7905,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "StringLiteral",
-      "offset": 8260,
+      "offset": 7952,
       "length": 23,
       "value": "\"onAccountDisconnected\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "BooleanLiteral",
-      "offset": 8414,
+      "offset": 8106,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "StringLiteral",
-      "offset": 8461,
+      "offset": 8153,
       "length": 16,
       "value": "\"onTokenExpired\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "BooleanLiteral",
-      "offset": 8607,
+      "offset": 8299,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "StringLiteral",
-      "offset": 8654,
+      "offset": 8346,
       "length": 8,
       "value": "\"onExit\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "BooleanLiteral",
-      "offset": 8822,
+      "offset": 8514,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "StringLiteral",
-      "offset": 8869,
+      "offset": 8561,
       "length": 21,
       "value": "\"onConnectionFailure\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "StringLiteral",
-      "offset": 9161,
+      "offset": 8853,
       "length": 12,
       "value": "\"ip_address\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "StringLiteral",
-      "offset": 9277,
+      "offset": 8969,
       "length": 29,
       "value": "\"PhylloConnect deinited 👍\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "StringLiteral",
-      "offset": 9406,
+      "offset": 9098,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/PhylloConnect.swift",
       "kind": "StringLiteral",
-      "offset": 9522,
+      "offset": 9214,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
@@ -27985,532 +27978,525 @@
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8120,
+      "offset": 8161,
       "length": 8,
       "value": "\"userId\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8183,
+      "offset": 8224,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8237,
+      "offset": 8278,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8310,
+      "offset": 8351,
       "length": 16,
       "value": "\"workplatformID\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8718,
+      "offset": 8759,
       "length": 11,
       "value": "\"oAuthURL=\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8776,
+      "offset": 8817,
       "length": 9,
       "value": "\"oAuthId\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8835,
+      "offset": 8876,
       "length": 16,
       "value": "\"workplatformId\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8856,
+      "offset": 8897,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8909,
+      "offset": 8950,
       "length": 18,
       "value": "\"workplatformName\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8932,
+      "offset": 8973,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9221,
+      "offset": 9262,
       "length": 16,
       "value": "\"popup_open_url\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9295,
+      "offset": 9336,
       "length": 20,
       "value": "\"work_platform_name\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9374,
+      "offset": 9415,
       "length": 18,
       "value": "\"work_platform_id\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9665,
+      "offset": 9706,
       "length": 16,
       "value": "\"popup_open_url\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9740,
+      "offset": 9781,
       "length": 20,
       "value": "\"work_platform_name\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9819,
+      "offset": 9860,
       "length": 18,
       "value": "\"work_platform_id\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10313,
+      "offset": 10354,
       "length": 16,
       "value": "\"popup_open_url\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10434,
+      "offset": 10475,
       "length": 20,
       "value": "\"work_platform_name\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10509,
+      "offset": 10550,
       "length": 18,
       "value": "\"work_platform_id\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10729,
+      "offset": 10770,
       "length": 16,
       "value": "\"popup_open_url\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10800,
+      "offset": 10841,
       "length": 20,
       "value": "\"work_platform_name\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10875,
+      "offset": 10916,
       "length": 18,
       "value": "\"work_platform_id\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11144,
+      "offset": 11185,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11454,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11556,
+      "offset": 11470,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11876,
+      "offset": 11790,
       "length": 8,
       "value": "\"errors\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12038,
+      "offset": 11952,
       "length": 13,
       "value": "\"webview_url\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12207,
+      "offset": 12121,
       "length": 13,
       "value": "\"webview_url\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12259,
+      "offset": 12173,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12371,
+      "offset": 12285,
       "length": 13,
       "value": "\"webview_url\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12421,
+      "offset": 12335,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12598,
+      "offset": 12512,
       "length": 13,
       "value": "\"webview_url\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12658,
+      "offset": 12572,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12926,
+      "offset": 12840,
       "length": 3,
       "value": "\"#\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12954,
+      "offset": 12868,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12993,
+      "offset": 12907,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13005,
+      "offset": 12919,
       "length": 24,
       "value": "\"popup canceled by user\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13059,
+      "offset": 12973,
       "length": 17,
       "value": "\"popup_close_url\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13133,
+      "offset": 13047,
       "length": 20,
       "value": "\"work_platform_name\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13204,
+      "offset": 13118,
       "length": 18,
       "value": "\"work_platform_id\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13270,
+      "offset": 13184,
       "length": 11,
       "value": "\"initiator\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13285,
+      "offset": 13199,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13383,
+      "offset": 13297,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13395,
+      "offset": 13309,
       "length": 32,
       "value": "\"popup was closed automatically\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13457,
+      "offset": 13371,
       "length": 17,
       "value": "\"popup_close_url\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13531,
+      "offset": 13445,
       "length": 20,
       "value": "\"work_platform_name\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13602,
+      "offset": 13516,
       "length": 18,
       "value": "\"work_platform_id\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13668,
+      "offset": 13582,
       "length": 11,
       "value": "\"initiator\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13683,
+      "offset": 13597,
       "length": 11,
       "value": "\"automatic\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14052,
+      "offset": 13966,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14107,
+      "offset": 14021,
       "length": 17,
       "value": "\"popup_close_url\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14171,
+      "offset": 14085,
       "length": 20,
       "value": "\"work_platform_name\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14238,
+      "offset": 14152,
       "length": 18,
       "value": "\"work_platform_id\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14303,
+      "offset": 14217,
       "length": 11,
       "value": "\"initiator\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14702,
+      "offset": 14616,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14733,
+      "offset": 14647,
       "length": 18,
       "value": "\"authorization_id\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14897,
+      "offset": 14811,
       "length": 37,
       "value": "\"redirectControl(\"\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14930,
+      "offset": 14844,
       "length": 1,
       "value": "\"\")\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15054,
+      "offset": 14968,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 15160,
+      "offset": 15074,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 15191,
+      "offset": 15105,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 15201,
+      "offset": 15115,
       "length": 1,
       "value": "\"=\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 15213,
+      "offset": 15127,
       "length": 1,
       "value": "\"&\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15809,
+      "offset": 15723,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16212,
+      "offset": 16126,
       "length": 17,
       "value": "\"popup_close_url\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16270,
+      "offset": 16184,
       "length": 20,
       "value": "\"work_platform_name\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16337,
+      "offset": 16251,
       "length": 18,
       "value": "\"work_platform_id\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16525,
+      "offset": 16439,
       "length": 17,
       "value": "\"popup_close_url\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16589,
+      "offset": 16503,
       "length": 20,
       "value": "\"work_platform_name\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16656,
+      "offset": 16570,
       "length": 18,
       "value": "\"work_platform_id\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16878,
+      "offset": 16792,
       "length": 17,
       "value": "\"popup_close_url\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16936,
+      "offset": 16850,
       "length": 20,
       "value": "\"work_platform_name\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17003,
+      "offset": 16917,
       "length": 18,
       "value": "\"work_platform_id\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17191,
+      "offset": 17105,
       "length": 17,
       "value": "\"popup_close_url\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17255,
+      "offset": 17169,
       "length": 20,
       "value": "\"work_platform_name\""
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 17322,
+      "offset": 17236,
       "length": 18,
       "value": "\"work_platform_id\""
     },

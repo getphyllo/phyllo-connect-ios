@@ -1,7 +1,7 @@
 framework module PhylloConnect {
   umbrella header "PhylloConnect.h"
-
   export *
+
   module * { export * }
 }
 

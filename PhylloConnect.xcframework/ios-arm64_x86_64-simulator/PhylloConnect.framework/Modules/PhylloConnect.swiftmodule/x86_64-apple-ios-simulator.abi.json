@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "PhylloConnect",
+    "printedName": "PhylloConnect",
     "children": [
       {
         "kind": "Import",
@@ -165,6 +165,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -304,6 +320,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -656,6 +688,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Plugin",
             "printedName": "Plugin",
             "usr": "s:13PhylloConnect6PluginP",
@@ -746,6 +792,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -1996,6 +2056,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -3356,6 +3430,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "RawEvent",
             "printedName": "RawEvent",
             "usr": "s:13PhylloConnect8RawEventP",
@@ -4644,6 +4732,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "RawEvent",
@@ -6170,6 +6272,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "RawEvent",
             "printedName": "RawEvent",
             "usr": "s:13PhylloConnect8RawEventP",
@@ -7570,6 +7686,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "RawEvent",
             "printedName": "RawEvent",
             "usr": "s:13PhylloConnect8RawEventP",
@@ -8845,6 +8975,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "RawEvent",
             "printedName": "RawEvent",
             "usr": "s:13PhylloConnect8RawEventP",
@@ -9340,6 +9484,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DestinationPlugin",
             "printedName": "DestinationPlugin",
             "usr": "s:13PhylloConnect17DestinationPluginP",
@@ -9715,6 +9873,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Plugin",
             "printedName": "Plugin",
             "usr": "s:13PhylloConnect6PluginP",
@@ -9762,6 +9934,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -9823,6 +10011,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -11816,6 +12020,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Subscriber",
             "printedName": "Subscriber",
             "usr": "s:13PhylloConnect10SubscriberP",
@@ -11902,6 +12120,20 @@
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -12642,6 +12874,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -12980,6 +13228,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -14663,6 +14927,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -15071,6 +15349,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Plugin",
             "printedName": "Plugin",
             "usr": "s:13PhylloConnect6PluginP",
@@ -15402,6 +15694,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Plugin",
             "printedName": "Plugin",
             "usr": "s:13PhylloConnect6PluginP",
@@ -15509,6 +15815,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -15716,6 +16038,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -15982,6 +16318,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -16138,6 +16488,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Hashable",
@@ -16567,6 +16931,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -16733,6 +17113,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -17076,6 +17470,22 @@
         "moduleName": "PhylloConnect",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -17386,6 +17796,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -17641,7 +18067,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -17804,6 +18246,22 @@
         "declAttributes": [
           "AccessControl",
           "PropertyWrapper"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -17847,6 +18305,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -17895,6 +18369,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Subscriber",
@@ -18693,6 +19181,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -18751,6 +19253,22 @@
         "moduleName": "PhylloConnect",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -18880,6 +19398,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "ExpressibleByStringLiteral",
             "printedName": "ExpressibleByStringLiteral",
             "children": [
@@ -18967,7 +19499,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -19214,6 +19762,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -19512,6 +20074,20 @@
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Plugin",
@@ -19868,6 +20444,9 @@
             "moduleName": "PhylloConnect",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -19910,6 +20489,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -20162,6 +20755,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -20603,6 +21210,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -21126,6 +21749,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Plugin",
             "printedName": "Plugin",
             "usr": "s:13PhylloConnect6PluginP",
@@ -21512,6 +22149,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "EventPlugin",
             "printedName": "EventPlugin",
             "usr": "s:13PhylloConnect11EventPluginP",
@@ -21540,6 +22191,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "EventPlugin",
@@ -21591,6 +22256,22 @@
         "moduleName": "PhylloConnect",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -21616,6 +22297,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -21654,28 +22351,14 @@
         "usr": "s:Sq",
         "mangledName": "$sSq",
         "moduleName": "Swift",
-        "genericSig": "<τ_0_0>",
-        "sugared_genericSig": "<Wrapped>",
+        "genericSig": "<τ_0_0 where τ_0_0 : ~Copyable, τ_0_0 : ~Escapable>",
+        "sugared_genericSig": "<Wrapped where Wrapped : ~Copyable, Wrapped : ~Escapable>",
         "declAttributes": [
           "Frozen"
         ],
         "isExternal": true,
         "isEnumExhaustive": true,
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "ExpressibleByNilLiteral",
-            "printedName": "ExpressibleByNilLiteral",
-            "usr": "s:s23ExpressibleByNilLiteralP",
-            "mangledName": "$ss23ExpressibleByNilLiteralP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -21692,6 +22375,48 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByNilLiteral",
+            "printedName": "ExpressibleByNilLiteral",
+            "usr": "s:s23ExpressibleByNilLiteralP",
+            "mangledName": "$ss23ExpressibleByNilLiteralP"
+          },
+          {
+            "kind": "Conformance",
             "name": "CustomDebugStringConvertible",
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
@@ -21703,6 +22428,13 @@
             "printedName": "CustomReflectable",
             "usr": "s:s17CustomReflectableP",
             "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -21731,13 +22463,6 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -21783,49 +22508,44 @@
           },
           {
             "kind": "Conformance",
-            "name": "TableColumnContent",
-            "printedName": "TableColumnContent",
+            "name": "AttributedTextFormattingDefinition",
+            "printedName": "AttributedTextFormattingDefinition",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "TableRowValue",
-                "printedName": "TableRowValue",
+                "name": "Body",
+                "printedName": "Body",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "DependentMember",
-                    "printedName": "τ_0_0.TableRowValue"
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUICore.AttributedTextFormattingDefinition<Wrapped.Scope>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AttributedTextFormattingDefinition",
+                        "printedName": "SwiftUICore.AttributedTextFormattingDefinition",
+                        "usr": "s:7SwiftUI34AttributedTextFormattingDefinitionP"
+                      }
+                    ]
                   }
                 ]
               },
               {
                 "kind": "TypeWitness",
-                "name": "TableColumnSortComparator",
-                "printedName": "TableColumnSortComparator",
+                "name": "Scope",
+                "printedName": "Scope",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "DependentMember",
-                    "printedName": "τ_0_0.TableColumnSortComparator"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "TableColumnBody",
-                "printedName": "TableColumnBody",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
+                    "printedName": "τ_0_0.Scope"
                   }
                 ]
               }
             ],
-            "usr": "s:7SwiftUI18TableColumnContentP",
-            "mangledName": "$s7SwiftUI18TableColumnContentP"
+            "usr": "s:7SwiftUI34AttributedTextFormattingDefinitionP",
+            "mangledName": "$s7SwiftUI34AttributedTextFormattingDefinitionP"
           },
           {
             "kind": "Conformance",
@@ -21885,6 +22605,113 @@
           },
           {
             "kind": "Conformance",
+            "name": "TableColumnContent",
+            "printedName": "TableColumnContent",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "TableRowValue",
+                "printedName": "TableRowValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.TableRowValue"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "TableColumnSortComparator",
+                "printedName": "TableColumnSortComparator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.TableColumnSortComparator"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "TableColumnBody",
+                "printedName": "TableColumnBody",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI18TableColumnContentP",
+            "mangledName": "$s7SwiftUI18TableColumnContentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TabContent",
+            "printedName": "TabContent",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "TabValue",
+                "printedName": "TabValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.TabValue"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "_IdentifiedView",
+                "printedName": "_IdentifiedView",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0._IdentifiedView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0._IdentifiedView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI10TabContentP",
+            "mangledName": "$s7SwiftUI10TabContentP"
+          },
+          {
+            "kind": "Conformance",
             "name": "TableRowContent",
             "printedName": "TableRowContent",
             "children": [
@@ -21916,6 +22743,55 @@
             ],
             "usr": "s:7SwiftUI15TableRowContentP",
             "mangledName": "$s7SwiftUI15TableRowContentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SliderTickContent",
+            "printedName": "SliderTickContent",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Value",
+                "printedName": "Value",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Value"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[SwiftUI.SliderTick<τ_0_0.Value>]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SliderTick",
+                        "printedName": "SwiftUI.SliderTick<τ_0_0.Value>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DependentMember",
+                            "printedName": "τ_0_0.Value"
+                          }
+                        ],
+                        "usr": "s:7SwiftUI10SliderTickV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI17SliderTickContentP",
+            "mangledName": "$s7SwiftUI17SliderTickContentP"
           },
           {
             "kind": "Conformance",
@@ -22080,6 +22956,48 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "ReferenceConvertible",
             "printedName": "ReferenceConvertible",
             "children": [
@@ -22099,27 +23017,6 @@
             ],
             "usr": "s:10Foundation20ReferenceConvertibleP",
             "mangledName": "$s10Foundation20ReferenceConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -22205,12 +23102,6 @@
                         "name": "TransferRepresentation",
                         "printedName": "CoreTransferable.TransferRepresentation",
                         "usr": "s:16CoreTransferable22TransferRepresentationP"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Sendable",
-                        "printedName": "Swift.Sendable",
-                        "usr": "s:s8SendableP"
                       }
                     ]
                   }
@@ -22310,7 +23201,23 @@
         "usr": "s:SE",
         "mangledName": "$sSE",
         "moduleName": "Swift",
-        "isExternal": true
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -22805,6 +23712,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -23069,6 +23990,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -23353,27 +24281,6 @@
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
-      "offset": 496,
-      "length": 12,
-      "value": "\"Segment.io\""
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins\/SegmentDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 532,
-      "length": 9,
-      "value": "\"apiHost\""
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins\/SegmentDestination.swift",
-      "kind": "StringLiteral",
-      "offset": 564,
-      "length": 8,
-      "value": "\"apiKey\""
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins\/SegmentDestination.swift",
-      "kind": "StringLiteral",
       "offset": 1228,
       "length": 26,
       "value": "\"uploadsQueue.segment.com\""
@@ -23533,55 +24440,6 @@
       "value": "\"phyllo:\/\/failure\""
     },
     {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 433,
-      "length": 15,
-      "value": "\"phyllo:\/\/auth\""
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 467,
-      "length": 15,
-      "value": "\"phyllo:\/\/exit\""
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 509,
-      "length": 16,
-      "value": "\"onTokenExpired\""
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 559,
-      "length": 23,
-      "value": "\"phyllo:\/\/disconnected\""
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 604,
-      "length": 18,
-      "value": "\"phyllo:\/\/expired\""
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 653,
-      "length": 20,
-      "value": "\"phyllo:\/\/connected\""
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 695,
-      "length": 18,
-      "value": "\"phyllo:\/\/failure\""
-    },
-    {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins\/Logger\/SystemTarget.swift",
       "kind": "StringLiteral",
       "offset": 205,
@@ -23664,76 +24522,6 @@
       "offset": 1305,
       "length": 5,
       "value": "2"
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins\/Logger\/LogTarget.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1170,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins\/Logger\/LogTarget.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1235,
-      "length": 7,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins\/Logger\/LogTarget.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1305,
-      "length": 5,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins\/Logger\/LogTarget.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1170,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins\/Logger\/LogTarget.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1235,
-      "length": 7,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins\/Logger\/LogTarget.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1305,
-      "length": 5,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins\/Logger\/LogTarget.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3577,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins\/Logger\/LogTarget.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3606,
-      "length": 5,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins\/Logger\/LogTarget.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3577,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins\/Logger\/LogTarget.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3606,
-      "length": 5,
-      "value": "1"
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins\/Logger\/LogTarget.swift",
@@ -23834,46 +24622,32 @@
       "value": "\"segment.events\""
     },
     {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Utilities\/Storage.swift",
-      "kind": "StringLiteral",
-      "offset": 4385,
-      "length": 16,
-      "value": "\"segment.userId\""
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Utilities\/Storage.swift",
-      "kind": "StringLiteral",
-      "offset": 4424,
-      "length": 16,
-      "value": "\"segment.traits\""
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Utilities\/Storage.swift",
-      "kind": "StringLiteral",
-      "offset": 4468,
-      "length": 21,
-      "value": "\"segment.anonymousId\""
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Utilities\/Storage.swift",
-      "kind": "StringLiteral",
-      "offset": 4514,
-      "length": 18,
-      "value": "\"segment.settings\""
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Utilities\/Storage.swift",
-      "kind": "StringLiteral",
-      "offset": 4555,
-      "length": 16,
-      "value": "\"segment.events\""
-    },
-    {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Sovran\/Version.swift",
       "kind": "StringLiteral",
       "offset": 320,
       "length": 7,
       "value": "\"1.0.3\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/CustomView\/SpinningView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3150,
+      "length": 2,
+      "value": "36"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/CustomView\/SpinningView.swift",
+      "kind": "StringLiteral",
+      "offset": 3206,
+      "length": 13,
+      "value": "\"strokeColor\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/CustomView\/SpinningView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3251,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Utilities\/HTTPClient.swift",
@@ -23918,88 +24692,186 @@
       "value": "\"https:\/\/api.getphyllo.com\""
     },
     {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Utilities\/PhylloEnvironment.swift",
-      "kind": "StringLiteral",
-      "offset": 172,
-      "length": 31,
-      "value": "\"https:\/\/api.dev.getphyllo.com\""
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Utilities\/PhylloEnvironment.swift",
-      "kind": "StringLiteral",
-      "offset": 223,
-      "length": 35,
-      "value": "\"https:\/\/api.sandbox.getphyllo.com\""
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Utilities\/PhylloEnvironment.swift",
-      "kind": "StringLiteral",
-      "offset": 278,
-      "length": 35,
-      "value": "\"https:\/\/api.staging.getphyllo.com\""
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Utilities\/PhylloEnvironment.swift",
-      "kind": "StringLiteral",
-      "offset": 330,
-      "length": 27,
-      "value": "\"https:\/\/api.getphyllo.com\""
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins.swift",
-      "kind": "IntegerLiteral",
-      "offset": 358,
-      "length": 10,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins.swift",
-      "kind": "IntegerLiteral",
-      "offset": 440,
-      "length": 11,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins.swift",
-      "kind": "IntegerLiteral",
-      "offset": 573,
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1433,
       "length": 5,
-      "value": "3"
+      "value": "169.0"
     },
     {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins.swift",
-      "kind": "IntegerLiteral",
-      "offset": 649,
-      "length": 7,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins.swift",
-      "kind": "IntegerLiteral",
-      "offset": 358,
-      "length": 10,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins.swift",
-      "kind": "IntegerLiteral",
-      "offset": 440,
-      "length": 11,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins.swift",
-      "kind": "IntegerLiteral",
-      "offset": 573,
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1439,
       "length": 5,
-      "value": "3"
+      "value": "255.0"
     },
     {
-      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins.swift",
-      "kind": "IntegerLiteral",
-      "offset": 649,
-      "length": 7,
-      "value": "4"
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1453,
+      "length": 5,
+      "value": "169.0"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1459,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1472,
+      "length": 5,
+      "value": "169.0"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1478,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1492,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1528,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1562,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1622,
+      "length": 5,
+      "value": "750.0"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1679,
+      "length": 5,
+      "value": "750.0"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1740,
+      "length": 5,
+      "value": "750.0"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1802,
+      "length": 5,
+      "value": "750.0"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1840,
+      "length": 5,
+      "value": "667.0"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 1875,
+      "length": 5,
+      "value": "375.0"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2067,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2102,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2140,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2177,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2428,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2451,
+      "length": 8,
+      "value": "\"userId\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2475,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2503,
+      "length": 11,
+      "value": "\"tenant_id\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2518,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2545,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/ViewController\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4446,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/pankajpatel\/Desktop\/Work\/Phyllo\/ios-connect-sdk\/PhylloConnect\/Classes\/Segment\/Plugins.swift",

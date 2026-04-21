@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 effective-4.2 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PhylloConnect
+// swift-compiler-version: Apple Swift version 6.2.3 effective-4.2 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PhylloConnect
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import AuthenticationServices
 import CoreTelephony
 import DeveloperToolsSupport
@@ -27,8 +28,12 @@ public protocol Action {
 public protocol AsyncAction {
   associatedtype StateType : State
   associatedtype ResultType
+  #if compiler(>=5.3) && $NonescapableTypes
   func operation(state: Self.StateType, completion: @escaping (Self.ResultType?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func reduce(state: Self.StateType, operationResult: Self.ResultType?) -> Self.StateType
+  #endif
 }
 @_hasMissingDesignatedInitializers public class StartupQueue : Plugin, Subscriber {
   @Atomic public var running: Swift.Bool {
@@ -41,7 +46,9 @@ public protocol AsyncAction {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public func execute<T>(event: T?) -> T? where T : RawEvent
+  #endif
   @objc deinit
 }
 public struct DestinationMetadata : Swift.Codable {
@@ -49,15 +56,33 @@ public struct DestinationMetadata : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public protocol RawEvent : Swift.Decodable, Swift.Encodable {
+  #if compiler(>=5.3) && $NonescapableTypes
   var type: Swift.String? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var anonymousId: Swift.String? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var messageId: Swift.String? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var userId: Swift.String? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var timestamp: Swift.String? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var context: JSON? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var integrations: JSON? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var metrics: [JSON]? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var _metadata: DestinationMetadata? { get set }
+  #endif
 }
 public struct TrackEvent : RawEvent {
   public var type: Swift.String?
@@ -71,7 +96,9 @@ public struct TrackEvent : RawEvent {
   public var _metadata: DestinationMetadata?
   public var event: Swift.String
   public var properties: JSON?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(event: Swift.String, properties: JSON?)
+  #endif
   public init(existing: TrackEvent)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -87,7 +114,9 @@ public struct IdentifyEvent : RawEvent {
   public var metrics: [JSON]?
   public var _metadata: DestinationMetadata?
   public var traits: JSON?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(userId: Swift.String? = nil, traits: JSON? = nil)
+  #endif
   public init(existing: IdentifyEvent)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -105,7 +134,9 @@ public struct ScreenEvent : RawEvent {
   public var name: Swift.String?
   public var category: Swift.String?
   public var properties: JSON?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(title: Swift.String? = nil, category: Swift.String?, properties: JSON? = nil)
+  #endif
   public init(existing: ScreenEvent)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -122,7 +153,9 @@ public struct GroupEvent : RawEvent {
   public var _metadata: DestinationMetadata?
   public var groupId: Swift.String?
   public var traits: JSON?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(groupId: Swift.String? = nil, traits: JSON? = nil)
+  #endif
   public init(existing: GroupEvent)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -138,14 +171,20 @@ public struct AliasEvent : RawEvent {
   public var _metadata: DestinationMetadata?
   public var userId: Swift.String?
   public var previousId: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(newId: Swift.String? = nil)
+  #endif
   public init(existing: AliasEvent)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 extension RawEvent {
+  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func disableCloudIntegrations(exceptKeys: [Swift.String]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func enableCloudIntegrations(exceptKeys: [Swift.String]? = nil)
+  #endif
   public mutating func disableIntegration(key: Swift.String)
   public mutating func enableIntegration(key: Swift.String)
 }
@@ -158,7 +197,9 @@ extension RawEvent {
     set
   }
   public func update(settings: Settings, type: UpdateType)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func execute<T>(event: T?) -> T? where T : RawEvent
+  #endif
   public func flush()
   @objc deinit
 }
@@ -167,19 +208,25 @@ extension SegmentDestination : VersionedPlugin {
 }
 public protocol RemoteNotifications : Plugin {
   func registeredForRemoteNotifications(deviceToken: Foundation.Data)
+  #if compiler(>=5.3) && $NonescapableTypes
   func failedToRegisterForRemoteNotification(error: (any Swift.Error)?)
+  #endif
   func receivedRemoteNotification(userInfo: [Swift.AnyHashable : Any])
   func handleAction(identifier: Swift.String, userInfo: [Swift.String : Any])
 }
 extension RemoteNotifications {
   public func registeredForRemoteNotifications(deviceToken: Foundation.Data)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func failedToRegisterForRemoteNotification(error: (any Swift.Error)?)
+  #endif
   public func receivedRemoteNotification(userInfo: [Swift.AnyHashable : Any])
   public func handleAction(identifier: Swift.String, userInfo: [Swift.String : Any])
 }
 extension Analytics {
   public func registeredForRemoteNotifications(deviceToken: Foundation.Data)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func failedToRegisterForRemoteNotification(error: (any Swift.Error)?)
+  #endif
   public func receivedRemoteNotification(userInfo: [Swift.AnyHashable : Any])
   public func handleAction(identifier: Swift.String, userInfo: [Swift.String : Any])
 }
@@ -209,27 +256,37 @@ extension Analytics {
   public var anonymousId: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var userId: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func traits<T>() -> T? where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func traits() -> [Swift.String : Any]?
+  #endif
   public func flush()
   public func reset()
   public func version() -> Swift.String
   public static func version() -> Swift.String
 }
 extension Analytics {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func settings() -> Settings?
+  #endif
   public func manuallyEnableDestination(plugin: any DestinationPlugin)
 }
 extension Analytics {
   public var hasUnsentEvents: Swift.Bool {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var pendingUploads: [Foundation.URL]? {
     get
   }
+  #endif
   public func waitUntilStarted()
 }
 @_hasMissingDesignatedInitializers public class PhylloAnalyticsModel : Swift.Codable {
@@ -238,35 +295,77 @@ extension Analytics {
   required public init(from decoder: any Swift.Decoder) throws
 }
 public protocol iOSLifecycle {
+  #if compiler(>=5.3) && $NonescapableTypes
   func applicationDidEnterBackground(application: UIKit.UIApplication?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func applicationWillEnterForeground(application: UIKit.UIApplication?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func application(_ application: UIKit.UIApplication?, didFinishLaunchingWithOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func applicationDidBecomeActive(application: UIKit.UIApplication?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func applicationWillResignActive(application: UIKit.UIApplication?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func applicationDidReceiveMemoryWarning(application: UIKit.UIApplication?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func applicationWillTerminate(application: UIKit.UIApplication?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func applicationSignificantTimeChange(application: UIKit.UIApplication?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func applicationBackgroundRefreshDidChange(application: UIKit.UIApplication?, refreshStatus: UIKit.UIBackgroundRefreshStatus)
+  #endif
 }
 extension iOSLifecycle {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func applicationDidEnterBackground(application: UIKit.UIApplication?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func applicationWillEnterForeground(application: UIKit.UIApplication?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func application(_ application: UIKit.UIApplication?, didFinishLaunchingWithOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func applicationDidBecomeActive(application: UIKit.UIApplication?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func applicationWillResignActive(application: UIKit.UIApplication?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func applicationDidReceiveMemoryWarning(application: UIKit.UIApplication?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func applicationWillTerminate(application: UIKit.UIApplication?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func applicationSignificantTimeChange(application: UIKit.UIApplication?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func applicationBackgroundRefreshDidChange(application: UIKit.UIApplication?, refreshStatus: UIKit.UIBackgroundRefreshStatus)
+  #endif
 }
 extension SegmentDestination : iOSLifecycle {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func applicationWillEnterForeground(application: UIKit.UIApplication?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func applicationDidEnterBackground(application: UIKit.UIApplication?)
+  #endif
 }
 extension Foundation.URL {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var queryParameters: [Swift.String : Swift.String]? {
     get
   }
+  #endif
 }
 public typealias AdvertisingIdCallback = () -> Swift.String?
 public class Configuration {
@@ -274,8 +373,10 @@ public class Configuration {
   @objc deinit
 }
 extension Configuration {
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public func application(_ value: Any?) -> Configuration
+  #endif
   @discardableResult
   public func trackApplicationLifecycleEvents(_ enabled: Swift.Bool) -> Configuration
   @discardableResult
@@ -315,62 +416,104 @@ extension Swift.Encodable {
   public func toString(pretty: Swift.Bool) -> Swift.String
 }
 extension JSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func codableValue<T>() -> T? where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var boolValue: Swift.Bool? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var decimalValue: Foundation.Decimal? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var intValue: Swift.Int? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var uintValue: Swift.UInt? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var floatValue: Swift.Float? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var doubleValue: Swift.Double? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var stringValue: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var arrayValue: [Any]? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var dictionaryValue: [Swift.String : Any]? {
     get
   }
+  #endif
 }
 extension JSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func mapTransform(_ keys: [Swift.String : Swift.String], valueTransform: ((_ key: Swift.String, _ value: Any) -> Any)? = nil) throws -> JSON
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func add(value: Any) throws -> JSON?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func add(value: Any, forKey key: Swift.String) throws -> JSON?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func remove(key: Swift.String) throws -> JSON?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public subscript(index: Swift.Int) -> JSON? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public subscript(key: Swift.String) -> JSON? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public subscript<T>(keyPath keyPath: KeyPath) -> T? where T : Swift.Decodable, T : Swift.Encodable {
     get
     set(newValue)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func value<T>(forKeyPath keyPath: KeyPath) -> T? where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func setValue<T>(_ value: T?, forKeyPath keyPath: KeyPath) where T : Swift.Decodable, T : Swift.Encodable
+  #endif
 }
 extension Swift.Dictionary where Key == Swift.String, Value == Any {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func mapTransform(_ keys: [Swift.String : Swift.String], valueTransform: ((_ key: Key, _ value: Value) -> Any)? = nil) throws -> [Key : Value]
+  #endif
 }
 public class DeviceToken {
   final public let type: PluginType
   public var analytics: Analytics?
   public var token: Swift.String?
   required public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func execute<T>(event: T?) -> T? where T : RawEvent
+  #endif
   @objc deinit
 }
 extension Analytics {
@@ -379,7 +522,9 @@ extension Analytics {
 @_hasMissingDesignatedInitializers public class Context {
   final public let type: PluginType
   public var analytics: Analytics?
+  #if compiler(>=5.3) && $NonescapableTypes
   public func execute<T>(event: T?) -> T? where T : RawEvent
+  #endif
   @objc deinit
 }
 public protocol LogTarget {
@@ -390,7 +535,9 @@ public enum LogFilterKind : Swift.Int {
   case error
   case warning
   case debug
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -408,34 +555,48 @@ public struct LoggingType : Swift.Hashable {
     }
   }
   public init(types: [LoggingType.LogDestination])
-  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: LoggingType, b: LoggingType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
 public protocol LogMessage {
   var kind: LogFilterKind { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var title: Swift.String? { get }
+  #endif
   var message: Swift.String { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var event: (any RawEvent)? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var function: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var line: Swift.Int? { get }
+  #endif
   var logType: LoggingType.LogDestination { get }
   var dateTime: Foundation.Date { get }
 }
 public enum MetricType : Swift.Int {
   case counter
   case gauge
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 extension Analytics {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func log(message: Swift.String, kind: LogFilterKind? = nil, function: Swift.String = #function, line: Swift.Int = #line)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func metric(_ type: MetricType, name: Swift.String, value: Swift.Double, tags: [Swift.String]? = nil)
+  #endif
   public func history(event: any RawEvent, sender: Swift.AnyObject, function: Swift.String = #function, line: Swift.Int = #line)
 }
 extension Analytics {
@@ -453,7 +614,9 @@ public class Store {
   public func provide<T>(state: T) where T : State
   public func dispatch<T>(action: T) where T : Action
   public func dispatch<T>(action: T) where T : AsyncAction
+  #if compiler(>=5.3) && $NonescapableTypes
   public func currentState<T>() -> T? where T : State
+  #endif
   @objc deinit
 }
 @objc public protocol PhylloConnectDelegate : ObjectiveC.NSObjectProtocol {
@@ -490,22 +653,38 @@ public class Timeline : Subscriber {
   @objc deinit
 }
 extension Plugin {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func execute<T>(event: T?) -> T? where T : RawEvent
+  #endif
   public func update(settings: Settings, type: UpdateType)
   public func shutdown()
 }
 extension EventPlugin {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func execute<T>(event: T?) -> T? where T : RawEvent
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func identify(event: IdentifyEvent) -> IdentifyEvent?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func track(event: TrackEvent) -> TrackEvent?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func screen(event: ScreenEvent) -> ScreenEvent?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func group(event: GroupEvent) -> GroupEvent?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func alias(event: AliasEvent) -> AliasEvent?
+  #endif
   public func flush()
   public func reset()
 }
 extension DestinationPlugin {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func execute<T>(event: T?) -> T? where T : RawEvent
+  #endif
 }
 public struct Settings : Swift.Codable {
   public var integrations: JSON?
@@ -515,9 +694,15 @@ public struct Settings : Swift.Codable {
   public init(writeKey: Swift.String, apiHost: Swift.String)
   public init(writeKey: Swift.String)
   public init(from decoder: any Swift.Decoder) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public func integrationSettings(forKey key: Swift.String) -> [Swift.String : Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func integrationSettings<T>(forKey key: Swift.String) -> T? where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func integrationSettings<T>(forPlugin plugin: any DestinationPlugin) -> T? where T : Swift.Decodable, T : Swift.Encodable
+  #endif
   public func hasIntegrationSettings(forPlugin plugin: any DestinationPlugin) -> Swift.Bool
   public func hasIntegrationSettings(key: Swift.String) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
@@ -539,15 +724,21 @@ extension KeyPath : Swift.ExpressibleByStringLiteral {
   public typealias UnicodeScalarLiteralType = Swift.String
 }
 extension Swift.Dictionary where Key : Swift.StringProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
   public subscript(keyPath keyPath: KeyPath) -> Any? {
     get
     set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public subscript(keyPath keyPath: KeyPath, reference reference: Any?) -> Any? {
     get
     set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func exists(keyPath: KeyPath, reference: Any? = nil) -> Swift.Bool
+  #endif
 }
 @_hasMissingDesignatedInitializers public class HTTPClient {
   @objc deinit
@@ -557,7 +748,9 @@ public enum PhylloEnvironment : Swift.String {
   case sandbox
   case staging
   case prod
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -567,26 +760,46 @@ public enum PhylloEnvironment : Swift.String {
   final public let type: PluginType
   public var analytics: Analytics?
   public func update(settings: Settings, type: UpdateType)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func execute<T>(event: T?) -> T? where T : RawEvent
+  #endif
   @objc deinit
 }
 extension Analytics {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func track<P>(name: Swift.String, properties: P?) where P : Swift.Decodable, P : Swift.Encodable
+  #endif
   public func track(name: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func identify<T>(userId: Swift.String, traits: T?) where T : Swift.Decodable, T : Swift.Encodable
+  #endif
   public func identify<T>(traits: T) where T : Swift.Decodable, T : Swift.Encodable
   public func identify(userId: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func screen<P>(title: Swift.String, category: Swift.String? = nil, properties: P?) where P : Swift.Decodable, P : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func screen(title: Swift.String, category: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func group<T>(groupId: Swift.String, traits: T?) where T : Swift.Decodable, T : Swift.Encodable
+  #endif
   public func group(groupId: Swift.String)
   public func alias(newId: Swift.String)
 }
 extension Analytics {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func track(name: Swift.String, properties: [Swift.String : Any]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func identify(userId: Swift.String, traits: [Swift.String : Any]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func screen(title: Swift.String, category: Swift.String? = nil, properties: [Swift.String : Any]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func group(groupId: Swift.String, traits: [Swift.String : Any]?)
+  #endif
 }
 public enum PluginType : Swift.Int, Swift.CaseIterable {
   case before
@@ -594,10 +807,12 @@ public enum PluginType : Swift.Int, Swift.CaseIterable {
   case destination
   case after
   case utility
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias AllCases = [PluginType]
   public typealias RawValue = Swift.Int
-  public static var allCases: [PluginType] {
+  nonisolated public static var allCases: [PluginType] {
     get
   }
   public var rawValue: Swift.Int {
@@ -615,18 +830,32 @@ public enum UpdateType {
 }
 public protocol Plugin : AnyObject {
   var type: PluginType { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var analytics: Analytics? { get set }
+  #endif
   func configure(analytics: Analytics)
   func update(settings: Settings, type: UpdateType)
+  #if compiler(>=5.3) && $NonescapableTypes
   func execute<T>(event: T?) -> T? where T : RawEvent
+  #endif
   func shutdown()
 }
 public protocol EventPlugin : Plugin {
+  #if compiler(>=5.3) && $NonescapableTypes
   func identify(event: IdentifyEvent) -> IdentifyEvent?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func track(event: TrackEvent) -> TrackEvent?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func group(event: GroupEvent) -> GroupEvent?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func alias(event: AliasEvent) -> AliasEvent?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func screen(event: ScreenEvent) -> ScreenEvent?
+  #endif
   func reset()
   func flush()
 }
@@ -657,8 +886,12 @@ extension Analytics {
   @discardableResult
   public func add(plugin: any Plugin) -> any Plugin
   public func remove(plugin: any Plugin)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func find<T>(pluginType: T.Type) -> T? where T : Plugin
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func find(key: Swift.String) -> (any DestinationPlugin)?
+  #endif
 }
 public protocol Subscriber : AnyObject {
 }
